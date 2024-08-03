@@ -73,9 +73,11 @@ const ComingSoon = () => {
 
   //componentDidMount
   useEffect(() => {
+    const currentInterval = interval.current;
+
     startTimer();
     return () => {
-      clearInterval(interval.current);
+      clearInterval(currentInterval);
     };
   });
 
