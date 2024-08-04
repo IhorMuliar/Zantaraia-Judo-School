@@ -1,6 +1,5 @@
 import React from 'react';
 
-import NewsLetter from '../elements/NewsLetter';
 import PageTitle from '../elements/PageTitle';
 import ScheduleTable from '../elements/ScheduleTable';
 
@@ -16,11 +15,6 @@ const Schedule = () => {
                         </div>
                     </div>
                 </div>
-                <section className="call-action style-1 footer-action">
-			        <div className="container">
-                        <NewsLetter />
-                    </div>
-                </section>
             </div>   
         </>
     );

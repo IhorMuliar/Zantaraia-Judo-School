@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IMAGES } from "../constants/theme";
-import NewsLetter from "../elements/NewsLetter";
 import PageTitle from "../elements/PageTitle";
 
 const mediaBlog = [
@@ -66,11 +65,6 @@ const Team = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-        <section className="call-action style-1 footer-action">
-          <div className="container">
-            <NewsLetter />
           </div>
         </section>
       </div>

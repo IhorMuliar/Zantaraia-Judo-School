@@ -3,7 +3,6 @@ import FitnessGoal from '../components/FitnessGoal';
 import { IMAGES } from '../constants/theme';
 import FitnessTraining from '../elements/FitnessTraining';
 import LatestSlider from '../elements/LatestSlider';
-import NewsLetter from '../elements/NewsLetter';
 import PageTitle from '../elements/PageTitle';
 import ScheduleTable from '../elements/ScheduleTable';
 import WorkoutSlider from '../elements/WorkoutSlider';
@@ -51,11 +50,6 @@ const AboutUs = () => {
                 </section>
                 <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+IMAGES.BgImage1 +")"}}>			        
                     <LatestSlider />
-                </section>
-                <section className="call-action style-1 footer-action">
-			        <div className="container">
-                        <NewsLetter />
-                    </div>
                 </section>
             </div>   
         </>

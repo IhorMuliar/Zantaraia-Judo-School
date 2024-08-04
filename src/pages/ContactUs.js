@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
-import NewsLetter from "../elements/NewsLetter";
 import PageTitle from "../elements/PageTitle";
 import { Link } from "react-router-dom";
 
@@ -226,11 +225,6 @@ const ContactUs = () => {
             ></iframe>
           </div>
         </div>
-        <section className="call-action style-1 footer-action">
-          <div className="container">
-            <NewsLetter />
-          </div>
-        </section>
       </div>
     </>
   );

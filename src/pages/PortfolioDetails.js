@@ -15,7 +15,6 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 import { IMAGES } from '../constants/theme';
 import ClientLogoSlider from '../elements/ClientLogoSlider';
-import NewsLetter from '../elements/NewsLetter';
 import PageTitle from '../elements/PageTitle';
 import WorkoutSlider from '../elements/WorkoutSlider';
 import { Link } from 'react-router-dom';
@@ -193,11 +192,6 @@ const PortfolioDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <section className="call-action style-1 footer-action">
-                        <div className="container">          
-                            <NewsLetter /> 
-                        </div>
-                    </section>
                 </div>
             </div>
         </>
