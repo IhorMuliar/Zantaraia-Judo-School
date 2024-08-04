@@ -25,6 +25,7 @@
     transform: skewY(-4deg);
     background: var(--secondary);
     margin-top: 160px;
+	margin-bottom: 140px;
 	z-index: 2;
 	@include respond('laptop'){
 		margin-top: 120px;

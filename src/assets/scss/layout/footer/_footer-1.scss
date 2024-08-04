@@ -29,7 +29,7 @@
 		}
 		.footer-logo{
 			img{
-				max-width:240px;
+				max-width: 120px;
 			}
 		}
 		.girl-img {
@@ -46,18 +46,6 @@
 			}
 			@include respond('phone-land'){
 				display: none;
-			}
-		}
-		&.footer-action{
-			.footer-top{
-				padding-top: 200px;
-				
-				@include respond('tab-land'){
-					padding-top: 180px;
-				}
-				@include respond('phone-land'){
-					padding-top: 160px;
-				}
 			}
 		}
 		.widget-post-bx{

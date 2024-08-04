@@ -15350,7 +15350,7 @@ footer .dz-social-icon ul li {
   width: 7px;
 }
 .site-footer.style-1 .footer-logo img {
-  max-width: 240px;
+  max-width: 120px;
 }
 .site-footer.style-1 .girl-img {
   position: absolute;
@@ -15371,19 +15371,6 @@ footer .dz-social-icon ul li {
 @media only screen and (max-width: 767px) {
   .site-footer.style-1 .girl-img {
     display: none;
-  }
-}
-.site-footer.style-1.footer-action .footer-top {
-  padding-top: 200px;
-}
-@media only screen and (max-width: 1280px) {
-  .site-footer.style-1.footer-action .footer-top {
-    padding-top: 180px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .site-footer.style-1.footer-action .footer-top {
-    padding-top: 160px;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -23615,6 +23602,7 @@ ul a.rsswidget:hover {
   transform: skewY(-4deg);
   background: var(--secondary);
   margin-top: 160px;
+  margin-bottom: 140px;
   z-index: 2;
 }
 @media only screen and (max-width: 1480px) {
