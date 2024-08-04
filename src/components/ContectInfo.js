@@ -1,7 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import emailjs from "@emailjs/browser";
-import swal from "sweetalert";
 
 const socialIcons = [
   { icon: "fab fa-facebook-f", link: "https://www.facebook.com/GZJudoSchool/" },
@@ -10,28 +8,6 @@ const socialIcons = [
 ];
 
 const ContectInfo = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-    emailjs
-      .sendForm(
-        "service_gfykn6i",
-        "template_iy1pb0b",
-        e.target,
-        "HccoOtZS6GHw-N-m6"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    swal("Good job!", "form successfuly submmited", "success");
-  };
   return (
     <>
       <div className="row align-items-center justify-content-between">
@@ -84,7 +60,10 @@ const ContectInfo = () => {
                 </span>
               </li>
               <li>
-                <span className="days">Sunday Closed:</span>
+                <span className="days">Sunday:</span>
+                <span className="time">
+                  Closed
+                </span>
               </li>
               <li>
                 <span className="days">Saturday:</span>

@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IMAGES, SVGICON } from "../constants/theme";
+
+import { IMAGES } from "../constants/theme";
 
 const Footer2 = () => {
   let update = new Date();
+
   return (
     <>
       <footer className="site-footer style-1 footer-action bg-dark">
         <div className="footer-top">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-between">
               <div className="col-xl-3 col-md-12">
                 <div className="widget widget_about">
                   <div className="footer-logo  logo-white">
                     <Link to={"/"}>
                       <img
                         className="select_logo_white"
-                        src={IMAGES.logoWhite2}
-                        alt=""
+                        src={IMAGES.logoTest}
+                        alt="Logo"
                       />
                     </Link>
                   </div>
@@ -31,7 +33,7 @@ const Footer2 = () => {
                       <li>
                         <Link
                           target="_blank"
-                          to="https://www.facebook.com/"
+                          to="https://www.facebook.com/GZJudoSchool/"
                           rel="noreferrer"
                         >
                           <i className="fab fa-facebook-f"></i>
@@ -40,16 +42,7 @@ const Footer2 = () => {
                       <li>
                         <Link
                           target="_blank"
-                          to="https://twitter.com/?lang=en"
-                          rel="noreferrer"
-                        >
-                          <i className="fab fa-twitter"></i>
-                        </Link>
-                      </li>{" "}
-                      <li>
-                        <Link
-                          target="_blank"
-                          to="https://www.instagram.com/?hl=en"
+                          to="https://www.instagram.com/zantaraia_school"
                           rel="noreferrer"
                         >
                           <i className="fab fa-instagram"></i>
@@ -58,10 +51,10 @@ const Footer2 = () => {
                       <li>
                         <Link
                           target="_blank"
-                          to="https://www.whatsapp.com/"
+                          to="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                           rel="noreferrer"
                         >
-                          <i className="fa-brands fa-whatsapp"></i>
+                          <i className="fa-brands fa-tiktok"></i>
                         </Link>
                       </li>
                     </ul>
@@ -69,40 +62,11 @@ const Footer2 = () => {
                 </div>
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
-                <div className="widget recent-posts-entry">
-                  <h4 className="footer-title">Blog Posts</h4>
-                  <div className="widget-post-bx">
-                    <div className="widget-post clearfix">
-                      <div className="dz-info">
-                        <h6 className="title">
-                          <Link to={"/blog-details"}>
-                            The Philosophy Of Best Fitness.
-                          </Link>
-                        </h6>
-                        <span className="post-date"> JUNE 18, 2023</span>
-                      </div>
-                    </div>
-                    <div className="post-separator"></div>
-                    <div className="widget-post clearfix">
-                      <div className="dz-info">
-                        <h6 className="title">
-                          <Link to={"/blog-details"}>
-                            Best 50 Tips For Heavy Fitness.
-                          </Link>
-                        </h6>
-                        <span className="post-date"> AUGUST 22, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_locations">
                   <h4 className="footer-title">Locations</h4>
                   <div className="clearfix">
-                    <h6>Washington</h6>
-                    <p>1559 Alabama Ave SE, DC 20032, Washington, USA</p>
-                    {SVGICON.map}
+                    <h6>Kyiv</h6>
+                    <p>Vasylia Lypkivskoho St, 36, Kyiv, Ukraine</p>
                   </div>
                 </div>
               </div>
@@ -111,19 +75,22 @@ const Footer2 = () => {
                   <h4 className="footer-title">Working Hours</h4>
                   <ul>
                     <li>
-                      <span className="days">Monday – Friday:</span>
+                      <span className="days">Monday - Friday:</span>
                       <span className="time">
-                        <Link to={"/schedule"}>07:00 – 21:00</Link>
+                        <Link to={"/schedule"}>07:00 - 21:00</Link>
                       </span>
                     </li>
                     <li>
                       <span className="days">Saturday:</span>
                       <span className="time">
-                        <Link to={"/schedule"}>07:00 – 16:00</Link>
+                        <Link to={"/schedule"}>07:00 - 16:00</Link>
                       </span>
                     </li>
                     <li>
-                      <span className="days">Sunday Closed:</span>
+                      <span className="days">Sunday:</span>
+                      <span className="time">
+                        Closed
+                      </span>
                     </li>
                   </ul>
                   <Link to={"/schedule"} className="btn-link">
@@ -140,13 +107,9 @@ const Footer2 = () => {
             <div className="text-center">
               <span className="copyright-text">
                 Copyright © {update.getFullYear()}{" "}
-                <Link
-                  to="https://dexignzone.com/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  DexignZone
-                </Link>
+                <span className="text-yellow">
+                  GEORGII ZANTARAIA JUDO SCHOOL 
+                </span>
                 . All rights reserved.
               </span>
             </div>
@@ -155,12 +118,12 @@ const Footer2 = () => {
         <img
           className="svg-shape-1 rotate-360"
           src={IMAGES.footercircle}
-          alt=""
+          alt="Circle 1"
         />
         <img
           className="svg-shape-2 rotate-360"
           src={IMAGES.footercircle}
-          alt=""
+          alt="Circle 2"
         />
       </footer>
     </>
