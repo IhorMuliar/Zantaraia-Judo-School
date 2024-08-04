@@ -31,7 +31,7 @@ const PortfolioDetails = () => {
     <>
       <div className="page-wraper">
         <div className="page-content bg-white">
-          <PageTitle activePage="Portfolio Details" parentTitle="Portfolio" />
+          <PageTitle activePage="Gallery" parentTitle="Home" />
           <div className="content-inner-2">
             <div className="container">
               <LightGallery

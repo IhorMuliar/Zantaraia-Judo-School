@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <PageTitle activePage="About Us" parentTitle="Pages" />
+        <PageTitle activePage="About Us" parentTitle="Home" />
         <section
           className="content-inner-2"
           style={{ backgroundImage: "url(" + IMAGES.BgImage1 + ")" }}

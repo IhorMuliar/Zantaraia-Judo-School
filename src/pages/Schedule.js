@@ -7,7 +7,7 @@ const Schedule = () => {
     return (
         <>
             <div className="page-content bg-white">
-                <PageTitle activePage="Schedule" parentTitle="Pages" />    
+                <PageTitle activePage="Schedule" parentTitle="Home" />    
                 <div className="content-inner-1">
                     <div className="container">
                         <div className="schedule-table table-responsive">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { IMAGES } from "../constants/theme";
 import PageTitle from "../elements/PageTitle";
 
@@ -16,7 +17,7 @@ const Team = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <PageTitle parentTitle="Pages" activePage="Our Team" />
+        <PageTitle parentTitle="Home" activePage="Our Team" />
         <section className="content-inner">
           <div className="container">
             <div className="row ">
