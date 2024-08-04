@@ -1,9 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 
 
 //layouts
-import Header from "./../layouts/Header";
+import Header, { Mainheader }from "./../layouts/Header";
 import Footer from "./../layouts/Footer";
 import ScrollToTop from "./../layouts/ScrollToTop";
 
@@ -99,9 +99,23 @@ function Index() {
 }
 
 function HomeLayout() {
+  const [headerFix, setheaderFix] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setheaderFix(window.scrollY > 50);
+    });
+  }, []);
   return (
     <div className="page-wraper">
-      <Header />
+      <header className="site-header mo-left header header-transparent style-1">
+        <div
+          className={`sticky-header mt-3 main-bar-wraper navbar-expand-lg ${
+            headerFix ? "is-fixed" : ""
+          }`}
+        >
+          <Mainheader />
+        </div>
+      </header>
       <Outlet />
     </div>
   );

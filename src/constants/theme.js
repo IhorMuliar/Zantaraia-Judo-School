@@ -170,8 +170,8 @@ export const IMAGES = {
   clientLogo5: require("../assets/images/client-logo/logo5.png"),
   clientLogo6: require("../assets/images/client-logo/logo6.png"),
 
-  mainSliderPic1: require("../assets/images/main-slider/slider3/pic1.png"),
-  miniSlidePic1: require("../assets/images/main-slider/slider3/pic1.jpg"),
+  mainSliderPic: require("../assets/images/main-slider/slider3/gym.jpg"),
+  miniSlidePic: require("../assets/images/main-slider/slider3/pic1.jpg"),
 
   beforeimg: require("../assets/images/after-before/before.jpg"),
   afterimg: require("../assets/images/after-before/after.jpg"),
