@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 
-//layouts
 import Header, { Mainheader } from "./../layouts/Header";
 import Footer2 from "./../layouts/Footer2";
 import ScrollToTop from "./../layouts/ScrollToTop";
 
-//Pages
 import AboutUs from "./AboutUs";
 import Team from "./Team";
 import Schedule from "./Schedule";
