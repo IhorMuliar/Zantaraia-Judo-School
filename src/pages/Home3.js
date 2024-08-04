@@ -65,15 +65,11 @@ const Home3 = () => {
                 <div className="col-lg-6 m-md-b30">
                   <div className="dz-media p-r20">
                     <img
-                      src={IMAGES.aboutPic7}
-                      alt=""
+                      src={IMAGES.aboutPicZantaraia}
+                      alt="Zantaraia"
                       className="wow fadeInUp"
                       data-wow-delay="0.4s"
                     />
-                    <div className="tag">
-                      <h2>20</h2>
-                      <h5>YEAR EXPERIENCE</h5>
-                    </div>
                   </div>
                 </div>
               </div>

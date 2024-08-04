@@ -149,6 +149,7 @@ export const IMAGES = {
   aboutPic5: require("../assets/images/about/pic5.jpg"),
   aboutPic6: require("../assets/images/about/pic6.jpg"),
   aboutPic7: require("../assets/images/about/pic7.png"),
+  aboutPicZantaraia: require("../assets/images/about/zantaraia.png"),
   aboutPic: require("../assets/images/about/pic.png"),
 
   overlayBoxpic1: require("../assets/images/overly-box/pic1.jpg"),

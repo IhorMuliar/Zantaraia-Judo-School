@@ -41,7 +41,7 @@ export const AboutServicesDetails = () => {
     <>
       <div className="col-lg-6 about-content m-lg-t40 wow fadeInUp">
         <div className="section-head style-1">
-          <h5 className="sub-title">WAKE UP IT’S TIME</h5>
+          <h5 className="sub-title">WAKE UP IT'S TIME</h5>
           <h2 className="title mb-0">
             Take The <span> Action </span>
           </h2>
