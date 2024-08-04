@@ -46,7 +46,6 @@ const Header = () => {
         >
           <Mainheader />
         </div>
-        {/* <!-- Main Header End --> */}
       </header>
     </>
   );
@@ -55,8 +54,6 @@ const Header = () => {
 export default Header;
 
 export const Mainheader = () => {
-  /* for sticky header */
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("");
   const location = useLocation();
@@ -135,46 +132,10 @@ export const Mainheader = () => {
               <span></span>
             </button>
 
-            {/* <!-- Extra Nav --> */}
-            <div className="extra-nav">
-              <div className="extra-cell">
-                <button
-                  id="quik-search-btn"
-                  type="button"
-                  className="header-search-btn"
-                >
-                  <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <Link
-                  to={"/appointment"}
-                  className="btn btn-primary btn-skew appointment-btn"
-                >
-                  <span>Appointment</span>
-                </Link>
-              </div>
-            </div>
-            {/* <!-- Extra Nav --> */}
-
-            {/* <!-- Search Form --> */}
-            <div className="dz-quik-search">
-              <form action="#">
-                <input
-                  name="search"
-                  defaultValue=""
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter Your Keyword ..."
-                />
-                <span id="quik-search-remove">
-                  <i className="fa-solid fa-xmark"></i>
-                </span>
-              </form>
-            </div>
-
             {/* <!-- Header Nav --> */}
             <div
               id="navbarNavDropdown"
-              className={`header-nav navbar-collapse collapse justify-content-end ${
+              className={`header-nav navbar-collapse collapse justify-content-around ${
                 sidebarOpen ? "show" : ""
               }`}
             >

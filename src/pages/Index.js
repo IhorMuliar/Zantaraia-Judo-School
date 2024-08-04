@@ -1,16 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 
 
 //layouts
-import Header, { Mainheader } from "./../layouts/Header";
+import Header from "./../layouts/Header";
 import Footer from "./../layouts/Footer";
-import Footer2 from "../layouts/Footer2";
 import ScrollToTop from "./../layouts/ScrollToTop";
 
 
 //Pages
-import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Team from "./Team";
 import Pricing from "./Pricing";
@@ -30,8 +28,6 @@ import BlogDetail from "./BlogDetail";
 import Appointment from "./Appointment";
 import WeightCalculator from "./WeightCalculator";
 import ContactUs from "./ContactUs";
-import Home2 from "./Home2";
-import Header2 from "../layouts/Header2";
 import Home3 from "./Home3";
 
 function Index() {
@@ -50,8 +46,10 @@ function Index() {
         <Route path="/under-maintenance" exact element={<UnderConstruction />}/>
         <Route path="/appointment" exact element={<Appointment />} />
         <Route path="/coming-soon" exact element={<ComingSoon />} />
+        <Route element={<HomeLayout />}>
+          <Route path="/" exact element={<Home3 />} />
+        </Route>
         <Route element={<MainLayout />}>
-          <Route path="/" exact element={<Home />} />
           <Route path="/about-us" exact element={<AboutUs />} />
           <Route path="/team" exact element={<Team />} />
           <Route path="/faq" exact element={<Faq />} />
@@ -84,14 +82,7 @@ function Index() {
           />
           <Route path="/contact-us" exact element={<ContactUs />} />
         </Route>
-        <Route element={<MainLayout2 />}>
-          <Route path="/home-2" exact element={<Home2 />} />
-        </Route>
-        <Route element={<MainLayout3 />}>
-          <Route path="/home-3" exact element={<Home3 />} />
-        </Route>
       </Routes>
-      {/* <Switcher /> */}
       <ScrollToTop />
       <button
         onClick={() => {
@@ -107,43 +98,21 @@ function Index() {
   );
 }
 
+function HomeLayout() {
+  return (
+    <div className="page-wraper">
+      <Header />
+      <Outlet />
+    </div>
+  );
+}
+
 function MainLayout() {
   return (
     <div className="page-wraper">
       <Header />
       <Outlet />
       <Footer />
-    </div>
-  );
-}
-function MainLayout2() {
-  return (
-    <div className="page-wraper">
-      <Header2 />
-      <Outlet />
-      <Footer2 />
-    </div>
-  );
-}
-function MainLayout3() {
-  const [headerFix, setheaderFix] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setheaderFix(window.scrollY > 50);
-    });
-  }, []);
-  return (
-    <div className="page-wraper">
-      <header className="site-header mo-left header header-transparent style-1">
-        <div
-          className={`sticky-header mt-3 main-bar-wraper navbar-expand-lg ${
-            headerFix ? "is-fixed" : ""
-          }`}
-        >
-          <Mainheader />
-        </div>
-      </header>
-      <Outlet />
     </div>
   );
 }

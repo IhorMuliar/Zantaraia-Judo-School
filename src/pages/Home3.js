@@ -24,8 +24,8 @@ const Home3 = () => {
 
   useEffect(() => {
     const body = document.querySelector("body");  
-    body.setAttribute("data-theme-color", 'color_3'); 
-    localStorage.setItem("theme", "color_3");
+    body.setAttribute("data-theme-color", 'color_5'); 
+    localStorage.setItem("theme", "color_5");
     localStorage.setItem("themeInd", 2);
   }, [location]);
 
