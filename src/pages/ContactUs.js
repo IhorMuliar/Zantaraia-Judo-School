@@ -31,7 +31,7 @@ const ContactUs = () => {
     <>
       <div className="page-content bg-white">
         <PageTitle activePage="Contact Us" parentTitle="Home" />
-        <section className="content-inner-2 z-index-none">
+        <section className="content-inner-1 z-index-none">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6 col-xl-5 m-sm-b30 m-xl-b0">
@@ -41,32 +41,27 @@ const ContactUs = () => {
                     Fill up the form and our Team will get back to you within 24
                     hours.
                   </p>
-                  <div className="widget widget_getintuch ">
-                    <ul>
+                  <address className="widget widget_getintuch">
+                    <ul >
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
                         <p>
-                          832 Thompson Drive, San Fransisco CA 94107, United
-                          States
+                          Vasylia Lypkivskoho St, 36, Kyiv
                         </p>
                       </li>
                       <li>
                         <i className="fa-solid fa-phone"></i>
-                        <p>111-222-3333</p>
-                      </li>
-                      <li>
-                        <i className="fa-solid fa-envelope"></i>
-                        <p>support@BodyShape.com</p>
+                        <a className="text-white" href="tel:+380969795892">096-979-58-92</a>
                       </li>
                     </ul>
-                  </div>
+                  </address>
                   <h6 className="m-b15 text-white">Our Socials</h6>
                   <div className="dz-social-icon style-1 dark">
                     <ul>
                       <li>
                         <Link
                           target="_blank"
-                          to="https://www.facebook.com/"
+                          to="https://www.facebook.com/GZJudoSchool/ "
                           rel="noreferrer"
                         >
                           <i className="fab fa-facebook-f" />
@@ -75,7 +70,7 @@ const ContactUs = () => {
                       <li>
                         <Link
                           target="_blank"
-                          to="https://www.instagram.com/"
+                          to="https://www.instagram.com/zantaraia_school"
                           rel="noreferrer"
                         >
                           <i className="fab fa-instagram" />
@@ -84,21 +79,12 @@ const ContactUs = () => {
                       <li>
                         <Link
                           target="_blank"
-                          to="https://twitter.com/"
+                          to="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                           rel="noreferrer"
                         >
-                          <i className="fab fa-twitter" />
+                          <i className="fab fa-tiktok" />
                         </Link>
                       </li>{" "}
-                      <li>
-                        <Link
-                          target="_blank"
-                          to="https://whatsapp.com/"
-                          rel="noreferrer"
-                        >
-                          <i className="fa-brands fa-whatsapp" />
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                   <svg
@@ -128,103 +114,20 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="col-md-6 col-xl-7">
-                <form
-                  className="dz-form dzForm style-1"
-                  ref={form}
-                  onSubmit={sendEmail}
-                >
-                  <input
-                    type="hidden"
-                    className="form-control"
-                    name="dzToDo"
-                    value="Contact"
-                  />
-                  <div className="dzFormMsg"></div>
-
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <div className="input-group input-line">
-                        <input
-                          name="dzFirstName"
-                          required
-                          type="text"
-                          className="form-control"
-                          placeholder="First Name"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="input-group input-line">
-                        <input
-                          name="dzLastName"
-                          required
-                          type="text"
-                          className="form-control"
-                          placeholder="Last Name"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-xl-6">
-                      <div className="input-group input-line">
-                        <input
-                          name="dzEmail"
-                          required
-                          type="text"
-                          className="form-control"
-                          placeholder="Your Email Address"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-xl-6">
-                      <div className="input-group input-line">
-                        <input
-                          name="dzPhoneNumber"
-                          required
-                          type="text"
-                          className="form-control"
-                          placeholder="Phone"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-sm-12">
-                      <div className="input-group input-line m-b30">
-                        <textarea
-                          name="dzMessage"
-                          rows="5"
-                          required
-                          className="form-control"
-                          placeholder="Message..."
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div className="col-sm-12">
-                      <button
-                        name="submit"
-                        type="submit"
-                        value="Submit"
-                        className="btn btn-primary btn-lg btn-skew"
-                      >
-                        <span>Send Message</span>
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                <div className="map-iframe">
+                  <iframe
+                    title="myFrame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40663.595985020795!2d30.433361728057005!3d50.432257171290516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf54fcd2e17b%3A0xe59b1fd3955732ac!2sShkola%20Dzyudo%20Heorhiya%20Zantaraya!5e0!3m2!1sen!2sua!4v1722780764704!5m2!1sen!2sua"
+                    style={{ border: "0", width: "100%" }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <div className="container content-inner-1">
-          <div className="map-iframe">
-            <iframe
-              title="myFrame"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28896.531392443423!2d75.81462525569334!3d25.133445080066668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x537f208422eb8f28!2sW3ITEXPERTS%20-%20Software%20Development%20Company%20in%20kota!5e0!3m2!1sen!2sin!4v1669897446044!5m2!1sen!2sin"
-              style={{ border: "0", marginBottom: "-7px", width: "100%" }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
       </div>
     </>
   );
