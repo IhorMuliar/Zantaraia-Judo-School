@@ -26,6 +26,7 @@ export const IMAGES = {
   Slide2Starts: require("../assets/images/main-slider/slider2/stars.png"),
 
   //logo
+  logoTest: require("../assets/images/logo-test.jpg"),
   logo: require("../assets/images/logo.png"),
   logo1: require("../assets/images/logo/logo1.png"),
   logo2: require("../assets/images/logo/logo2.png"),

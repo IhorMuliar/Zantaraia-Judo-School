@@ -74,17 +74,18 @@
 			}
 		}
 		.logo-header{
-			height: 80px;
+			height: 78px;
+
 			img {
-			    max-width: 240px;
+			    max-width: 77px;
 			}
-			@include respond('tab-land'){
-				img{
-					max-width: 180px;
-				}
-			}
+
 			@include respond('tab-port'){
 				height: 70px;
+
+				img {
+					max-width: 68px;
+				}
 			}
 		}
 		

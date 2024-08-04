@@ -116,7 +116,7 @@ export const Mainheader = () => {
             {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
               <Link to={"/"}>
-                <img className="select_logo" src={IMAGES.logo} alt="" />
+                <img className="select_logo" src={IMAGES.logoTest} alt="Logo" />
               </Link>
             </div>
 
@@ -141,7 +141,7 @@ export const Mainheader = () => {
             >
               <div className="logo-header logo-dark">
                 <Link to={"/"}>
-                  <img src={IMAGES.logo} alt="" />
+                  <img src={IMAGES.logoTest} alt="Logo" />
                 </Link>
               </div>
               <ul className="nav navbar-nav navbar navbar-left">

@@ -13461,7 +13461,6 @@ section {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  width: 180px;
   height: 100px;
   position: relative;
   z-index: 9;
@@ -14442,7 +14441,7 @@ section {
     float: none;
     height: auto !important;
     max-width: 100%;
-    padding: 25px 20px;
+    padding: 15px;
     width: 100% !important;
   }
   .mo-left .header-nav .logo-header img {
@@ -14616,19 +14615,17 @@ section {
   }
 }
 .site-header.style-1 .logo-header {
-  height: 80px;
+  height: 78px;
 }
 .site-header.style-1 .logo-header img {
-  max-width: 240px;
-}
-@media only screen and (max-width: 1280px) {
-  .site-header.style-1 .logo-header img {
-    max-width: 180px;
-  }
+  max-width: 77px;
 }
 @media only screen and (max-width: 991px) {
   .site-header.style-1 .logo-header {
     height: 70px;
+  }
+  .site-header.style-1 .logo-header img {
+    max-width: 68px;
   }
 }
 @media only screen and (min-width: 991px) {
