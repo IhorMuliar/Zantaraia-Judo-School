@@ -32,7 +32,7 @@ const Header = () => {
                     <i className="fa-regular fa-clock"></i> From 13:00 To 20:00
                   </li>{" "}
                   <li>
-                    <i class="fa-solid fa-location-crosshairs"></i> Vasylia Lypkivskoho St, 36, Kyiv
+                    <i className="fa-solid fa-location-crosshairs"></i> Vasylia Lypkivskoho St, 36, Kyiv
                   </li>
                 </ul>
               </div>
