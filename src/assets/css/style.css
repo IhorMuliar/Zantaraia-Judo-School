@@ -14913,13 +14913,13 @@ section {
   z-index: -2;
   left: -20px;
   color: #fff;
-  opacity: 0.3;
-  bottom: -10%;
+  opacity: 0.6;
+  bottom: -14%;
 }
 @media only screen and (max-width: 1480px) {
   .dz-bnr-inr.style-1:after {
     font-size: 200px;
-    bottom: -15%;
+    bottom: -11%;
   }
 }
 @media only screen and (max-width: 991px) {

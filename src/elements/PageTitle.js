@@ -5,7 +5,7 @@ import { IMAGES } from '../constants/theme';
 const PageTitle = ({parentTitle, activePage}) => {
     return (
         <>
-            <div className="dz-bnr-inr style-1 text-center" data-text="FITNESS" style={{backgroundImage: "url("+IMAGES.BgBanner2 +")"}}>
+            <div className="dz-bnr-inr style-1 text-center" data-text="JUDO" style={{backgroundImage: "url("+IMAGES.BgBanner2 +")"}}>
                 <div className="container">
                     <div className="dz-bnr-inr-entry">
                         <h1>{activePage}</h1>
