@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Navigation, Pagination } from "swiper";
+
 import { IMAGES } from "../constants/theme";
 
 const dataBlog = [
   {
     image: IMAGES.portfolio1,
-    title: "Fitness – Workout Exercises for Fat Loss",
+    title: "Fitness - Workout Exercises for Fat Loss",
     changestyle: "box-1",
   },
   {
@@ -18,7 +18,7 @@ const dataBlog = [
   },
   {
     image: IMAGES.portfolio3,
-    title: "Fitness – Workout Exercises for Fat Loss",
+    title: "Fitness - Workout Exercises for Fat Loss",
     changestyle: "box-3",
   },
 ];

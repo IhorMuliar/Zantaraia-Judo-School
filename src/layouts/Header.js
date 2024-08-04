@@ -21,18 +21,18 @@ const Header = () => {
               <div className="dz-topbar-left">
                 <ul>
                   <li>
-                    <i className="fa-regular fa-envelope"></i> info@example.com
+                    <i className="fa fa-phone"></i> 
+                    <a className="text-black" href="tel:+380969795892">096-979-58-92</a>
                   </li>
                 </ul>
               </div>
               <div className="dz-topbar-right">
                 <ul>
                   <li>
-                    <i className="fa-regular fa-clock"></i> Time 06:00 AM To
-                    08:00 PM
+                    <i className="fa-regular fa-clock"></i> From 13:00 To 20:00
                   </li>{" "}
                   <li>
-                    <i className="fa fa-phone"></i> +91-1234567890
+                    <i class="fa-solid fa-location-crosshairs"></i> Vasylia Lypkivskoho St, 36, Kyiv
                   </li>
                 </ul>
               </div>
