@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 
 //layouts
 import Header, { Mainheader }from "./../layouts/Header";
-import Footer from "./../layouts/Footer";
+import Footer2 from "./../layouts/Footer2";
 import ScrollToTop from "./../layouts/ScrollToTop";
 
 
@@ -126,7 +126,7 @@ function MainLayout() {
     <div className="page-wraper">
       <Header />
       <Outlet />
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

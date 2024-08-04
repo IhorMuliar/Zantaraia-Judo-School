@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const cards = [
-  { icon: "flaticon-fitness", title: "Our Classes" },
-  { icon: "flaticon-user", title: "Our Trainers" },
-  { icon: "flaticon-medal", title: "Memberships" },
-  { icon: "flaticon-calendar", title: "Our Timeline" },
+  { icon: "flaticon-fitness", title: "Our Classes", link: "/about-us" },
+  { icon: "flaticon-user", title: "Our Trainers", link: "/team" },
+  { icon: "flaticon-medal", title: "Moments with Us", link: "/portfolio-details" },
+  { icon: "flaticon-calendar", title: "Our Timeline", link: "/schedule" },
 ];
+
 const HomebannerCard = () => {
   return (
     <>
@@ -24,13 +25,13 @@ const HomebannerCard = () => {
               </div>
               <div className="icon-content">
                 <h4 className="dz-title m-b10">
-                  <Link to="/pricing">{item.title}</Link>
+                  <Link to={item.link}>{item.title}</Link>
                 </h4>
                 <p className="m-b15">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Link to="/pricing" className="read-more">
+                <Link to={item.link} className="read-more">
                   Read More <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </div>

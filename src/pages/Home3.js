@@ -1,21 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
+import ModalVideo from "react-modal-video";
+
 import { IMAGES } from "../constants/theme";
 import MainBanner3 from "../components/MainBanner3";
-import ModalVideo from "react-modal-video";
-import HomebannerCard from "../elements/HomebannerCard";
 import { AboutServicesDetails } from "../components/AboutServices";
-import IconBox from "../elements/IconBox";
-import { Link, useLocation } from "react-router-dom";
-import Home3Services from "../components/Home3Services";
 import Portfolio from "../components/Portfolio";
 import Home3testimonial from "../components/Home3testimonial";
-import OurBlog from "../components/OurBlog";
-import Clients from "../elements/Clients";
 import ContectInfo from "../components/ContectInfo";
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
+import HomebannerCard from "../elements/HomebannerCard";
+import IconBox from "../elements/IconBox";
 
 const Home3 = () => {
   const [open, setOpen] = useState(false);
@@ -23,8 +17,8 @@ const Home3 = () => {
   const location = useLocation().pathname;
 
   useEffect(() => {
-    const body = document.querySelector("body");  
-    body.setAttribute("data-theme-color", 'color_5'); 
+    const body = document.querySelector("body");
+    body.setAttribute("data-theme-color", "color_5");
     localStorage.setItem("theme", "color_5");
     localStorage.setItem("themeInd", 2);
   }, [location]);
@@ -98,66 +92,7 @@ const Home3 = () => {
             <IconBox />
           </div>
         </section>
-        <section className="content-inner-2">
-          <div className="container">
-            <div className="section-head style-1 wow fadeInUp">
-              <div className="row align-items-end">
-                <div className="col-lg-7">
-                  <h5 className="sub-title">Our Service</h5>
-                  <h2 className="title">
-                    Bring Your Fitness{" "}
-                    <span className="text-primary">Ideas To Life</span>
-                  </h2>
-                </div>
-                <div className="col-lg-5 d-none d-lg-flex align-items-end justify-content-end">
-                  <Link to="#" className="btn btn-primary btn-skew">
-                    <span>View All</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <Home3Services />
-          </div>
-        </section>
-        <div className="content-inner">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 m-b30 wow fadeInUp">
-                <ReactCompareSlider
-                  itemOne={
-                    <ReactCompareSliderImage
-                      src={IMAGES.beforeimg}
-                      srcSet={IMAGES.beforeimg}
-                      alt="Image one"
-                    />
-                  }
-                  itemTwo={
-                    <ReactCompareSliderImage
-                      src={IMAGES.afterimg}
-                      srcSet={IMAGES.afterimg}
-                      alt="Image two"
-                    />
-                  }
-                />
-              </div>
-              <div className="col-lg-6">
-                <div className="section-head style-1 wow fadeInUp">
-                  <h5 className="sub-title">GYm Time</h5>
-                  <h2 className="title">
-                    Workout Routine for Better{" "}
-                    <span className="text-primary">Fitness Results</span>
-                  </h2>
-                  <p>
-                    Nunc vulputate urna ut erat posuere accumsan. Curabitur ut
-                    commodo mauris, ac volutpat dui. Nullam eget enim ut mi
-                    bibendum ultrices. Pellentesque non feugia.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section className="clearfix">
+        <section className="half-shape-top-w content-inner-2 clearfix">
           <Portfolio />
         </section>
         <section
@@ -195,29 +130,6 @@ const Home3 = () => {
           </div>
         </section>
         <section
-          className="content-inner-2 overflow-hidden"
-          style={{
-            backgroundImage: `url(${IMAGES.BgImage1})`,
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="container">
-            <div className="section-head style-1 text-center">
-              <h2 className="title">
-                Latest <span className="text-primary">News Feed</span>
-              </h2>
-            </div>
-            <OurBlog />
-          </div>
-        </section>
-        <div className="half-shape-top-w theme-bg content-inner-1 ">
-          <div className="container">
-            <div className="clients-box">
-              <Clients />
-            </div>
-          </div>
-        </div>
-        <section
           className="content-inner-2 theme-bg contact-section style-2"
           style={{
             backgroundImage: ` url(${IMAGES.BgImage10})`,
@@ -230,7 +142,8 @@ const Home3 = () => {
         </section>
         <div className="map z-index-none">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28896.531392443423!2d75.81462525569334!3d25.133445080066668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x537f208422eb8f28!2sW3ITEXPERTS%20-%20Software%20Development%20Company%20in%20kota!5e0!3m2!1sen!2sin!4v1669897446044!5m2!1sen!2sin"
+            title="Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40663.595985020795!2d30.433361728057005!3d50.432257171290516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf54fcd2e17b%3A0xe59b1fd3955732ac!2sShkola%20Dzyudo%20Heorhiya%20Zantaraya!5e0!3m2!1sen!2sua!4v1722780764704!5m2!1sen!2sua"
             style={{
               border: "0",
               marginBottom: "-7px",
