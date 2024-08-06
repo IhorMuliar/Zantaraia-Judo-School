@@ -12,7 +12,7 @@ const serviceList = [
   { title: "Cardio And More" },
 ];
 
-const AboutServicesDetails = () => {
+const AboutDetails = () => {
   return (
     <>
       <div className="col-lg-6 about-content m-lg-t40 wow fadeInUp">
@@ -49,4 +49,4 @@ const AboutServicesDetails = () => {
   );
 };
 
-export default AboutServicesDetails;
+export default AboutDetails;

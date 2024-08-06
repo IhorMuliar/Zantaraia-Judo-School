@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { PORTFOLIOPIC8, PORTFOLIOPIC9, PORTFOLIOPIC10 } from "../constants";
+import { PORTFOLIOPIC8, PORTFOLIOPIC9, PORTFOLIOPIC10 } from "../../constants";
 
 const carousel = [
   { img: PORTFOLIOPIC8 },
@@ -15,7 +15,7 @@ const carousel = [
 ];
 const Portfolio = () => {
   const swiperRef = useRef(null);
-  
+
   return (
     <>
       <div className="swiper portfolio-slider-2">

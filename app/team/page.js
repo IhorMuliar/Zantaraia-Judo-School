@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 import { TEAM1, TEAM2, TEAM3, TEAM4, TEAM5, TEAM6 } from "@/constants";
-import PageTitle from "@/elements/PageTitle";
+import Breadcrumbs from "@/components/shared/breadcrumbs";
 
 const mediaBlog = [
   { images: TEAM1, title: "EMILY" },
@@ -17,7 +17,7 @@ const Team = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <PageTitle parentTitle="Home" activePage="Our Team" />
+        <Breadcrumbs parentTitle="Home" activePage="Our Team" />
         <section className="content-inner">
           <div className="container">
             <div className="row ">

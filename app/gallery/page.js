@@ -1,11 +1,17 @@
-"use client"
+"use client";
 
 import React from "react";
 import LightGallery from "lightgallery/react";
 
-import { BLOGGRID1, BLOGGRID2, BLOGGRID3, BLOGGRID4, BLOGGRID5 } from "@/constants";
-import PageTitle from "@/elements/PageTitle";
-import WorkoutSlider from "@/elements/WorkoutSlider";
+import {
+  BLOGGRID1,
+  BLOGGRID2,
+  BLOGGRID3,
+  BLOGGRID4,
+  BLOGGRID5,
+} from "@/constants";
+import Breadcrumbs from "@/components/shared/breadcrumbs";
+import WorkoutSlider from "@/components/shared/workout-slider";
 
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
@@ -32,7 +38,7 @@ const Gallery = () => {
     <>
       <div className="page-wraper">
         <div className="page-content bg-white">
-          <PageTitle activePage="Gallery" parentTitle="Home" />
+          <Breadcrumbs activePage="Gallery" parentTitle="Home" />
           <div className="content-inner-2">
             <div className="container">
               <LightGallery

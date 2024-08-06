@@ -8,7 +8,7 @@ const cards = [
   { icon: "flaticon-calendar", title: "Our Timeline", link: "/schedule" },
 ];
 
-const HomebannerCard = () => {
+const InfoCards = () => {
   return (
     <>
       <div className="row align-items-center justify-content-center">
@@ -43,4 +43,4 @@ const HomebannerCard = () => {
   );
 };
 
-export default HomebannerCard;
+export default InfoCards;

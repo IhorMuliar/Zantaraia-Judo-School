@@ -1,13 +1,19 @@
 import Link from "next/link";
 import React from "react";
 
-const socialIcons = [
+const socials = [
   { icon: "fab fa-facebook-f", link: "https://www.facebook.com/GZJudoSchool/" },
-  { icon: "fab fa-instagram", link: "https://www.instagram.com/zantaraia_school" },
-  { icon: "fa-brands fa-tiktok", link: "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1" },
+  {
+    icon: "fab fa-instagram",
+    link: "https://www.instagram.com/zantaraia_school",
+  },
+  {
+    icon: "fa-brands fa-tiktok",
+    link: "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
+  },
 ];
 
-const ContectInfo = () => {
+const ContactInfo = () => {
   return (
     <>
       <div className="row align-items-center justify-content-between">
@@ -30,14 +36,16 @@ const ContectInfo = () => {
                 </li>
                 <li>
                   <i className="fa-solid fa-phone"></i>
-                  <a className="text-dark" href="tel:+380969795892">096-979-58-92</a>
+                  <a className="text-dark" href="tel:+380969795892">
+                    096-979-58-92
+                  </a>
                 </li>
               </ul>
             </address>
             <h6 className="m-b15  wow fadeInUp">Our Socials</h6>
             <div className="dz-social-icon style-1  wow fadeInUp">
               <ul>
-                {socialIcons.map((item, ind2) => (
+                {socials.map((item, ind2) => (
                   <li key={ind2}>
                     <Link
                       target="_blank"
@@ -61,9 +69,7 @@ const ContectInfo = () => {
               </li>
               <li>
                 <span className="days">Sunday:</span>
-                <span className="time">
-                  Closed
-                </span>
+                <span className="time">Closed</span>
               </li>
               <li>
                 <span className="days">Saturday:</span>
@@ -83,9 +89,8 @@ const ContectInfo = () => {
           </div>
         </div>
       </div>
-      
     </>
   );
 };
 
-export default ContectInfo;
+export default ContactInfo;

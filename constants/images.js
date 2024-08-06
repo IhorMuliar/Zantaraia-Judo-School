@@ -44,4 +44,3 @@ export const BLOGGRID2 = "/images/blog/blog-grid/pic2.jpg";
 export const BLOGGRID3 = "/images/blog/blog-grid/pic3.jpg";
 export const BLOGGRID4 = "/images/blog/blog-grid/pic4.jpg";
 export const BLOGGRID5 = "/images/blog/blog-grid/pic5.jpg";
-

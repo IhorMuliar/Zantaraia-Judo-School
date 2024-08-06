@@ -2,14 +2,18 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
-import { TESTIMONIALPIC4, TESTIMONIALPIC5, TESTIMONIALPIC6 } from "../constants";
+import {
+  TESTIMONIALPIC4,
+  TESTIMONIALPIC5,
+  TESTIMONIALPIC6,
+} from "@/constants";
 
 const testimonial = [
   { img: TESTIMONIALPIC4, name: "John doe" },
   { img: TESTIMONIALPIC5, name: "Johnethan Lee" },
   { img: TESTIMONIALPIC6, name: "John doe" },
 ];
-const Home3testimonial = ({ refVal }) => {
+const Testimonial = ({ refVal }) => {
   return (
     <>
       <div className="swiper testimonial-swiper-3">
@@ -56,4 +60,4 @@ const Home3testimonial = ({ refVal }) => {
   );
 };
 
-export default Home3testimonial;
+export default Testimonial;

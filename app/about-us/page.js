@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
 import { BGIMAGE1 } from "@/constants";
-import FitnessGoal from "@/components/FitnessGoal";
-import FitnessTraining from "@/elements/FitnessTraining";
-import PageTitle from "@/elements/PageTitle";
-import WorkoutSlider from "@/elements/WorkoutSlider";
+import Breadcrumbs from "@/components/shared/breadcrumbs";
+import WorkoutSlider from "@/components/shared/workout-slider";
+import FitnessGoal from "@/components/about-us/fitness-goal";
+import FitnessTraining from "@/components/about-us/fitness-training";
 
 const AboutUs = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <PageTitle activePage="About Us" parentTitle="Home" />
+        <Breadcrumbs activePage="About Us" parentTitle="Home" />
         <section
           className="content-inner-2"
           style={{ backgroundImage: "url(" + BGIMAGE1 + ")" }}

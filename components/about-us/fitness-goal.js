@@ -64,7 +64,9 @@ const FitnessGoal = () => {
           </span>
           <div className="content d-flex flex-column">
             <span>Call us for help</span>
-            <a className="number" href="tel+380969795892">096-979-58-92</a>
+            <a className="number" href="tel+380969795892">
+              096-979-58-92
+            </a>
           </div>
         </div>
       </div>
@@ -74,10 +76,7 @@ const FitnessGoal = () => {
             <div className="video-bx1 h-auto w-auto overflow-visible">
               <img src={BOXPIC1} alt="" />
               <div className="video-btn sm">
-                <Link
-                  href={"#"}
-                  className="popup-youtube"
-                >
+                <Link href={"#"} className="popup-youtube">
                   <i className="fa fa-play" />
                 </Link>
               </div>

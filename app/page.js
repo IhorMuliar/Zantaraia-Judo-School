@@ -1,23 +1,22 @@
-"use client"
+"use client";
 
 import React, { useRef } from "react";
 
-import { 
-  BACKGROUNDBG15, 
-  BACKGROUNDBG7, 
-  BACKGROUNDBG8, 
+import {
+  BACKGROUNDBG15,
+  BACKGROUNDBG7,
+  BACKGROUNDBG8,
   BACKGROUNDBG9,
   BACKGROUNDBG10,
-  ABOUTPICZANTARAIA 
+  ABOUTPICZANTARAIA,
+  MAINSLIDERPIC,
 } from "@/constants";
-import MainBanner from "@/components/MainBanner";
-import AboutServicesDetails from "@/components/AboutServicesDetails";
-import Portfolio from "@/components/Portfolio";
-import Home3testimonial from "@/components/Home3testimonial";
-import ContectInfo from "@/components/ContectInfo";
-import HomebannerCard from "@/elements/HomebannerCard";
-import IconBox from "@/elements/IconBox";
-
+import AboutDetails from "@/components/home/about-details";
+import ContactInfo from "@/components/home/contact-info";
+import Portfolio from "@/components/home/portfolio";
+import Testimonial from "@/components/home/testimonial";
+import Advantages from "@/components/home/advantages";
+import InfoCards from "@/components/home/info-cards";
 
 const Home = () => {
   const swiperRef = useRef(null);
@@ -33,12 +32,24 @@ const Home = () => {
               backgroundSize: " cover",
             }}
           >
-            <MainBanner />
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="banner-media">
+                    <img
+                      src={MAINSLIDERPIC}
+                      className="main-img"
+                      alt="Main banner"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <section className="clearfix section-wrapper1">
           <div className="container">
-            <HomebannerCard />
+            <InfoCards />
           </div>
         </section>
         <section
@@ -53,7 +64,7 @@ const Home = () => {
           <div className="content-inner">
             <div className="container">
               <div className="row align-items-end">
-                <AboutServicesDetails />
+                <AboutDetails />
                 <div className="col-lg-6 m-md-b30">
                   <div className="dz-media p-r20">
                     <img
@@ -77,7 +88,7 @@ const Home = () => {
           }}
         >
           <div className="container">
-            <IconBox />
+            <Advantages />
           </div>
         </section>
         <section className="half-shape-top-w content-inner-2 clearfix">
@@ -98,7 +109,7 @@ const Home = () => {
                 What <span className="text-primary">Client</span> Say's
               </h2>
             </div>
-            <Home3testimonial refVal={swiperRef} />
+            <Testimonial refVal={swiperRef} />
           </div>
           <div
             onClick={() => {
@@ -118,14 +129,14 @@ const Home = () => {
           </div>
         </section>
         <section
-          className="content-inner-2 theme-bg contact-section style-2"
+          className="theme-bg contact-section style-2"
           style={{
             backgroundImage: ` url(${BACKGROUNDBG10})`,
             backgroundPosition: " center",
           }}
         >
           <div className="container">
-            <ContectInfo />
+            <ContactInfo />
           </div>
         </section>
         <div className="map z-index-none">

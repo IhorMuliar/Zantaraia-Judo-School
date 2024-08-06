@@ -68,7 +68,7 @@ const boxSVG = [
   },
 ];
 
-const IconBox = () => {
+const Advantages = () => {
   const [addActive, setActive] = useState(1);
 
   return (
@@ -112,4 +112,4 @@ const IconBox = () => {
   );
 };
 
-export default IconBox;
+export default Advantages;

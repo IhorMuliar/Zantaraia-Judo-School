@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-import PageTitle from "@/elements/PageTitle";
+import Breadcrumbs from "@/components/shared/breadcrumbs";
 
 const ContactUs = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <PageTitle activePage="Contact Us" parentTitle="Home" />
+        <Breadcrumbs activePage="Contact Us" parentTitle="Home" />
         <section className="content-inner-1 z-index-none">
           <div className="container">
             <div className="row align-items-center">
@@ -19,16 +19,16 @@ const ContactUs = () => {
                     hours.
                   </p>
                   <address className="widget widget_getintuch">
-                    <ul >
+                    <ul>
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
-                        <p>
-                          Vasylia Lypkivskoho St, 36, Kyiv
-                        </p>
+                        <p>Vasylia Lypkivskoho St, 36, Kyiv</p>
                       </li>
                       <li>
                         <i className="fa-solid fa-phone"></i>
-                        <a className="text-white" href="tel:+380969795892">096-979-58-92</a>
+                        <a className="text-white" href="tel:+380969795892">
+                          096-979-58-92
+                        </a>
                       </li>
                     </ul>
                   </address>

@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 
-import Mainheader from "./MainHeader";
+import HomeHeader from "./home-header";
 
-const Header = () => {
-  const [headerFix, setheaderFix] = useState(false);
+const MainHeader = () => {
+  const [headerFix, setHeaderFix] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setheaderFix(window.scrollY > 50);
-    });
+    const handleScroll = () => setHeaderFix(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -46,11 +47,11 @@ const Header = () => {
             headerFix ? "is-fixed" : ""
           }`}
         >
-          <Mainheader />
+          <HomeHeader />
         </div>
       </header>
     </>
   );
 };
 
-export default Header;
+export default MainHeader;

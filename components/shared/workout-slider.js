@@ -97,5 +97,5 @@ const WorkoutSlider = () => {
       </Swiper>
     </>
   );
-}
+};
 export default WorkoutSlider;

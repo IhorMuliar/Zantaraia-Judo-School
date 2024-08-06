@@ -7,7 +7,7 @@ import Collapse from "react-bootstrap/Collapse";
 
 import { LOGO, MENU_ITEMS } from "../constants";
 
-const Mainheader = () => {
+const HomeHeader = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("");
   const pathname = usePathname()
@@ -260,4 +260,4 @@ const Mainheader = () => {
   );
 };
 
-export default Mainheader;
+export default HomeHeader;
