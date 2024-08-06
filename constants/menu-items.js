@@ -1,26 +1,26 @@
 export const MENU_ITEMS = [
   {
-    title: "Home",
+    title: "Головна",
     to: "/",
   },
   {
-    title: "About Us",
+    title: "Про клуб",
     to: "/about-us",
   },
   {
-    title: "Team",
+    title: "Команда",
     to: "/team",
   },
   {
-    title: "Schedule",
+    title: "Розклад",
     to: "/schedule",
   },
   {
-    title: "Gallery",
+    title: "Галерея",
     to: "/gallery",
   },
   {
-    title: "Contact Us",
+    title: "Контакти",
     to: "/contact-us",
   },
 ];

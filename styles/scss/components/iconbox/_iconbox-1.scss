@@ -390,7 +390,7 @@
 			}
 		}
 		.icon-content{
-			padding-right: 60px;
+			padding-right: 110px;
 			.dz-title,
 			.dz-title a{
 				color:#000;
@@ -399,9 +399,6 @@
 				@include respond('tab-port'){
 					font-size: 24px;
 				}
-			}
-			a{
-
 			}
 			p {
 				font-size: 15px;

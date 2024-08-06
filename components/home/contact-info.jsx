@@ -1,17 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const socials = [
-  { icon: "fab fa-facebook-f", link: "https://www.facebook.com/GZJudoSchool/" },
-  {
-    icon: "fab fa-instagram",
-    link: "https://www.instagram.com/zantaraia_school",
-  },
-  {
-    icon: "fa-brands fa-tiktok",
-    link: "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
-  },
-];
+import { SOCIALS } from "@/constants/home";
 
 const ContactInfo = () => {
   return (
@@ -21,18 +11,19 @@ const ContactInfo = () => {
           <div className="m-b60 col-10">
             <div className="section-head style-1 wow fadeInUp">
               <h2 className="title m-0">
-                Contact <span>Info</span>
+                Контактна <span>інформація</span>
               </h2>
               <p className="m-t10">
-                Fill up the form and our Team will get back to you within 24
-                hours.
+                Зв’яжіться з нами, і наша команда відповість протягом 24 годин.
               </p>
             </div>
             <address className="widget widget_getintuch m-0 wow fadeInUp">
               <ul>
                 <li>
                   <i className="fa-solid fa-location-dot"></i>
-                  <p className="text-dark">Vasylia Lypkivskoho St, 36, Kyiv</p>
+                  <p className="text-dark">
+                    вул. Василія Липківського, 36, Київ
+                  </p>
                 </li>
                 <li>
                   <i className="fa-solid fa-phone"></i>
@@ -42,10 +33,10 @@ const ContactInfo = () => {
                 </li>
               </ul>
             </address>
-            <h6 className="m-b15  wow fadeInUp">Our Socials</h6>
+            <h6 className="m-b15  wow fadeInUp">Ми в соцімережах</h6>
             <div className="dz-social-icon style-1  wow fadeInUp">
               <ul>
-                {socials.map((item, ind2) => (
+                {SOCIALS.map((item, ind2) => (
                   <li key={ind2}>
                     <Link
                       target="_blank"
@@ -62,17 +53,17 @@ const ContactInfo = () => {
           <div className="widget widget_working style-2 mb-4 mb-lg-0 bg-dark wow fadeInUp">
             <ul>
               <li>
-                <span className="days">Monday - Friday:</span>
+                <span className="days">Понеділок - П'ятниця:</span>
                 <span className="time">
                   <Link href="/schedule">13:00 - 20:00</Link>
                 </span>
               </li>
               <li>
-                <span className="days">Sunday:</span>
-                <span className="time">Closed</span>
+                <span className="days">Неділя:</span>
+                <span className="time">Зачинено</span>
               </li>
               <li>
-                <span className="days">Saturday:</span>
+                <span className="days">Субота:</span>
                 <span className="time">
                   <Link href="/schedule">09:00 - 13:00</Link>
                 </span>
@@ -82,7 +73,7 @@ const ContactInfo = () => {
                   className="btn btn-primary rounded-0 btn-skew"
                   href="/schedule"
                 >
-                  <span> More Here</span>{" "}
+                  <span>Детальніше</span>{" "}
                 </Link>
               </li>
             </ul>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -10,7 +10,7 @@ import { LOGO, MENU_ITEMS } from "../constants";
 const HomeHeader = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("");
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   useEffect(() => {
     var mainMenu = document.getElementById("OpenMenu");
@@ -67,7 +67,7 @@ const HomeHeader = () => {
           <div className="box-header clearfix">
             {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
-              <Link href={'/'}>
+              <Link href={"/"}>
                 <img className="select_logo" src={LOGO} alt="Logo" />
               </Link>
             </div>
@@ -184,7 +184,9 @@ const HomeHeader = () => {
                                                       return (
                                                         <>
                                                           <li key={index}>
-                                                            <Link href={data.to}>
+                                                            <Link
+                                                              href={data.to}
+                                                            >
                                                               {data.title}
                                                             </Link>
                                                           </li>
@@ -196,7 +198,9 @@ const HomeHeader = () => {
                                             </Collapse>
                                           </>
                                         ) : (
-                                          <Link href={data.to}>{data.title}</Link>
+                                          <Link href={data.to}>
+                                            {data.title}
+                                          </Link>
                                         )}
                                       </li>
                                     );
@@ -217,7 +221,7 @@ const HomeHeader = () => {
                   <li>
                     <Link
                       target="_blank"
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/GZJudoSchool/"
                       rel="noreferrer"
                     >
                       <i className="fab fa-facebook-f"></i>
@@ -226,28 +230,19 @@ const HomeHeader = () => {
                   <li>
                     <Link
                       target="_blank"
-                      href="https://twitter.com/?lang=en"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                  </li>{" "}
-                  <li>
-                    <Link
-                      target="_blank"
-                      href="https://www.linkedin.com/"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </li>{" "}
-                  <li>
-                    <Link
-                      target="_blank"
-                      href="https://www.instagram.com/?hl=en"
+                      href="https://www.instagram.com/zantaraia_school"
                       rel="noreferrer"
                     >
                       <i className="fab fa-instagram"></i>
+                    </Link>
+                  </li>{" "}
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-tiktok"></i>
                     </Link>
                   </li>
                 </ul>

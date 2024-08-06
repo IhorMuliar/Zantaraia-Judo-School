@@ -104,9 +104,9 @@ const Home = () => {
         >
           <div className="container">
             <div className="section-head style-1 text-center">
-              <h5 className="sub-title wow fadeInUp">TESTIMONIAL</h5>
+              <h5 className="sub-title wow fadeInUp">ВІДГУКИ</h5>
               <h2 className="title wow fadeInUp">
-                What <span className="text-primary">Client</span> Say's
+                Що <span className="text-primary">Клієнти</span> кажуть про нас
               </h2>
             </div>
             <Testimonial refVal={swiperRef} />
@@ -129,7 +129,7 @@ const Home = () => {
           </div>
         </section>
         <section
-          className="theme-bg contact-section style-2"
+          className="content-inner-2 theme-bg contact-section style-2"
           style={{
             backgroundImage: ` url(${BACKGROUNDBG10})`,
             backgroundPosition: " center",
