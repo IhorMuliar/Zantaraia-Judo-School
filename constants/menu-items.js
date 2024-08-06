@@ -1,4 +1,4 @@
-export const MENULISTARRAY = [
+export const MENU_ITEMS = [
     {
         title: 'Home',
         to: '/',

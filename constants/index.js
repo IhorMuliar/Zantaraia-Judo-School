@@ -1,2 +1,2 @@
 export * from './images';
-export * from './menu-list-array';
+export * from './menu-items';

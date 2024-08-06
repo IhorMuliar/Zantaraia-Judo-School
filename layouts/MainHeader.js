@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect, useReducer, useMemo } from "react";
 import Collapse from "react-bootstrap/Collapse";
 
-import { LOGO, MENULISTARRAY } from "../constants";
+import { LOGO, MENU_ITEMS } from "../constants";
 
 const Mainheader = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -47,7 +47,7 @@ const Mainheader = () => {
   };
 
   function AddActiveMenu() {
-    MENULISTARRAY?.forEach((ell) => {
+    MENU_ITEMS?.forEach((ell) => {
       if (ell.to === pathname) {
         setActiveMenu(ell.title);
       }
@@ -97,7 +97,7 @@ const Mainheader = () => {
                 </Link>
               </div>
               <ul className="nav navbar-nav navbar navbar-left">
-                {MENULISTARRAY.map((item, index) => {
+                {MENU_ITEMS.map((item, index) => {
                   let menuClass = item.classChange;
                   if (menuClass !== "sub-menu-down") {
                     return (
