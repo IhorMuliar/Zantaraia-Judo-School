@@ -7,7 +7,7 @@
   overflow: hidden;
 
   figure {
-    background: url("/src/assets/images/after-before/before.jpg") no-repeat
+    background: url("/src/images/after-before/before.jpg") no-repeat
       center center;
     background-size: cover;
     position: absolute;
@@ -17,7 +17,7 @@
 
     div {
       &:first-of-type {
-        background-image: url("/src/assets/images/after-before/after.jpg");
+        background-image: url("/src/images/after-before/after.jpg");
         background-size: cover;
         position: absolute;
         height: 100%;

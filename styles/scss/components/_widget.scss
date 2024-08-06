@@ -200,7 +200,7 @@
 	    bottom: 0;
 	    right: 0;
 	    z-index: -1;
-		background-image: url(/public/assets/background/bg-pricetable-2.png);
+		background-image: url(/background/bg-pricetable-2.png);
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	}
@@ -754,12 +754,12 @@ ul {
 	    background-repeat: no-repeat;
 	}
 	&:after {
-		background-image: url(/public/assets/background/bg-pricetable-1.png);
+		background-image: url(/background/bg-pricetable-1.png);
 	    width: 10%;
 		height: 20%;
 	}
 	&:before {
-		background-image: url(/public/assets/background/bg-pricetable-2.png);
+		background-image: url(/background/bg-pricetable-2.png);
 	    width: 40%;
 	    opacity: 0.2;
 	}

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { IMAGES } from "../constants/theme";
 import { Swiper, SwiperSlide } from "swiper/react";
-import circlebig from "../assets/images/pattern/circle-big.svg";
-import circlebig2 from "../assets/images/pattern/circle-2.svg";
+import circlebig from "../images/pattern/circle-big.svg";
+import circlebig2 from "../images/pattern/circle-2.svg";
 
 const carousel = [
   { img: IMAGES.largeTestimonialPic7 },

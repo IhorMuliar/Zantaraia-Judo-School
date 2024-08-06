@@ -216,7 +216,7 @@
 	opacity:0.9;
 }
 .overlay-primary.curv-bx:before{
-	background-image: url(/public/assets/shape.png);
+	background-image: url(/shape.png);
 	background-position: bottom;
 	content: "";
 	position: absolute;
@@ -402,7 +402,7 @@
 	font-family: 'Rubik', sans-serif;
 }
 .theme-footer.curv-bx:before{
-	background-image: url(/public/assets/curv.png);
+	background-image: url(/curv.png);
 	background-position: top;
 }
 .theme-footer{
@@ -1578,7 +1578,7 @@ padding-left:20px;
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/public/assets/banner/bg1.png);
+    background-image: url(/banner/bg1.png);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 65%;
@@ -1599,7 +1599,7 @@ padding-left:20px;
     top: 0;
     width: 100%;
     height: 100%;
-    background-image:  url(/public/assets/banner/bg2.png);
+    background-image:  url(/banner/bg2.png);
     background-position: right top;
     background-repeat: no-repeat;
     background-size:32%;
