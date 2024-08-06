@@ -11,7 +11,7 @@ import ScrollToTop from "@/layouts/ScrollToTop";
 import "@/styles/vendor/swiper/swiper-bundle.min.css"
 import "@/styles/scss/main.scss"
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   const scrollTopBtn = useRef(null);
   const pathname = usePathname();
 
@@ -54,6 +54,8 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export default RootLayout;
 
 function HomeLayout({ children }) {
   const [headerFix, setHeaderFix] = useState(false);

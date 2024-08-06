@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-import { ABOUTPIC5, ABOUTPIC6 } from "../constants";
-
 const serviceList = [
   { title: "Personal Training" },
   { title: "Body Building" },
@@ -13,31 +11,8 @@ const serviceList = [
   { title: "Boxing Classess" },
   { title: "Cardio And More" },
 ];
-const AboutServices = () => {
-  return (
-    <>
-      <div className="row align-items-center">
-        <div className="col-lg-6">
-          <div className="dz-media p-r20">
-            <div className="image-box wow fadeInUp">
-              <img src={ABOUTPIC5} alt="" />
-              <div className="tag">
-                <h2>2 0</h2>
-                <h5>year experience</h5>
-              </div>
-            </div>
-            <img src={ABOUTPIC6} alt="" className="wow fadeInUp" />
-          </div>
-        </div>
-        <AboutServicesDetails />
-      </div>
-    </>
-  );
-};
 
-export default AboutServices;
-
-export const AboutServicesDetails = () => {
+const AboutServicesDetails = () => {
   return (
     <>
       <div className="col-lg-6 about-content m-lg-t40 wow fadeInUp">
@@ -73,3 +48,5 @@ export const AboutServicesDetails = () => {
     </>
   );
 };
+
+export default AboutServicesDetails;

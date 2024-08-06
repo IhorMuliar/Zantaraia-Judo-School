@@ -11,7 +11,7 @@ import {
   ABOUTPICZANTARAIA 
 } from "@/constants";
 import MainBanner from "@/components/MainBanner";
-import { AboutServicesDetails } from "@/components/AboutServices";
+import AboutServicesDetails from "@/components/AboutServicesDetails";
 import Portfolio from "@/components/Portfolio";
 import Home3testimonial from "@/components/Home3testimonial";
 import ContectInfo from "@/components/ContectInfo";
@@ -19,7 +19,7 @@ import HomebannerCard from "@/elements/HomebannerCard";
 import IconBox from "@/elements/IconBox";
 
 
-export default function Home() {
+const Home = () => {
   const swiperRef = useRef(null);
 
   return (
@@ -145,3 +145,5 @@ export default function Home() {
     </>
   );
 };
+
+export default Home;

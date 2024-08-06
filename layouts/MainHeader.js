@@ -7,7 +7,7 @@ import Collapse from "react-bootstrap/Collapse";
 
 import { LOGO, MENULISTARRAY } from "../constants";
 
-export const Mainheader = () => {
+const Mainheader = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("");
   const pathname = usePathname()

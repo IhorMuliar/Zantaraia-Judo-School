@@ -23,7 +23,7 @@ const dataBlog = [
   },
 ];
 
-function WorkoutSlider() {
+const WorkoutSlider = () => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   const paginationRef = useRef(null);

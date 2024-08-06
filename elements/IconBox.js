@@ -67,6 +67,7 @@ const boxSVG = [
     num: 3,
   },
 ];
+
 const IconBox = () => {
   const [addActive, setActive] = useState(1);
 
