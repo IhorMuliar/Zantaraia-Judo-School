@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { INFO_CARDS } from "@/constants/home";
+import { INFO_CARDS } from "@/constants";
 
 const Card = ({ icon, title, description, link }) => (
   <div className="col-xl-3 col-sm-6 mb-xl-0 mb-4 wow fadeInUp">

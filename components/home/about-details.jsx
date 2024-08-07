@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { SERVICES } from "@/constants/home";
+import { SERVICES } from "@/constants";
 
 const AboutDetails = () => {
   return (

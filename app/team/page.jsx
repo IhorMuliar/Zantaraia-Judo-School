@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import { TEAM_MEMBERS } from "@/constants/team/team-members";
+import { TEAM_MEMBERS } from "@/constants";
 
 const Team = () => {
   return (

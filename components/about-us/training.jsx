@@ -1,7 +1,4 @@
-import Link from "next/link";
-
-import { SERVICES1, SERVICES2, SERVICES3, SERVICES4 } from "@/constants";
-import { TRAINING_DETAILS } from "@/constants/about-us";
+import { SERVICES1, SERVICES2, SERVICES3, SERVICES4, TRAINING_DETAILS } from "@/constants";
 
 const InfoMedia = ({ Image }) => {
   return (

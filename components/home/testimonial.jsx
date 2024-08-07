@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
-import { TESTIMONIALS } from "@/constants/home";
+import { TESTIMONIALS } from "@/constants";
 
 const Testimonial = ({ refVal }) => {
   return (
