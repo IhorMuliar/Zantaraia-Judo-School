@@ -3,25 +3,7 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 
-import { PORTFOLIO1, PORTFOLIO2, PORTFOLIO3 } from "@/constants";
-
-const dataBlog = [
-  {
-    image: PORTFOLIO1,
-    title: "Fitness - Workout Exercises for Fat Loss",
-    changestyle: "box-1",
-  },
-  {
-    image: PORTFOLIO2,
-    title: "The Worst Advices We've Heard For Health.",
-    changestyle: "box-2",
-  },
-  {
-    image: PORTFOLIO3,
-    title: "Fitness - Workout Exercises for Fat Loss",
-    changestyle: "box-3",
-  },
-];
+import { WORKOUTS_SLIDER_ITEMS } from "@/constants";
 
 const WorkoutSlider = () => {
   const navigationPrevRef = useRef(null);
@@ -32,7 +14,6 @@ const WorkoutSlider = () => {
     <>
       <Swiper
         className="swiper portfolio-slider"
-        // centeredSlides={true}
         slidesPerView={"auto"}
         spaceBetween={0}
         loop={true}
@@ -47,27 +28,25 @@ const WorkoutSlider = () => {
           },
         }}
         onSwiper={(swiper) => {
-          setTimeout(() => {
             swiper.params.navigation.prevEl = navigationPrevRef.current;
             swiper.params.navigation.nextEl = navigationNextRef.current;
             swiper.navigation.destroy();
             swiper.navigation.init();
             swiper.navigation.update();
-          });
         }}
         modules={[Navigation, Pagination]}
       >
-        {dataBlog.map((item, ind) => (
-          <SwiperSlide key={ind}>
+        {WORKOUTS_SLIDER_ITEMS.map((item, index) => (
+          <SwiperSlide key={index}>
             <div className={`dz-box style-1 ${item.changestyle}`}>
               <div className="dz-media">
-                <Link href={"/portfolio-details"}>
+                <Link href={"/gallery"}>
                   <img src={item.image} alt="" />
                 </Link>
               </div>
               <div className="dz-info">
                 <h3 className="title">
-                  <Link href={"/portfolio-details"}>{item.title}</Link>
+                  <Link href={"/gallery"}>{item.title}</Link>
                 </h3>
               </div>
             </div>
@@ -98,4 +77,5 @@ const WorkoutSlider = () => {
     </>
   );
 };
+
 export default WorkoutSlider;

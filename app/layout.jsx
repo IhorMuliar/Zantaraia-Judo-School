@@ -11,6 +11,40 @@ import ScrollToTop from "@/layouts/scroll-to-top";
 import "@/styles/vendor/swiper/swiper-bundle.min.css";
 import "@/styles/scss/main.scss";
 
+const HomeLayout = ({ children }) => {
+  const [headerFix, setHeaderFix] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setHeaderFix(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <header className="site-header mo-left header header-transparent style-1">
+        <div
+          className={`sticky-header mt-3 main-bar-wraper navbar-expand-lg ${
+            headerFix ? "is-fixed" : ""
+          }`}
+        >
+          <HomeHeader />
+        </div>
+      </header>
+      {children}
+    </>
+  );
+};
+
+const MainLayout = ({ children }) => (
+  <>
+    <MainHeader />
+    {children}
+    <Footer />
+  </>
+);
+
 const RootLayout = ({ children }) => {
   const scrollTopBtn = useRef(null);
   const pathname = usePathname();
@@ -50,38 +84,5 @@ const RootLayout = ({ children }) => {
   );
 };
 
-const HomeLayout = ({ children }) => {
-  const [headerFix, setHeaderFix] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setHeaderFix(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <>
-      <header className="site-header mo-left header header-transparent style-1">
-        <div
-          className={`sticky-header mt-3 main-bar-wraper navbar-expand-lg ${
-            headerFix ? "is-fixed" : ""
-          }`}
-        >
-          <HomeHeader />
-        </div>
-      </header>
-      {children}
-    </>
-  );
-};
-
-const MainLayout = ({ children }) => (
-  <>
-    <MainHeader />
-    {children}
-    <Footer />
-  </>
-);
 
 export default RootLayout;

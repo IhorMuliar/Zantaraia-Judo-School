@@ -1,4 +1,4 @@
-import { TEAM1, TEAM2, TEAM3, TEAM4, TEAM5 } from "@/constants";
+import { TEAM1, TEAM2, TEAM3, TEAM4, TEAM5 } from "../images";
 
 export const TEAM_MEMBERS = [
     {

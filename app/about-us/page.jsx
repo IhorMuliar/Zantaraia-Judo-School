@@ -3,27 +3,27 @@
 import { BGIMAGE1 } from "@/constants";
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import WorkoutSlider from "@/components/shared/workout-slider";
-import FitnessGoal from "@/components/about-us/fitness-goal";
-import FitnessTraining from "@/components/about-us/fitness-training";
+import Goals from "@/components/about-us/goals";
+import Training from "@/components/about-us/training";
 
 const AboutUs = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <Breadcrumbs activePage="About Us" parentTitle="Home" />
+        <Breadcrumbs activePage="Про клуб" parentTitle="Головна" />
         <section
           className="content-inner-2"
           style={{ backgroundImage: "url(" + BGIMAGE1 + ")" }}
         >
           <div className="container">
             <div className="row about-bx2 align-items-center">
-              <FitnessGoal />
+              <Goals />
             </div>
           </div>
         </section>
         <section className="content-inner clearfix">
           <div className="fitness-classes">
-            <FitnessTraining />
+            <Training />
           </div>
         </section>
         <section className="content-inner portfolio-wrapper">
