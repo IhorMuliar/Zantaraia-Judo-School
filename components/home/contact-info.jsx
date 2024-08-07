@@ -33,7 +33,7 @@ const ContactInfo = () => {
                 </li>
               </ul>
             </address>
-            <h6 className="m-b15  wow fadeInUp">Ми в соцімережах</h6>
+            <h6 className="m-b15  wow fadeInUp">Ми в соцмережах</h6>
             <div className="dz-social-icon style-1  wow fadeInUp">
               <ul>
                 {SOCIALS.map((item, ind2) => (

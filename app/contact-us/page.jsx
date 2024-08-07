@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <Breadcrumbs activePage="Contact Us" parentTitle="Home" />
+        <Breadcrumbs activePage="Контакти" parentTitle="Головна" />
         <section className="content-inner-1 z-index-none">
           <div className="container">
             <div className="row align-items-center">
