@@ -49,10 +49,10 @@ const Gallery = () => {
                 getCaptionFromTitleOrAlt={false}
                 alignThumbnails="left"
               >
-                {galleryBlog.map((data, ind) => (
+                {galleryBlog.map((data, index) => (
                   <div
                     className="col-xl-4 col-md-6 m-lg-b30"
-                    key={ind}
+                    key={index}
                     data-src={data.image}
                   >
                     <div className="dz-box gallery">

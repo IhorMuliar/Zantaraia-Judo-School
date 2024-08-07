@@ -23,8 +23,8 @@ const AboutDetails = () => {
           розвивайте свої навички і досягайте нових вершин разом з нами!
         </p>
         <ul className="pr-list list-italic m-t30 m-b35">
-          {SERVICES.map((item, ind) => (
-            <li key={ind}>
+          {SERVICES.map((item, index) => (
+            <li key={index}>
               <i className="flaticon-check-mark"></i>
               {item.title}
             </li>
