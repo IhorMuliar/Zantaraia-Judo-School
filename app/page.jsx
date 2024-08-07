@@ -106,7 +106,7 @@ const Home = () => {
             <div className="section-head style-1 text-center">
               <h5 className="sub-title wow fadeInUp">ВІДГУКИ</h5>
               <h2 className="title wow fadeInUp">
-                Що <span className="text-primary">Клієнти</span> кажуть про нас
+                Що <span className="text-primary">клієнти</span> кажуть про нас
               </h2>
             </div>
             <Testimonial refVal={swiperRef} />
