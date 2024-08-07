@@ -1,6 +1,5 @@
 "use client";
 
-import { BGIMAGE1 } from "@/constants";
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import WorkoutSlider from "@/components/shared/workout-slider";
 import Goals from "@/components/about-us/goals";
@@ -13,7 +12,7 @@ const AboutUs = () => {
         <Breadcrumbs activePage="Про клуб" parentTitle="Головна" />
         <section
           className="content-inner-2"
-          style={{ backgroundImage: "url(" + BGIMAGE1 + ")" }}
+          style={{ backgroundImage: "url(/images/background/bg1.png)" }}
         >
           <div className="container">
             <div className="row about-bx2 align-items-center">

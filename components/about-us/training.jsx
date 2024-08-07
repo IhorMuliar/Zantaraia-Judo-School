@@ -1,10 +1,16 @@
-import { SERVICES1, SERVICES2, SERVICES3, SERVICES4, TRAINING_DETAILS } from "@/constants";
+import {
+  SERVICES1,
+  SERVICES2,
+  SERVICES3,
+  SERVICES4,
+  TRAINING_DETAILS,
+} from "@/constants";
 
-const InfoMedia = ({ Image }) => {
+const InfoMedia = ({ image }) => {
   return (
     <div className="col-xl-3 col-md-6">
       <div className="dz-media">
-        <img src={Image} alt="" />
+        <img src={image} alt="Trainings" />
       </div>
     </div>
   );
@@ -46,20 +52,20 @@ const Training = () => {
           subtitle={TRAINING_DETAILS.childrenSection.subtitle}
           description={TRAINING_DETAILS.childrenSection.description}
         />
-        <InfoMedia Image={SERVICES1} />
+        <InfoMedia image={SERVICES1} />
         <InfoLight
           title={TRAINING_DETAILS.championsProgram.title}
           subtitle={TRAINING_DETAILS.championsProgram.subtitle}
           description={TRAINING_DETAILS.championsProgram.description}
         />
-        <InfoMedia Image={SERVICES3} />
-        <InfoMedia Image={SERVICES4} />
+        <InfoMedia image={SERVICES3} />
+        <InfoMedia image={SERVICES4} />
         <InfoLight
           title={TRAINING_DETAILS.physicalDevelopment.title}
           subtitle={TRAINING_DETAILS.physicalDevelopment.subtitle}
           description={TRAINING_DETAILS.physicalDevelopment.description}
         />
-        <InfoMedia Image={SERVICES2} />
+        <InfoMedia image={SERVICES2} />
         <InfoDark
           title={TRAINING_DETAILS.friendlyAtmosphere.title}
           subtitle={TRAINING_DETAILS.friendlyAtmosphere.subtitle}

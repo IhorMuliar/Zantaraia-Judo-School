@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import { LOGO, FOOTERCIRCLE } from "../constants";
+import logoImage from "@/public/images/logo-test.jpg";
+import circleImage from "@/public/images/pattern/circle-footer-1.svg";
 
 const Footer = () => {
   let update = new Date();
@@ -16,9 +18,9 @@ const Footer = () => {
                 <div className="widget widget_about">
                   <div className="footer-logo  logo-white">
                     <Link href={"/"}>
-                      <img
+                      <Image
                         className="select_logo_white"
-                        src={LOGO}
+                        src={logoImage}
                         alt="Logo"
                       />
                     </Link>
@@ -88,9 +90,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <span className="days">Sunday:</span>
-                      <span className="time">
-                        Closed
-                      </span>
+                      <span className="time">Closed</span>
                     </li>
                   </ul>
                   <Link href={"/schedule"} className="btn-link">
@@ -108,21 +108,21 @@ const Footer = () => {
               <span className="copyright-text">
                 Copyright © {update.getFullYear()}{" "}
                 <span className="text-yellow">
-                  GEORGII ZANTARAIA JUDO SCHOOL 
+                  GEORGII ZANTARAIA JUDO SCHOOL
                 </span>
                 . All rights reserved.
               </span>
             </div>
           </div>
         </div>
-        <img
+        <Image
           className="svg-shape-1 rotate-360"
-          src={FOOTERCIRCLE}
+          src={circleImage}
           alt="Circle 1"
         />
-        <img
+        <Image
           className="svg-shape-2 rotate-360"
-          src={FOOTERCIRCLE}
+          src={circleImage}
           alt="Circle 2"
         />
       </footer>

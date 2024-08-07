@@ -1,12 +1,3 @@
-import {
-  PORTFOLIOPIC8,
-  PORTFOLIOPIC9,
-  PORTFOLIOPIC10,
-  TESTIMONIALPIC4,
-  TESTIMONIALPIC5,
-  TESTIMONIALPIC6,
-} from "./images";
-
 export const ADVANTAGE1 = (
   <svg
     width="72"
@@ -108,12 +99,12 @@ export const INFO_CARDS = [
 ];
 
 export const PORTFOLIO_DATA = [
-  { image: PORTFOLIOPIC8 },
-  { image: PORTFOLIOPIC9 },
-  { image: PORTFOLIOPIC10 },
-  { image: PORTFOLIOPIC8 },
-  { image: PORTFOLIOPIC9 },
-  { image: PORTFOLIOPIC10 },
+  { image: '/images/portfolio/pic8.png' },
+  { image: '/images/portfolio/pic9.png' },
+  { image: '/images/portfolio/pic10.png' },
+  { image: '/images/portfolio/pic8.png' },
+  { image: '/images/portfolio/pic9.png' },
+  { image: '/images/portfolio/pic10.png' },
 ];
 
 export const SERVICES = [
@@ -138,7 +129,7 @@ export const SOCIALS = [
 ];
 
 export const TESTIMONIALS = [
-  { avatar: TESTIMONIALPIC4, name: "Олексій Коваленко" },
-  { avatar: TESTIMONIALPIC5, name: "Марина Гончарова" },
-  { avatar: TESTIMONIALPIC6, name: "Іван Петров" },
+  { avatar: '/images/testimonials/pic4.jpg', name: "Олексій Коваленко" },
+  { avatar: '/images/testimonials/pic5.jpg', name: "Марина Гончарова" },
+  { avatar: '/images/testimonials/pic6.jpg', name: "Іван Петров" },
 ];

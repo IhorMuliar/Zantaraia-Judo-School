@@ -1,22 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import React, { useRef } from "react";
 
-import {
-  BACKGROUNDBG15,
-  BACKGROUNDBG7,
-  BACKGROUNDBG8,
-  BACKGROUNDBG9,
-  BACKGROUNDBG10,
-  ABOUTPICZANTARAIA,
-  MAINSLIDERPIC,
-} from "@/constants";
 import AboutDetails from "@/components/home/about-details";
 import ContactInfo from "@/components/home/contact-info";
 import Portfolio from "@/components/home/portfolio";
 import Testimonial from "@/components/home/testimonial";
 import Advantages from "@/components/home/advantages";
 import InfoCards from "@/components/home/info-cards";
+
+import mainBannerImage from "@/public/images/main-slider/gym.jpg";
+import zantaraiaImage from "@/public/images/about/zantaraia.png";
 
 const Home = () => {
   const swiperRef = useRef(null);
@@ -25,19 +20,13 @@ const Home = () => {
     <>
       <div className="page-content bg-white">
         <div className="main-bnr-two">
-          <div
-            className="banner-inner"
-            style={{
-              backgroundImage: `url(${BACKGROUNDBG15})`,
-              backgroundSize: " cover",
-            }}
-          >
+          <div className="banner-inner">
             <div className="container">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="banner-media">
-                    <img
-                      src={MAINSLIDERPIC}
+                    <Image
+                      src={mainBannerImage}
                       className="main-img"
                       alt="Main banner"
                     />
@@ -55,7 +44,7 @@ const Home = () => {
         <section
           className="about-bx3"
           style={{
-            backgroundImage: ` url(${BACKGROUNDBG8})`,
+            backgroundImage: "url(/images/background/bg8.png)",
             backgroundPosition: " center",
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
@@ -67,8 +56,8 @@ const Home = () => {
                 <AboutDetails />
                 <div className="col-lg-6 m-md-b30">
                   <div className="dz-media p-r20">
-                    <img
-                      src={ABOUTPICZANTARAIA}
+                    <Image
+                      src={zantaraiaImage}
                       alt="Zantaraia"
                       className="wow fadeInUp"
                       data-wow-delay="0.4s"
@@ -82,7 +71,7 @@ const Home = () => {
         <section
           className="content-inner section-wrapper-1"
           style={{
-            backgroundImage: ` url(${BACKGROUNDBG7})`,
+            backgroundImage: "url(/images/background/bg7.png)",
             backgroundSize: " cover",
             backgroundRepeat: " no-repeat",
           }}
@@ -97,7 +86,7 @@ const Home = () => {
         <section
           className="content-inner testimonial-swiper-wrapper-3"
           style={{
-            backgroundImage: `url(${BACKGROUNDBG9})`,
+            backgroundImage: "url(/images/background/bg9.png)",
             backgroundPosition: " center",
             backgroundSize: " 100%",
           }}
@@ -131,7 +120,7 @@ const Home = () => {
         <section
           className="content-inner-2 theme-bg contact-section style-2"
           style={{
-            backgroundImage: ` url(${BACKGROUNDBG10})`,
+            backgroundImage: "url(/images/background/bg10.png)",
             backgroundPosition: " center",
           }}
         >

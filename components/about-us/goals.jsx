@@ -1,6 +1,8 @@
+import Image from "next/image";
 import { Tab, Nav } from "react-bootstrap";
 
-import { BOXPIC2 } from "@/constants";
+import image from "@/public/images/about/image-box/pic1.jpg";
+
 
 const Goals = () => {
   return (
@@ -76,7 +78,7 @@ const Goals = () => {
       <div className="col-lg-6 m-b30">
         <div className="dz-media">
           <div className="image-box">
-            <img src={BOXPIC2} alt="" />
+            <Image src={image} alt="Goal 1" />
             <div className="info-box">
               <span>
                 <i className="flaticon-athletics text-primary"></i>
@@ -85,7 +87,7 @@ const Goals = () => {
             </div>
           </div>
           <div className="image-box">
-            <img src={BOXPIC2} alt="" />
+            <Image src={image} alt="Goal 2" />
             <div className="info-box">
               <span>
                 <i className="fa-solid fa-user-group text-primary"></i>

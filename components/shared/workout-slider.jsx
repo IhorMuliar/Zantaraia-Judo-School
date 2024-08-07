@@ -41,7 +41,7 @@ const WorkoutSlider = () => {
             <div className={`dz-box style-1 ${item.changestyle}`}>
               <div className="dz-media">
                 <Link href={"/gallery"}>
-                  <img src={item.image} alt="" />
+                  <img src={item.image} alt="Workouts" />
                 </Link>
               </div>
               <div className="dz-info">

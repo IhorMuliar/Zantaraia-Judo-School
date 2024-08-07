@@ -1,8 +1,6 @@
-import { TEAM1, TEAM2, TEAM3, TEAM4, TEAM5 } from "./images";
-
 export const TEAM_MEMBERS = [
     {
-        image: TEAM1,
+        image: '/images/team/member1.png',
         title: "Зантарая Георгій",
         describtion: "Тренер",
         facebook: "https://www.facebook.com/",
@@ -10,7 +8,7 @@ export const TEAM_MEMBERS = [
     },
     
     {
-        image: TEAM2,
+        image: '/images/team/member2.png',
         title: "Анатолій",
         describtion: "Головний Тренер",
         facebook: "https://www.facebook.com/",
@@ -18,7 +16,7 @@ export const TEAM_MEMBERS = [
     },
 
     {
-        image: TEAM3,
+        image: '/images/team/member3.png',
         title: "Толкач Денис",
         describtion: "Тренер",
         facebook: "https://www.facebook.com/",
@@ -26,7 +24,7 @@ export const TEAM_MEMBERS = [
     },
 
     {
-        image: TEAM4,
+        image: '/images/team/member4.png',
         title: "Ольга",
         describtion: "Тренер",
         facebook: "https://www.facebook.com/",
@@ -34,7 +32,7 @@ export const TEAM_MEMBERS = [
     },
 
     {
-        image: TEAM5,
+        image: '/images/team/stukolenko.jpg',
         title: "Ольга",
         describtion: "Тренер",
         facebook: "https://www.facebook.com/",

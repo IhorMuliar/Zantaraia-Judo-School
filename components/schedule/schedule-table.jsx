@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const ScheduleTable = () => {
@@ -25,7 +24,7 @@ const ScheduleTable = () => {
               <div className="event-tag">Gym</div>
             </td>
             <td className="event title" rowSpan="2">
-                Crossfit Class
+              Crossfit Class
               <span className="subtitle">Madison Fren</span>
               <div className="event-tag">Hit Training</div>
             </td>
@@ -34,25 +33,25 @@ const ScheduleTable = () => {
             <td></td>
             <td></td>
             <td className="event title" rowSpan="4">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
           </tr>
           <tr className="row_2">
             <td className="event-time"> 07:00 - 08:00 </td>
             <td className="event title" rowSpan="3">
-                Power Lifting
+              Power Lifting
               <span className="subtitle">Joe Bell</span>
               <div className="event-tag">Strenght</div>
             </td>
             <td></td>
             <td className="event title" rowSpan="3">
-                Power Lifting
+              Power Lifting
               <span className="subtitle">Joe Bell</span>
               <div className="event-tag">Strenght</div>
             </td>
             <td className="event title">
-                Cardio Burn
+              Cardio Burn
               <span className="subtitle">Anna Simms Jr.</span>
               <div className="event-tag">Aerobic</div>
             </td>
@@ -61,7 +60,7 @@ const ScheduleTable = () => {
             <td className="event-time"> 08:00 - 09:00 </td>
             <td></td>
             <td className="event title" rowSpan="4">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
             <td></td>
@@ -71,7 +70,7 @@ const ScheduleTable = () => {
             <td className="event-time"> 09:00 - 10:00 </td>
             <td></td>
             <td className="event title" rowSpan="6">
-                Crossfit Class
+              Crossfit Class
               <span className="subtitle">Madison Fren</span>
               <div className="event-tag">Hit Training</div>
             </td>
@@ -80,16 +79,16 @@ const ScheduleTable = () => {
           <tr className="row_5">
             <td className="event-time"> 10:00 - 11:00 </td>
             <td className="event title" rowSpan="2">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
             <td></td>
             <td className="event title">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
             <td className="event title" rowSpan="2">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
             <td></td>
@@ -103,23 +102,23 @@ const ScheduleTable = () => {
           <tr className="row_7">
             <td className="event-time"> 12:00 - 13:00 </td>
             <td className="event title">
-                Power Lifting
+              Power Lifting
               <span className="subtitle">Joe Bell</span>
               <div className="event-tag">Strength</div>
             </td>
             <td></td>
             <td className="event title">
-                Cardio Burn
+              Cardio Burn
               <span className="subtitle">Anna Simms Jr.</span>
               <div className="event-tag">Aerobic</div>
             </td>
             <td className="event title">
-                Crossfit Class
+              Crossfit Class
               <span className="subtitle">Madison Fren</span>
               <div className="event-tag">Hit Training</div>
             </td>
             <td className="event title">
-                Crossfit Class
+              Crossfit Class
               <span className="subtitle">Madison Fren</span>
               <div className="event-tag">Hit Training</div>
             </td>
@@ -138,11 +137,11 @@ const ScheduleTable = () => {
             <td className="event-time"> 14:00 - 15:00 </td>
             <td></td>
             <td className="event title" rowSpan="2">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
             <td className="event title" rowSpan="2">
-                Open Gym
+              Open Gym
               <div className="event-tag">Gym</div>
             </td>
             <td></td>
@@ -160,12 +159,12 @@ const ScheduleTable = () => {
           <tr className="row_11">
             <td className="event-time"> 18:00 - 19:00 </td>
             <td className="event title" rowSpan="2">
-                Crossfit Class
+              Crossfit Class
               <span className="subtitle">Madison Fren</span>
               <div className="event-tag">Hit Training</div>
             </td>
             <td className="event title" rowSpan="2">
-                Power Lifting
+              Power Lifting
               <span className="subtitle">Joe Bell</span>
               <div className="event-tag">Strength</div>
             </td>
@@ -186,7 +185,7 @@ const ScheduleTable = () => {
           <tr className="row_13">
             <td className="event-time"> 20:00 - 21:00 </td>
             <td className="event title">
-                Cardio Burn
+              Cardio Burn
               <span className="subtitle">Anna Simms Jr.</span>
               <div className="event-tag">Aerobic</div>
             </td>
@@ -194,7 +193,7 @@ const ScheduleTable = () => {
             <td></td>
             <td></td>
             <td className="event title">
-                Cardio Burn
+              Cardio Burn
               <span className="subtitle">Anna Simms Jr.</span>
               <div className="event-tag">Aerobic</div>
             </td>

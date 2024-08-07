@@ -1,14 +1,12 @@
 import Link from "next/link";
 
-import { BGBANNER2 } from "@/constants";
-
 const Breadcrumbs = ({ parentTitle, activePage }) => {
   return (
     <>
       <div
         className="dz-bnr-inr style-1 text-center"
         data-text="JUDO"
-        style={{ backgroundImage: "url(" + BGBANNER2 + ")" }}
+        style={{ backgroundImage: "url(/images/banner/bg2.png)" }}
       >
         <div className="container">
           <div className="dz-bnr-inr-entry">

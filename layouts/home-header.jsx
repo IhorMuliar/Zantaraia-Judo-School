@@ -1,11 +1,14 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useReducer, useMemo } from "react";
 import Collapse from "react-bootstrap/Collapse";
 
-import { LOGO, MENU_ITEMS } from "../constants";
+import { MENU_ITEMS } from "@/constants";
+
+import logoImage from "@/public/images/logo-test.jpg";
 
 const HomeHeader = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -68,7 +71,7 @@ const HomeHeader = () => {
             {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
               <Link href={"/"}>
-                <img className="select_logo" src={LOGO} alt="Logo" />
+                <Image className="select_logo" src={logoImage} alt="Logo" />
               </Link>
             </div>
 
@@ -93,7 +96,7 @@ const HomeHeader = () => {
             >
               <div className="logo-header logo-dark">
                 <Link href={"/"}>
-                  <img src={LOGO} alt="Logo" />
+                  <Image src={logoImage} alt="Logo" />
                 </Link>
               </div>
               <ul className="nav navbar-nav navbar navbar-left">
