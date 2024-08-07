@@ -36,8 +36,7 @@ export const TEAM1 = "/images/team/member1.png";
 export const TEAM2 = "/images/team/member2.png";
 export const TEAM3 = "/images/team/member3.png";
 export const TEAM4 = "/images/team/member4.png";
-export const TEAM5 = "/images/team/member5.png";
-export const TEAM6 = "/images/team/member6.png";
+export const TEAM5 = "/images/team/stukolenko.jpg";
 
 export const BLOGGRID1 = "/images/blog/blog-grid/pic1.jpg";
 export const BLOGGRID2 = "/images/blog/blog-grid/pic2.jpg";

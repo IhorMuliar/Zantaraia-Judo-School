@@ -1,38 +1,29 @@
 import Link from "next/link";
 import React from "react";
 
-import { TEAM1, TEAM2, TEAM3, TEAM4, TEAM5, TEAM6 } from "@/constants";
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-
-const mediaBlog = [
-  { images: TEAM1, title: "EMILY" },
-  { images: TEAM2, title: "EMMA" },
-  { images: TEAM3, title: "OLIVER" },
-  { images: TEAM4, title: "ELIJAH" },
-  { images: TEAM5, title: "JAMES" },
-  { images: TEAM6, title: "AMELIA" },
-];
+import { TEAM_MEMBERS } from "@/constants/team/team-members";
 
 const Team = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <Breadcrumbs parentTitle="Home" activePage="Our Team" />
+        <Breadcrumbs parentTitle="Головна" activePage="Команда" />
         <section className="content-inner">
           <div className="container">
             <div className="row ">
-              {mediaBlog.map((item, index) => (
+              {TEAM_MEMBERS.map((item, index) => (
                 <div className="col-lg-4 col-sm-6 m-b30" key={index}>
                   <div className="dz-team style-1">
                     <div className="dz-media">
                       <Link href={"#"}>
-                        <img src={item.images} alt="" />
+                        <img src={item.image} alt="Coach" />
                       </Link>
                       <ul className="team-social">
                         <li>
                           <Link
                             target="_blank"
-                            href="https://www.facebook.com/"
+                            href={item.facebook}
                             rel="noreferrer"
                           >
                             <i className="fab fa-facebook-f"></i>
@@ -41,16 +32,7 @@ const Team = () => {
                         <li>
                           <Link
                             target="_blank"
-                            href="https://twitter.com/?lang=en"
-                            rel="noreferrer"
-                          >
-                            <i className="fab fa-twitter"></i>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            target="_blank"
-                            href="https://www.instagram.com/?hl=en"
+                            href={item.instagram}
                             rel="noreferrer"
                           >
                             <i className="fab fa-instagram"></i>
@@ -60,7 +42,7 @@ const Team = () => {
                     </div>
                     <div className="dz-content ">
                       <h4 className="dz-name">{item.title}</h4>
-                      <span className="dz-position">Yoga trainer</span>
+                      <span className="dz-position">{item.describtion}</span>
                     </div>
                   </div>
                 </div>
