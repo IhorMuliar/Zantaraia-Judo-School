@@ -1,7 +1,18 @@
 import Link from "next/link";
-import React from "react";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
+
+export const metadata = {
+  title: "Контакти",
+  description:
+    "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
+  keywords: [
+    "Контактні дані",
+    "Запис на тренування",
+    "Адреса дзюдо школи",
+    "Телефон",
+  ],
+};
 
 const ContactUs = () => {
   return (
@@ -15,7 +26,8 @@ const ContactUs = () => {
                 <div className="contact-box">
                   <h3 className="contact-title">Контактна інформація</h3>
                   <p className="contact-text">
-                  Зв’яжіться з нами, і наша команда відповість протягом 24 годин.
+                    Зв’яжіться з нами, і наша команда відповість протягом 24
+                    годин.
                   </p>
                   <address className="widget widget_getintuch">
                     <ul>

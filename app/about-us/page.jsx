@@ -1,9 +1,19 @@
-"use client";
-
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import WorkoutSlider from "@/components/shared/workout-slider";
 import Goals from "@/components/about-us/goals";
 import Training from "@/components/about-us/training";
+
+export const metadata = {
+  title: "Про клуб",
+  description:
+    "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
+  keywords: [
+    "Інформація про клуб",
+    "Історія дзюдо школи",
+    "Тренерський склад",
+    "Досягнення клубу",
+  ],
+};
 
 const AboutUs = () => {
   return (

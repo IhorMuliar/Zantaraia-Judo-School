@@ -1,8 +1,19 @@
 import Link from "next/link";
-import React from "react";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import { TEAM_MEMBERS } from "@/constants";
+
+export const metadata = {
+  title: "Команда",
+  description:
+    "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
+  keywords: [
+    "Команда дзюдо школи",
+    "Тренери дзюдо",
+    "Наставники клубу",
+    "Професіонали дзюдо",
+  ],
+};
 
 const Team = () => {
   return (

@@ -1,31 +1,25 @@
-"use client";
-
-import React from "react";
-import ImageGallery from "react-image-gallery";
-
 import Breadcrumbs from "@/components/shared/breadcrumbs";
+import GallerySlider from "@/components/gallery/gallery-slider";
 import WorkoutSlider from "@/components/shared/workout-slider";
-import { GALLERY_ITEMS } from "@/constants";
 
-import "react-image-gallery/styles/css/image-gallery.css";
+export const metadata = {
+  title: "Галерея",
+  description:
+    "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
+  keywords: [
+    "Фотогалерея",
+    "Моменти тренувань",
+    "Змагання дзюдо",
+    "Життя клубу",
+  ],
+};
 
 const Gallery = () => {
   return (
     <>
       <div className="page-content bg-white">
         <Breadcrumbs activePage="Галерея" parentTitle="Головна" />
-        <div className="content-inner">
-          <div className="container">
-            <ImageGallery
-              items={GALLERY_ITEMS}
-              showBullets={true}
-              showPlayButton={false}
-              showThumbnails={true}
-              showFullscreenButton={true}
-              additionalClass="row justify-content-center"
-            />
-          </div>
-        </div>
+        <GallerySlider />
         <section className="content-inner portfolio-wrapper">
           <div className="portfolio-wrapper-inner">
             <div className="container-fluid  p-0">

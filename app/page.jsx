@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import React, { useRef } from "react";
 
 import AboutDetails from "@/components/home/about-details";
 import ContactInfo from "@/components/home/contact-info";
@@ -13,9 +10,21 @@ import InfoCards from "@/components/home/info-cards";
 import mainBannerImage from "@/public/images/main-slider/gym.jpg";
 import zantaraiaImage from "@/public/images/about/zantaraia.png";
 
-const Home = () => {
-  const swiperRef = useRef(null);
+export const metadata = {
+  title: {
+    absolute: "Головна - Zantaraia Judo School",
+  },
+  description:
+    "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
+  keywords: [
+    "Дзюдо школа",
+    "Тренування дзюдо",
+    "Фізичний розвиток",
+    "Підготовка до змагань",
+  ],
+};
 
+const Home = () => {
   return (
     <>
       <div className="page-content bg-white">
@@ -87,8 +96,8 @@ const Home = () => {
           className="content-inner testimonial-swiper-wrapper-3"
           style={{
             backgroundImage: "url(/images/background/bg9.png)",
-            backgroundPosition: " center",
-            backgroundSize: " 100%",
+            backgroundPosition: "center",
+            backgroundSize: "100%",
           }}
         >
           <div className="container">
@@ -98,23 +107,7 @@ const Home = () => {
                 Що <span className="text-primary">клієнти</span> кажуть про нас
               </h2>
             </div>
-            <Testimonial refVal={swiperRef} />
-          </div>
-          <div
-            onClick={() => {
-              swiperRef.current.swiper.slidePrev();
-            }}
-            className="dz-swiper-prev3"
-          >
-            <i className="fa-solid fa-arrow-left"></i>
-          </div>
-          <div
-            onClick={() => {
-              swiperRef.current.swiper.slideNext();
-            }}
-            className="dz-swiper-next3"
-          >
-            <i className="fa-solid fa-arrow-right"></i>
+            <Testimonial />
           </div>
         </section>
         <section

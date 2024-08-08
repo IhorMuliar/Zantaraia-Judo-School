@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 import logoImage from "@/public/images/logo-test.jpg";
 import circleImage from "@/public/images/pattern/circle-footer-1.svg";
@@ -93,7 +92,7 @@ const Footer = () => {
                     </li>
                   </ul>
                   <Link href={"/schedule"} className="btn-link">
-                    More Here <i className="fa-solid fa-arrow-right m-l10"></i>
+                    Детальніше <i className="fa-solid fa-arrow-right m-l10"></i>
                   </Link>
                 </div>
               </div>
