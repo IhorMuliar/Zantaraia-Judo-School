@@ -2,7 +2,6 @@
 
 import ImageGallery from "react-image-gallery";
 
-import WorkoutSlider from "@/components/shared/workout-slider";
 import { GALLERY_ITEMS } from "@/constants";
 
 import "react-image-gallery/styles/css/image-gallery.css";

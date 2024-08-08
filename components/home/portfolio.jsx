@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef } from "react";
+import Image from "next/image";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { PORTFOLIO_DATA } from "@/constants";
@@ -26,7 +27,14 @@ const Portfolio = () => {
           <SwiperSlide className="swiper-slide" key={index}>
             <div className="image-tooltip-effect dz-box style-3 wow fadeInUp">
               <div className="dz-media">
-                <img src={item.image} alt="Porfolio iamge" />
+                <Image
+                  src={item.image}
+                  width={325}
+                  height={290}
+                  quality={100}
+                  alt="Portfolio"
+                  title="Portfolio photo"
+                />
               </div>
               <div className="dz-info">
                 <h4 className="title m-b10">Yearly Fitness</h4>

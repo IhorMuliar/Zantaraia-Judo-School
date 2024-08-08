@@ -20,7 +20,9 @@ const Footer = () => {
                       <Image
                         className="select_logo_white"
                         src={logoImage}
+                        quality={100}
                         alt="Logo"
+                        title="Zantaraia school logo"
                       />
                     </Link>
                   </div>
@@ -116,12 +118,16 @@ const Footer = () => {
         <Image
           className="svg-shape-1 rotate-360"
           src={circleImage}
+          quality={100}
           alt="Circle 1"
+          title="Circle 1 shape image"
         />
         <Image
           className="svg-shape-2 rotate-360"
           src={circleImage}
+          quality={100}
           alt="Circle 2"
+          title="Circle 2 shape image"
         />
       </footer>
     </>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import { TEAM_MEMBERS } from "@/constants";
@@ -27,9 +28,13 @@ const Team = () => {
                 <div className="col-lg-4 col-sm-6 m-b30" key={index}>
                   <div className="dz-team style-1">
                     <div className="dz-media">
-                      <Link href={"#"}>
-                        <img src={item.image} alt="Coach" />
-                      </Link>
+                      <Image
+                        src={item.image}
+                        width={285}
+                        height={475}
+                        alt="Coach"
+                        quality={100}
+                      />
                       <ul className="team-social">
                         <li>
                           <Link

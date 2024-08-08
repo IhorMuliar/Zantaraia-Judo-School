@@ -23,12 +23,7 @@ const Testimonial = () => {
           {TESTIMONIALS.map((item, index) => (
             <SwiperSlide className="swiper-slide" key={index}>
               <div className="testimonial-2 wow fadeInUp">
-                <div className="row align-items-xl-center">
-                  <div className="col-lg-4">
-                    <div className="testimonial-pic">
-                      <img src={item.avatar} alt="Avatar" />
-                    </div>
-                  </div>
+                <div className="row align-items-xl-center justify-content-center">
                   <div className="col-lg-8 ">
                     <div className="testimonial-info">
                       <i className="flaticon-left-quotes-sign quote"></i>

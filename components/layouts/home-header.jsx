@@ -71,7 +71,13 @@ const HomeHeader = () => {
             {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
               <Link href={"/"}>
-                <Image className="select_logo" src={logoImage} alt="Logo" />
+                <Image
+                  className="select_logo"
+                  src={logoImage}
+                  quality={100}
+                  alt="Logo"
+                  title="Zantaraia school logo"
+                />
               </Link>
             </div>
 
@@ -96,7 +102,12 @@ const HomeHeader = () => {
             >
               <div className="logo-header logo-dark">
                 <Link href={"/"}>
-                  <Image src={logoImage} alt="Logo" />
+                  <Image
+                    src={logoImage}
+                    quality={100}
+                    alt="Logo"
+                    title="Zantaraia school logo"
+                  />
                 </Link>
               </div>
               <ul className="nav navbar-nav navbar navbar-left">

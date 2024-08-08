@@ -129,7 +129,7 @@ export const SOCIALS = [
 ];
 
 export const TESTIMONIALS = [
-  { avatar: '/images/testimonials/pic4.jpg', name: "Олексій Коваленко" },
-  { avatar: '/images/testimonials/pic5.jpg', name: "Марина Гончарова" },
-  { avatar: '/images/testimonials/pic6.jpg', name: "Іван Петров" },
+  { name: "Олексій Коваленко" },
+  { name: "Марина Гончарова" },
+  { name: "Іван Петров" },
 ];

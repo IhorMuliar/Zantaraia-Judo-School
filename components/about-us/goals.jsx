@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { Tab, Nav } from "react-bootstrap";
 
 import image from "@/public/images/about/image-box/pic1.jpg";
-
 
 const Goals = () => {
   return (
@@ -80,7 +79,12 @@ const Goals = () => {
       <div className="col-lg-6 m-b30">
         <div className="dz-media">
           <div className="image-box">
-            <Image src={image} alt="Goal 1" />
+            <Image
+              src={image}
+              quality={100}
+              alt="Goal 1"
+              title="Your goal photo 1"
+            />
             <div className="info-box">
               <span>
                 <i className="flaticon-athletics text-primary"></i>
@@ -89,7 +93,12 @@ const Goals = () => {
             </div>
           </div>
           <div className="image-box">
-            <Image src={image} alt="Goal 2" />
+            <Image
+              src={image}
+              quality={100}
+              alt="Goal 2"
+              title="Your goal photo 1"
+            />
             <div className="info-box">
               <span>
                 <i className="fa-solid fa-user-group text-primary"></i>

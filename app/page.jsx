@@ -36,8 +36,11 @@ const Home = () => {
                   <div className="banner-media">
                     <Image
                       src={mainBannerImage}
+                      quality={100}
+                      priority={true}
                       className="main-img"
                       alt="Main banner"
+                      title="Banner"
                     />
                   </div>
                 </div>
@@ -67,9 +70,10 @@ const Home = () => {
                   <div className="dz-media p-r20">
                     <Image
                       src={zantaraiaImage}
+                      data-wow-delay="0.4s"
                       alt="Zantaraia"
                       className="wow fadeInUp"
-                      data-wow-delay="0.4s"
+                      title="Zantaraia photo"
                     />
                   </div>
                 </div>

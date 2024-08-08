@@ -1,10 +1,19 @@
+import Image from "next/image";
+
 import { TRAINING_DETAILS } from "@/constants";
 
 const InfoMedia = ({ image }) => {
   return (
     <div className="col-xl-3 col-md-6">
       <div className="dz-media">
-        <img src={image} alt="Trainings" />
+        <Image
+          src={image}
+          width={360}
+          height={100}
+          quality={100}
+          alt="Training"
+          title="Training photo"
+        />
       </div>
     </div>
   );

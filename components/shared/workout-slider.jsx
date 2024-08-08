@@ -1,5 +1,6 @@
-"use client"
+"use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,11 +31,11 @@ const WorkoutSlider = () => {
           },
         }}
         onSwiper={(swiper) => {
-            swiper.params.navigation.prevEl = navigationPrevRef.current;
-            swiper.params.navigation.nextEl = navigationNextRef.current;
-            swiper.navigation.destroy();
-            swiper.navigation.init();
-            swiper.navigation.update();
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
+          swiper.navigation.destroy();
+          swiper.navigation.init();
+          swiper.navigation.update();
         }}
         modules={[Navigation, Pagination]}
       >
@@ -43,7 +44,14 @@ const WorkoutSlider = () => {
             <div className={`dz-box style-1 ${item.changestyle}`}>
               <div className="dz-media">
                 <Link href={"/gallery"}>
-                  <img src={item.image} alt="Workouts" />
+                  <Image
+                    src={item.image}
+                    width={340}
+                    height={250}
+                    quality={100}
+                    alt="Workout"
+                    title="Our workout"
+                  />
                 </Link>
               </div>
               <div className="dz-info">
