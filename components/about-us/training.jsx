@@ -1,10 +1,4 @@
-import {
-  SERVICES1,
-  SERVICES2,
-  SERVICES3,
-  SERVICES4,
-  TRAINING_DETAILS,
-} from "@/constants";
+import { TRAINING_DETAILS } from "@/constants";
 
 const InfoMedia = ({ image }) => {
   return (
@@ -52,20 +46,20 @@ const Training = () => {
           subtitle={TRAINING_DETAILS.childrenSection.subtitle}
           description={TRAINING_DETAILS.childrenSection.description}
         />
-        <InfoMedia image={SERVICES1} />
+        <InfoMedia image="/images/services/pic1.jpg" />
         <InfoLight
           title={TRAINING_DETAILS.championsProgram.title}
           subtitle={TRAINING_DETAILS.championsProgram.subtitle}
           description={TRAINING_DETAILS.championsProgram.description}
         />
-        <InfoMedia image={SERVICES3} />
-        <InfoMedia image={SERVICES4} />
+        <InfoMedia image="/images/services/pic3.jpg" />
+        <InfoMedia image="/images/services/pic4.jpg" />
         <InfoLight
           title={TRAINING_DETAILS.physicalDevelopment.title}
           subtitle={TRAINING_DETAILS.physicalDevelopment.subtitle}
           description={TRAINING_DETAILS.physicalDevelopment.description}
         />
-        <InfoMedia image={SERVICES2} />
+        <InfoMedia image="/images/services/pic2.jpg" />
         <InfoDark
           title={TRAINING_DETAILS.friendlyAtmosphere.title}
           subtitle={TRAINING_DETAILS.friendlyAtmosphere.subtitle}
