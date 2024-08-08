@@ -13,16 +13,15 @@ const ContactUs = () => {
             <div className="row align-items-center">
               <div className="col-md-6 col-xl-5 m-sm-b30 m-xl-b0">
                 <div className="contact-box">
-                  <h3 className="contact-title">Contact Information</h3>
+                  <h3 className="contact-title">Контактна інформація</h3>
                   <p className="contact-text">
-                    Fill up the form and our Team will get back to you within 24
-                    hours.
+                  Зв’яжіться з нами, і наша команда відповість протягом 24 годин.
                   </p>
                   <address className="widget widget_getintuch">
                     <ul>
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
-                        <p>Vasylia Lypkivskoho St, 36, Kyiv</p>
+                        <p>вул. Василія Липківського, 36, Київ</p>
                       </li>
                       <li>
                         <i className="fa-solid fa-phone"></i>
@@ -32,7 +31,7 @@ const ContactUs = () => {
                       </li>
                     </ul>
                   </address>
-                  <h6 className="m-b15 text-white">Our Socials</h6>
+                  <h6 className="m-b15 text-white">Ми в соцмережах</h6>
                   <div className="dz-social-icon style-1 dark">
                     <ul>
                       <li>
