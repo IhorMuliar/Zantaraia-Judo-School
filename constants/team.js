@@ -2,15 +2,15 @@ export const TEAM_MEMBERS = [
     {
         image: '/images/team/member1.png',
         title: "Зантарая Георгій",
-        describtion: "Тренер",
+        describtion: "Засновник клубу",
         facebook: "https://www.facebook.com/",
         instagram: "https://www.instagram.com/?hl=en",
     },
     
     {
         image: '/images/team/member2.png',
-        title: "Анатолій",
-        describtion: "Головний Тренер",
+        title: "Ласкута Анатолій",
+        describtion: "Старший Тренер",
         facebook: "https://www.facebook.com/",
         instagram: "https://www.instagram.com/?hl=en",
     },
@@ -25,7 +25,7 @@ export const TEAM_MEMBERS = [
 
     {
         image: '/images/team/member4.png',
-        title: "Ольга",
+        title: "Старубіньска Ольга",
         describtion: "Тренер",
         facebook: "https://www.facebook.com/",
         instagram: "https://www.instagram.com/?hl=en",
@@ -33,7 +33,7 @@ export const TEAM_MEMBERS = [
 
     {
         image: '/images/team/stukolenko.jpg',
-        title: "Ольга",
+        title: "Стукаленко Ольга",
         describtion: "Тренер",
         facebook: "https://www.facebook.com/",
         instagram: "https://www.instagram.com/?hl=en",

@@ -31,11 +31,11 @@ const MainHeader = () => {
               <div className="dz-topbar-right">
                 <ul>
                   <li>
-                    <i className="fa-regular fa-clock"></i> From 13:00 To 20:00
+                    <i className="fa-regular fa-clock"></i> З 13:00 до 20:00
                   </li>{" "}
                   <li>
-                    <i className="fa-solid fa-location-crosshairs"></i> Vasylia
-                    Lypkivskoho St, 36, Kyiv
+                    <i className="fa-solid fa-location-crosshairs"></i> 
+                      вул. Василія Липківського, 36, Київ
                   </li>
                 </ul>
               </div>

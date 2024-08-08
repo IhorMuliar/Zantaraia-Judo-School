@@ -26,10 +26,9 @@ const Footer = () => {
                     </Link>
                   </div>
                   <p>
-                    A Wonderful Serenity Has Taken Possession Of My Entire Soul,
-                    Like These.
+                    Дзюдо – мистецтво гармонії тіла і духу. Вчіться з нами досягати досконалості.
                   </p>
-                  <h6 className="m-b15">Our Socials</h6>
+                  <h6 className="m-b15">Ми в соцмережах</h6>
                   <div className="dz-social-icon style-1">
                     <ul>
                       <li>
@@ -65,32 +64,32 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_locations">
-                  <h4 className="footer-title">Locations</h4>
+                  <h4 className="footer-title">Розташування</h4>
                   <div className="clearfix">
-                    <h6>Kyiv</h6>
-                    <p>Vasylia Lypkivskoho St, 36, Kyiv, Ukraine</p>
+                    <h6>Київ</h6>
+                    <p>вул. Василія Липківського, 36, Київ</p>
                   </div>
                 </div>
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_working">
-                  <h4 className="footer-title">Working Hours</h4>
+                  <h4 className="footer-title">Робочі години</h4>
                   <ul>
                     <li>
-                      <span className="days">Monday - Friday:</span>
+                      <span className="days">Понеділок П'ятниця:</span>
                       <span className="time">
-                        <Link href={"/schedule"}>07:00 - 21:00</Link>
+                        <Link href={"/schedule"}>13:00 - 20:00</Link>
                       </span>
                     </li>
                     <li>
-                      <span className="days">Saturday:</span>
+                      <span className="days">Субота:</span>
                       <span className="time">
-                        <Link href={"/schedule"}>07:00 - 16:00</Link>
+                        <Link href={"/schedule"}>09:00 - 13:00</Link>
                       </span>
                     </li>
                     <li>
-                      <span className="days">Sunday:</span>
-                      <span className="time">Closed</span>
+                      <span className="days">Неділя:</span>
+                      <span className="time">Зачинено</span>
                     </li>
                   </ul>
                   <Link href={"/schedule"} className="btn-link">
