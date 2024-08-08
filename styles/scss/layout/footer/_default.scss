@@ -235,6 +235,8 @@ footer{
 
 .svg-shape-1 {
 	position: absolute;
+	height: auto !important;
+	width: auto !important;
 	top: -67%;
     left: -15%;
     @include respond('laptop'){
@@ -264,6 +266,7 @@ footer{
 	position: absolute;
     bottom: -70%;
     right: -20%;
+		width: auto !important;
 	
 	@include respond('laptop'){
 	    bottom: -50%;
