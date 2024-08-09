@@ -5,6 +5,7 @@ import "@/styles/vendor/swiper/swiper-bundle.min.css";
 import "@/styles/scss/main.scss";
 
 export const metadata = {
+  metadataBase: new URL("https://zantaraia-judo-school.pp.ua"),
   title: {
     template: "%s - Zantaraia Judo School",
     default: "Zantaraia Judo School",
@@ -20,6 +21,22 @@ export const metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "uk",
+    url: "/",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
+  twitter: {
+    site: "https://zantaraia-judo-school.pp.ua",
+    card: "summary_large_image",
+    images: [`https://zantaraia-judo-school.pp.ua/opengraph-image.jpg`],
   },
 };
 

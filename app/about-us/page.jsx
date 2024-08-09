@@ -13,6 +13,15 @@ export const metadata = {
     "Тренерський склад",
     "Досягнення клубу",
   ],
+  openGraph: {
+    url: "/about-us",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
 };
 
 const AboutUs = () => {

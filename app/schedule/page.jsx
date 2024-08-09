@@ -11,6 +11,15 @@ export const metadata = {
     "Графік тренувань",
     "Заняття для дітей та дорослих",
   ],
+  openGraph: {
+    url: "/schedule",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
 };
 
 const Schedule = () => {

@@ -14,6 +14,15 @@ export const metadata = {
     "Наставники клубу",
     "Професіонали дзюдо",
   ],
+  openGraph: {
+    url: "/team",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
 };
 
 const Team = () => {

@@ -12,6 +12,15 @@ export const metadata = {
     "Адреса дзюдо школи",
     "Телефон",
   ],
+  openGraph: {
+    url: "/contact-us",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
 };
 
 const ContactUs = () => {
