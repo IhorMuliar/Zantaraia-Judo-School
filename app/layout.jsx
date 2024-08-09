@@ -15,7 +15,12 @@ export const metadata = {
       url: "https://www.instagram.com/zantaraia_school",
     },
   ],
-  category: 'sport',
+  category: "sport",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export const viewport = {
