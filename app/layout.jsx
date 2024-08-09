@@ -25,7 +25,7 @@ export const viewport = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="uk">
       <body data-theme-color="color_5" suppressHydrationWarning>
         <div className="page-wraper">
           <Layout>{children}</Layout>
