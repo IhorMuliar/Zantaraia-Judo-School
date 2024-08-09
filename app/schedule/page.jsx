@@ -11,18 +11,25 @@ export const metadata = {
     "Графік тренувань",
     "Заняття для дітей та дорослих",
   ],
+  openGraph: {
+    url: "/schedule",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
 };
 
 const Schedule = () => {
   return (
     <>
-      <div className="page-content bg-white">
-        <Breadcrumbs activePage="Розклад" parentTitle="Головна" />
-        <div className="content-inner-1">
-          <div className="container">
-            <div className="schedule-table table-responsive">
-              <ScheduleTable />
-            </div>
+      <Breadcrumbs activePage="Розклад" parentTitle="Головна" />
+      <div className="content-inner-1">
+        <div className="container">
+          <div className="schedule-table table-responsive">
+            <ScheduleTable />
           </div>
         </div>
       </div>

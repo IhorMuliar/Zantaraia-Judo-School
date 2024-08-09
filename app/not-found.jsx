@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <>
       <div className="page-wraper">
-        <div className="page-content bg-white">
+        <main className="page-content bg-white">
           <section
             className="error-page"
             data-text="ERROR"
@@ -25,7 +25,7 @@ const NotFound = () => {
               </div>
             </div>
           </section>
-        </div>
+        </main>
       </div>
     </>
   );

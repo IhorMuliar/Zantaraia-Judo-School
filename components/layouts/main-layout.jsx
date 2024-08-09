@@ -4,7 +4,7 @@ import Footer from "./footer";
 const MainLayout = ({ children }) => (
   <>
     <MainHeader />
-    {children}
+    <main className="page-content bg-white">{children}</main>
     <Footer />
   </>
 );

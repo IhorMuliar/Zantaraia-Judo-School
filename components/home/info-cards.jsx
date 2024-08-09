@@ -11,9 +11,9 @@ const Card = ({ icon, title, description, link }) => (
         </div>
       </div>
       <div className="icon-content">
-        <h4 className="dz-title m-b10">
+        <h3 className="dz-title m-b10">
           <Link href={link}>{title}</Link>
-        </h4>
+        </h3>
         <p className="m-b15">{description}</p>
         <Link href={link} className="read-more">
           Детальніше <i className="fa-solid fa-arrow-right"></i>

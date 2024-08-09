@@ -36,7 +36,7 @@ const Testimonial = () => {
                         Рекомендую всім, хто прагне покращити свої навички в
                         дзюдо!
                       </p>
-                      <h4 className="testimonial-name">{item.name}</h4>
+                      <p className="testimonial-name mb-0">{item.name}</p>
                       <span className="testimonial-position text-primary">
                         Спортсмен
                       </span>

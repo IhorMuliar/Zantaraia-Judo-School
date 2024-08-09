@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect, useReducer, useMemo } from "react";
+import { useEffect, useMemo, useReducer, useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
 
 import { MENU_ITEMS } from "@/constants";
@@ -61,6 +61,7 @@ const HomeHeader = () => {
       });
     });
   }
+
   useMemo(AddActiveMenu, [pathname]);
 
   return (
@@ -94,7 +95,7 @@ const HomeHeader = () => {
             </button>
 
             {/* <!-- Header Nav --> */}
-            <div
+            <nav
               id="navbarNavDropdown"
               className={`header-nav navbar-collapse collapse justify-content-around ${
                 sidebarOpen ? "show" : ""
@@ -145,9 +146,7 @@ const HomeHeader = () => {
                             >
                               {item.title}
                             </Link>
-                            <Collapse
-                              in={state.active === item.title ? true : false}
-                            >
+                            <Collapse in={state.active === item.title}>
                               <ul
                                 className={`sub-menu ${
                                   menuClass === "mm-collapse" ? "open" : ""
@@ -181,8 +180,6 @@ const HomeHeader = () => {
                                               in={
                                                 state.activeSubmenu ===
                                                 data.title
-                                                  ? true
-                                                  : false
                                               }
                                             >
                                               <ul
@@ -206,7 +203,7 @@ const HomeHeader = () => {
                                                           </li>
                                                         </>
                                                       );
-                                                    }
+                                                    },
                                                   )}
                                               </ul>
                                             </Collapse>
@@ -261,7 +258,7 @@ const HomeHeader = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
       </div>

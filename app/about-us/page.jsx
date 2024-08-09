@@ -13,56 +13,63 @@ export const metadata = {
     "Тренерський склад",
     "Досягнення клубу",
   ],
+  openGraph: {
+    url: "/about-us",
+    images: [
+      {
+        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        alt: 'Zantaraia Judo School',
+      },
+    ],
+  },
 };
 
 const AboutUs = () => {
   return (
     <>
-      <div className="page-content bg-white">
-        <Breadcrumbs activePage="Про клуб" parentTitle="Головна" />
-        <section
-          className="content-inner-2"
-          style={{ backgroundImage: "url(/images/background/bg1.png)" }}
+      <Breadcrumbs activePage="Про клуб" parentTitle="Головна" />
+      <section
+        className="content-inner-2"
+        style={{ backgroundImage: "url(/images/background/bg1.png)" }}
+      >
+        <div className="container">
+          <div className="row about-bx2 align-items-center">
+            <Goals />
+          </div>
+        </div>
+      </section>
+      <section className="content-inner clearfix">
+        <div className="fitness-classes">
+          <Training />
+        </div>
+      </section>
+      <section className="content-inner portfolio-wrapper">
+        <div className="portfolio-wrapper-inner">
+          <div className="container-fluid  p-0">
+            <WorkoutSlider />
+          </div>
+        </div>
+        <svg
+          className="shape-up"
+          width="635"
+          height="107"
+          viewBox="0 0 635 107"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <div className="container">
-            <div className="row about-bx2 align-items-center">
-              <Goals />
-            </div>
-          </div>
-        </section>
-        <section className="content-inner clearfix">
-          <div className="fitness-classes">
-            <Training />
-          </div>
-        </section>
-        <section className="content-inner portfolio-wrapper">
-          <div className="portfolio-wrapper-inner">
-            <div className="container-fluid  p-0">
-              <WorkoutSlider />
-            </div>
-          </div>
-          <svg
-            className="shape-up"
-            width="635"
-            height="107"
-            viewBox="0 0 635 107"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M577 0L-16 107L635 45L577 0Z" fill="var(--primary-dark)" />
-          </svg>
-          <svg
-            className="shape-down"
-            width="673"
-            height="109"
-            viewBox="0 0 673 109"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)" />
-          </svg>
-        </section>
-      </div>
+          <path d="M577 0L-16 107L635 45L577 0Z" fill="var(--primary-dark)" />
+        </svg>
+        <svg
+          className="shape-down"
+          width="673"
+          height="109"
+          viewBox="0 0 673 109"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)" />
+        </svg>
+      </section>
     </>
   );
 };

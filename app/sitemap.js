@@ -1,0 +1,36 @@
+export default function sitemap() {
+  const baseUrl = "https://zantaraia-judo-school.pp.ua";
+
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/about-us`,
+      lastModified: new Date(),
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact-us`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/team`,
+      lastModified: new Date(),
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/gallery`,
+      lastModified: new Date(),
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/schedule`,
+      lastModified: new Date(),
+      priority: 0.5,
+    },
+  ];
+}
