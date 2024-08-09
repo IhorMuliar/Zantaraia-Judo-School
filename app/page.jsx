@@ -28,6 +28,7 @@ const Home = () => {
   return (
     <>
       <div className="page-content bg-white">
+        <h1 className="visually-hidden">Zantaraia Judo School</h1>
         <div className="main-bnr-two">
           <div className="banner-inner">
             <div className="container">
@@ -106,7 +107,7 @@ const Home = () => {
         >
           <div className="container">
             <div className="section-head style-1 text-center">
-              <h5 className="sub-title wow fadeInUp">ВІДГУКИ</h5>
+              <p className="sub-title wow fadeInUp">ВІДГУКИ</p>
               <h2 className="title wow fadeInUp">
                 Що <span className="text-primary">клієнти</span> кажуть про нас
               </h2>

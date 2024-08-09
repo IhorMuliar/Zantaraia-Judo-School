@@ -36,10 +36,6 @@ const Portfolio = () => {
                   title="Portfolio photo"
                 />
               </div>
-              <div className="dz-info">
-                <h4 className="title m-b10">Yearly Fitness</h4>
-                <h6 className="sub-title text-primary m-b0">$150000</h6>
-              </div>
             </div>
           </SwiperSlide>
         ))}

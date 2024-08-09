@@ -7,7 +7,7 @@ const AboutDetails = () => {
     <>
       <div className="col-lg-6 about-content m-lg-t40 wow fadeInUp">
         <div className="section-head style-1">
-          <h5 className="sub-title">Готові розпочати шлях у дзюдо?</h5>
+          <p className="sub-title mb-0">Готові розпочати шлях у дзюдо?</p>
           <h2 className="title mb-0">
             <span>Приєднуйтесь!</span>
           </h2>

@@ -43,7 +43,7 @@ const ContactUs = () => {
                       </li>
                     </ul>
                   </address>
-                  <h6 className="m-b15 text-white">Ми в соцмережах</h6>
+                  <p className="m-b15 text-white">Ми в соцмережах</p>
                   <div className="dz-social-icon style-1 dark">
                     <ul>
                       <li>

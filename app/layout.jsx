@@ -1,4 +1,4 @@
-import Layout from "@/components/layouts/layout";
+import LayoutBuilder from "@/components/layouts/layout-builder";
 import ScrollToTop from "@/components/shared/scroll-to-top";
 
 import "@/styles/vendor/swiper/swiper-bundle.min.css";
@@ -33,7 +33,7 @@ const RootLayout = ({ children }) => {
     <html lang="uk">
       <body data-theme-color="color_5" suppressHydrationWarning>
         <div className="page-wraper">
-          <Layout>{children}</Layout>
+          <LayoutBuilder>{children}</LayoutBuilder>
         </div>
         <ScrollToTop />
       </body>
