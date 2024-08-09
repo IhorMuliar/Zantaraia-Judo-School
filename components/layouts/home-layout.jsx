@@ -23,7 +23,7 @@ const HomeLayout = ({ children }) => {
           <HomeHeader />
         </div>
       </header>
-      {children}
+      <main className="page-content bg-white">{children}</main>
     </>
   );
 };

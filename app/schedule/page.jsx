@@ -16,13 +16,11 @@ export const metadata = {
 const Schedule = () => {
   return (
     <>
-      <div className="page-content bg-white">
-        <Breadcrumbs activePage="Розклад" parentTitle="Головна" />
-        <div className="content-inner-1">
-          <div className="container">
-            <div className="schedule-table table-responsive">
-              <ScheduleTable />
-            </div>
+      <Breadcrumbs activePage="Розклад" parentTitle="Головна" />
+      <div className="content-inner-1">
+        <div className="container">
+          <div className="schedule-table table-responsive">
+            <ScheduleTable />
           </div>
         </div>
       </div>
