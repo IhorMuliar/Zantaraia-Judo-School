@@ -16,7 +16,7 @@ const HomeLayout = ({ children }) => {
     <>
       <header className="site-header mo-left header header-transparent style-1">
         <div
-          className={`sticky-header mt-3 main-bar-wraper navbar-expand-lg ${
+          className={`sticky-header mt-3 navbar-expand-lg ${
             headerFix ? "is-fixed" : ""
           }`}
         >

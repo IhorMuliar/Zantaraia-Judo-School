@@ -24,9 +24,6 @@ footer{
 		}
 	}
 	.widget_about{
-		p{
-			margin-bottom:30px;
-		}
 		@include custommq ($max:1200px){
 			padding:0;
 		}

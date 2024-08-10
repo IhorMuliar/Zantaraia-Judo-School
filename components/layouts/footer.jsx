@@ -26,10 +26,11 @@ const Footer = () => {
                       />
                     </Link>
                   </div>
-                  <p>
-                    Дзюдо – мистецтво гармонії тіла і духу. Вчіться з нами досягати досконалості.
+                  <p className="m-b30">
+                    Дзюдо – мистецтво гармонії тіла і духу. Вчіться з нами
+                    досягати досконалості.
                   </p>
-                  <h6 className="m-b15">Ми в соцмережах</h6>
+                  <p className="m-b15 fw-bold text-white">Ми в соцмережах</p>
                   <div className="dz-social-icon style-1">
                     <ul>
                       <li>
@@ -67,7 +68,7 @@ const Footer = () => {
                 <div className="widget widget_locations">
                   <h4 className="footer-title">Розташування</h4>
                   <div className="clearfix">
-                    <h6>Київ</h6>
+                    <p className="m-b5 fw-bold text-white">Київ</p>
                     <p>вул. Василія Липківського, 36, Київ</p>
                   </div>
                 </div>

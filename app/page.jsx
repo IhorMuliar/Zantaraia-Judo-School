@@ -49,6 +49,7 @@ const Home = () => {
         </div>
       </div>
       <section className="clearfix section-wrapper1">
+        <h2 className="visually-hidden">Коротка інформація</h2>
         <div className="container">
           <InfoCards />
         </div>

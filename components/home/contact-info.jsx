@@ -32,14 +32,15 @@ const ContactInfo = () => {
                 </li>
               </ul>
             </address>
-            <h6 className="m-b15  wow fadeInUp">Ми в соцмережах</h6>
+            <p className="m-b15 wow fadeInUp fw-bold text-black">Ми в соцмережах</p>
             <div className="dz-social-icon style-1  wow fadeInUp">
               <ul>
-                {SOCIALS.map((item, ind2) => (
-                  <li key={ind2}>
+                {SOCIALS.map((item, index) => (
+                  <li key={index}>
                     <Link
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={item.label}
                       className={item.icon}
                       href={item.link}
                     ></Link>

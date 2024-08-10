@@ -44,7 +44,7 @@ const MainHeader = () => {
           </div>
         </div>
         <div
-          className={`sticky-header main-bar-wraper navbar-expand-lg ${
+          className={`sticky-header navbar-expand-lg ${
             headerFix ? "is-fixed" : ""
           }`}
         >

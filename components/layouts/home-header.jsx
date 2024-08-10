@@ -16,7 +16,8 @@ const HomeHeader = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    var mainMenu = document.getElementById("OpenMenu");
+    const mainMenu = document.getElementById("OpenMenu");
+
     if (mainMenu) {
       if (sidebarOpen) {
         mainMenu.classList.add("show");
@@ -87,6 +88,7 @@ const HomeHeader = () => {
                 sidebarOpen ? "open" : "collapsed"
               }`}
               type="button"
+              aria-label="Toggle navigation"
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
               <span></span>
