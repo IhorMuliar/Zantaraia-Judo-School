@@ -26,9 +26,9 @@ const ContactInfo = () => {
                 </li>
                 <li>
                   <i className="fa-solid fa-phone"></i>
-                  <a className="text-dark" href="tel:+380969795892">
+                  <Link className="text-dark" href="tel:+380969795892">
                     096-979-58-92
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </address>
@@ -39,6 +39,7 @@ const ContactInfo = () => {
                   <li key={ind2}>
                     <Link
                       target="_blank"
+                      rel="noreferrer"
                       className={item.icon}
                       href={item.link}
                     ></Link>

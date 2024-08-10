@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 import HomeHeader from "./home-header";
@@ -22,9 +23,9 @@ const MainHeader = () => {
                 <ul>
                   <li>
                     <i className="fa fa-phone"></i>
-                    <a className="text-black" href="tel:+380969795892">
+                    <Link className="text-black" href="tel:+380969795892">
                       096-979-58-92
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

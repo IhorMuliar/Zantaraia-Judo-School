@@ -39,9 +39,9 @@ const ContactUs = () => {
                     </li>
                     <li>
                       <i className="fa-solid fa-phone"></i>
-                      <a className="text-white" href="tel:+380969795892">
+                      <Link className="text-white" href="tel:+380969795892">
                         096-979-58-92
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </address>

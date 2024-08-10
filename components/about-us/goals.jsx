@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { Tab, Nav } from "react-bootstrap";
 
@@ -70,9 +71,9 @@ const Goals = () => {
           </span>
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
-            <a className="number" href="tel:+380969795892">
+            <Link className="number" href="tel:+380969795892">
               096-979-58-92
-            </a>
+            </Link>
           </div>
         </div>
       </div>

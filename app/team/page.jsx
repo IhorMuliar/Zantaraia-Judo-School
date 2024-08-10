@@ -60,7 +60,7 @@ const Team = () => {
                   </div>
                   <div className="dz-content ">
                     <h4 className="dz-name">{item.title}</h4>
-                    <span className="dz-position">{item.describtion}</span>
+                    <span className="dz-position">{item.description}</span>
                   </div>
                 </div>
               </div>
