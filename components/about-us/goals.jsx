@@ -70,7 +70,7 @@ const Goals = () => {
           </span>
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
-            <a className="number" href="tel+380969795892">
+            <a className="number" href="tel:+380969795892">
               096-979-58-92
             </a>
           </div>

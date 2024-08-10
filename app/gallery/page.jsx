@@ -14,12 +14,6 @@ export const metadata = {
   ],
   openGraph: {
     url: "/gallery",
-    images: [
-      {
-        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
-        alt: 'Zantaraia Judo School',
-      },
-    ],
   },
 };
 

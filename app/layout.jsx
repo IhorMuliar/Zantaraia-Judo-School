@@ -5,7 +5,7 @@ import "@/styles/vendor/swiper/swiper-bundle.min.css";
 import "@/styles/scss/main.scss";
 
 export const metadata = {
-  metadataBase: new URL("https://zantaraia-judo-school.pp.ua"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL),
   title: {
     template: "%s - Zantaraia Judo School",
     default: "Zantaraia Judo School",
@@ -23,20 +23,21 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    type: "website",
-    locale: "uk",
     url: "/",
+    siteName: 'Zantaraia Judo School',
     images: [
       {
-        url: 'https://zantaraia-judo-school.pp.ua/opengraph-image.jpg',
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
         alt: 'Zantaraia Judo School',
       },
     ],
+    type: "website",
+    locale: "uk",
   },
   twitter: {
-    site: "https://zantaraia-judo-school.pp.ua",
+    site: `Zantaraia Judo School`,
     card: "summary_large_image",
-    images: [`https://zantaraia-judo-school.pp.ua/opengraph-image.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`],
   },
 };
 
