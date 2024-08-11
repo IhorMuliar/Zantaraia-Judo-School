@@ -1,8 +1,32 @@
 import Link from "next/link";
 
+import JsonLd from '@/components/shared/json-ld';
+
 const Breadcrumbs = ({ parentTitle, activePage }) => {
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: parentTitle,
+        item: "https://zantaraia-judo-school.pp.ua",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: activePage,
+      },
+    ],
+  };
+
   return (
     <>
+      <JsonLd
+        schema={jsonLd}
+        schemaId={activePage}
+      />
       <div
         className="dz-bnr-inr style-1 text-center"
         data-text="JUDO"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import JsonLd from '@/components/shared/json-ld';
 import AboutDetails from "@/components/home/about-details";
 import ContactInfo from "@/components/home/contact-info";
 import Portfolio from "@/components/home/portfolio";
@@ -24,9 +25,35 @@ export const metadata = {
   ],
 };
 
+const jsonLd = {
+  "@context": "https://schema.org/",
+  "@type": "SportsOrganization",
+  name: "Zantaraia Judo School",
+  sport: "Judo",
+  logo: "https://zantaraia-judo-school.pp.ua/logo.png",
+  url: "https://zantaraia-judo-school.pp.ua",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Vasylia Lypkivskoho St, 36,",
+    addressLocality: "Kyiv",
+    addressRegion: "Kyiv",
+    postalCode: "0200",
+    addressCountry: "Ukraine",
+  },
+  sameAs: [
+    "https://www.facebook.com/GZJudoSchool/",
+    "https://www.instagram.com/zantaraia_school",
+    "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
+  ],
+};
+
 const Home = () => {
   return (
     <>
+      <JsonLd
+        schema={jsonLd}
+        id="home"
+      />
       <h1 className="visually-hidden">Zantaraia Judo School</h1>
       <div className="main-bnr-two">
         <div className="banner-inner">

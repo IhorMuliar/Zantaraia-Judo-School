@@ -22,6 +22,11 @@ export const metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
   openGraph: {
     url: "/",
     siteName: 'Zantaraia Judo School',
