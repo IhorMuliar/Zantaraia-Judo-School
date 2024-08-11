@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
+import JsonLd from '@/components/shared/json-ld';
 
 export const metadata = {
   title: "Контакти",
@@ -15,11 +16,33 @@ export const metadata = {
   openGraph: {
     url: "/contact-us",
   },
+  alternates: {
+    canonical: '/contact-us',
+  },
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Zantaraia Judo School",
+  url: "https://zantaraia-judo-school.pp.ua",
+};
+
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Контакти - Zantaraia Judo School",
+  description:
+    "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
+  url: "https://zantaraia-judo-school.pp.ua/contact-us",
+  inLanguage: "uk",
 };
 
 const ContactUs = () => {
   return (
     <>
+      <JsonLd schema={webSiteJsonLd} />
+      <JsonLd schema={webPageJsonLd} />
       <Breadcrumbs activePage="Контакти" parentTitle="Головна" />
       <section className="content-inner-1 z-index-none">
         <div className="container">

@@ -1,4 +1,5 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
+import JsonLd from '@/components/shared/json-ld';
 import WorkoutSlider from "@/components/shared/workout-slider";
 import Goals from "@/components/about-us/goals";
 import Training from "@/components/about-us/training";
@@ -16,11 +17,33 @@ export const metadata = {
   openGraph: {
     url: "/about-us",
   },
+  alternates: {
+    canonical: '/about-us',
+  },
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Zantaraia Judo School",
+  url: "https://zantaraia-judo-school.pp.ua",
+};
+
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Про клуб - Zantaraia Judo School",
+  description:
+    "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
+  url: "https://zantaraia-judo-school.pp.ua/about-us",
+  inLanguage: "uk",
 };
 
 const AboutUs = () => {
   return (
     <>
+      <JsonLd schema={webSiteJsonLd} />
+      <JsonLd schema={webPageJsonLd} />
       <Breadcrumbs activePage="Про клуб" parentTitle="Головна" />
       <section
         className="content-inner-2"

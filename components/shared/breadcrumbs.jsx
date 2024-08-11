@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import JsonLd from '@/components/shared/json-ld';
+import JsonLd from "@/components/shared/json-ld";
 
 const Breadcrumbs = ({ parentTitle, activePage }) => {
   const jsonLd = {
@@ -23,10 +23,7 @@ const Breadcrumbs = ({ parentTitle, activePage }) => {
 
   return (
     <>
-      <JsonLd
-        schema={jsonLd}
-        schemaId={activePage}
-      />
+      <JsonLd schema={jsonLd} />
       <div
         className="dz-bnr-inr style-1 text-center"
         data-text="JUDO"

@@ -1,6 +1,7 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import GallerySlider from "@/components/gallery/gallery-slider";
+import JsonLd from "@/components/shared/json-ld";
 import WorkoutSlider from "@/components/shared/workout-slider";
+import GallerySlider from "@/components/gallery/gallery-slider";
 
 export const metadata = {
   title: "Галерея",
@@ -15,11 +16,33 @@ export const metadata = {
   openGraph: {
     url: "/gallery",
   },
+  alternates: {
+    canonical: "/gallery",
+  },
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Zantaraia Judo School",
+  url: "https://zantaraia-judo-school.pp.ua",
+};
+
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Галерея - Zantaraia Judo School",
+  description:
+    "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
+  url: "https://zantaraia-judo-school.pp.ua/gallery",
+  inLanguage: "uk",
 };
 
 const Gallery = () => {
   return (
     <>
+      <JsonLd schema={webSiteJsonLd} />
+      <JsonLd schema={webPageJsonLd} />
       <Breadcrumbs activePage="Галерея" parentTitle="Головна" />
       <GallerySlider />
       <section className="content-inner portfolio-wrapper">

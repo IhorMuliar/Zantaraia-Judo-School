@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
+import JsonLd from "@/components/shared/json-ld";
 import { TEAM_MEMBERS } from "@/constants";
 
 export const metadata = {
@@ -17,11 +18,33 @@ export const metadata = {
   openGraph: {
     url: "/team",
   },
+  alternates: {
+    canonical: "/team",
+  },
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Zantaraia Judo School",
+  url: "https://zantaraia-judo-school.pp.ua",
+};
+
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Контакти - Zantaraia Judo School",
+  description:
+    "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
+  url: "https://zantaraia-judo-school.pp.ua/team",
+  inLanguage: "uk",
 };
 
 const Team = () => {
   return (
     <>
+      <JsonLd schema={webSiteJsonLd} />
+      <JsonLd schema={webPageJsonLd} />
       <Breadcrumbs parentTitle="Головна" activePage="Команда" />
       <section className="content-inner">
         <div className="container">

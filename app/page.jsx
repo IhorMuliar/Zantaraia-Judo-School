@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import JsonLd from '@/components/shared/json-ld';
+import JsonLd from "@/components/shared/json-ld";
 import AboutDetails from "@/components/home/about-details";
 import ContactInfo from "@/components/home/contact-info";
 import Portfolio from "@/components/home/portfolio";
@@ -23,37 +23,89 @@ export const metadata = {
     "Фізичний розвиток",
     "Підготовка до змагань",
   ],
+  alternates: {
+    canonical: "/",
+  },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org/",
+const organizationJsonLd = {
+  "@context": "https://schema.org",
   "@type": "SportsOrganization",
   name: "Zantaraia Judo School",
   sport: "Judo",
-  logo: "https://zantaraia-judo-school.pp.ua/logo.png",
   url: "https://zantaraia-judo-school.pp.ua",
+  logo: "https://zantaraia-judo-school.pp.ua/logo.png",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Vasylia Lypkivskoho St, 36,",
-    addressLocality: "Kyiv",
-    addressRegion: "Kyiv",
+    streetAddress: "вул. Василя Липківського, 36",
+    addressLocality: "Київ",
+    addressRegion: "Київ",
     postalCode: "0200",
-    addressCountry: "Ukraine",
+    addressCountry: "Україна",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+38-096-979-5892",
+    contactType: "Customer Service",
+    areaServed: "UA",
+    availableLanguage: ["Ukrainian"],
   },
   sameAs: [
     "https://www.facebook.com/GZJudoSchool/",
     "https://www.instagram.com/zantaraia_school",
     "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
   ],
+  // TODO: Update members
+  // member: [
+  //   {
+  //     "@type": "Person",
+  //     name: "Georgiy Zantaraia",
+  //     jobTitle: "Head Coach",
+  //     description:
+  //       "Experienced judo coach with a strong track record in training and competition.",
+  //     image:
+  //       "https://zantaraia-judo-school.pp.ua/images/coaches/georgiy-zantaraia.jpg",
+  //     url: "https://zantaraia-judo-school.pp.ua/about-us#coaches",
+  //   },
+  // ],
+};
+
+const breadcrumbsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Головна",
+    },
+  ],
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Zantaraia Judo School",
+  url: "https://zantaraia-judo-school.pp.ua",
+};
+
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Головна - Zantaraia Judo School",
+  description:
+    "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
+  url: "https://zantaraia-judo-school.pp.ua",
+  inLanguage: "uk",
 };
 
 const Home = () => {
   return (
     <>
-      <JsonLd
-        schema={jsonLd}
-        id="home"
-      />
+      <JsonLd schema={organizationJsonLd} />
+      <JsonLd schema={breadcrumbsJsonLd} />
+      <JsonLd schema={webSiteJsonLd} />
+      <JsonLd schema={webPageJsonLd} />
       <h1 className="visually-hidden">Zantaraia Judo School</h1>
       <div className="main-bnr-two">
         <div className="banner-inner">
