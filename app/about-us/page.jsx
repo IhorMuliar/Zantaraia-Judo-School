@@ -1,8 +1,8 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from '@/components/shared/json-ld';
 import WorkoutSlider from "@/components/shared/workout-slider";
-import Goals from "@/components/about-us/goals";
-import Training from "@/components/about-us/training";
+import Goals from "./_components/goals";
+import Training from "./_components/training";
 
 export const metadata = {
   title: "Про клуб",

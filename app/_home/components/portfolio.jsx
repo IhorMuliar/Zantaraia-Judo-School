@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { PORTFOLIO_DATA } from "@/constants";
+import { PORTFOLIO_DATA } from "../constants";
 
 const Portfolio = () => {
   const swiperRef = useRef(null);

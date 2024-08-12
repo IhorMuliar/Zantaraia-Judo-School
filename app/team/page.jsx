@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import { TEAM_MEMBERS } from "@/constants";
+import { TEAM_MEMBERS } from "./_constants";
 
 export const metadata = {
   title: "Команда",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { TRAINING_DETAILS } from "@/constants";
+import { TRAINING_DETAILS } from "../_constants";
 
 const InfoMedia = ({ image }) => {
   return (

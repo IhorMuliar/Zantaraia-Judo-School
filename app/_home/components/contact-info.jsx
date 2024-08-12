@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { SOCIALS } from "@/constants";
+import { SOCIALS } from "../constants";
 
 const ContactInfo = () => {
   return (

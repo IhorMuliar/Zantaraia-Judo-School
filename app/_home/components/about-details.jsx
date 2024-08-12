@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { SERVICES } from "@/constants";
+import { SERVICES } from "../constants";
 
 const AboutDetails = () => {
   return (

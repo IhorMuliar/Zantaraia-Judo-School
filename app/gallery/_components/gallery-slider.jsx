@@ -2,7 +2,7 @@
 
 import ImageGallery from "react-image-gallery";
 
-import { GALLERY_ITEMS } from "@/constants";
+import { GALLERY_ITEMS } from "../_constants";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 

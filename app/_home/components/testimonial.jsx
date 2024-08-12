@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 
-import { TESTIMONIALS } from "@/constants";
+import { TESTIMONIALS } from "../constants";
 
 const Testimonial = () => {
   const swiperRef = useRef(null);

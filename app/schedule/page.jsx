@@ -1,6 +1,6 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from '@/components/shared/json-ld';
-import ScheduleTable from "@/components/schedule/schedule-table";
+import ScheduleTable from "./_components/schedule-table";
 
 export const metadata = {
   title: "Рокзлад",

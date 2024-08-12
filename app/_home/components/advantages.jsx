@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import { ADVANTAGES_STEPS } from "@/constants";
+import { ADVANTAGES_STEPS } from "../constants";
 
 const Advantages = () => {
   const [activeIndex, setActiveIndex] = useState(1);
