@@ -109,15 +109,11 @@
       }
     }
 
-    .breadcrumb-item + .breadcrumb-item::before {
-      content: "\f105";
+    svg {
       color: #fff;
-      font-weight: 700;
-      font-family: 'Font Awesome 6 Free';
       font-size: 14px;
       padding-right: 10px;
-      top: 2px;
-      position: relative;
+      padding-left: 10px;
     }
 
     @include respond('phone-land') {

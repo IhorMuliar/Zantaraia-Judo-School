@@ -1,7 +1,9 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import { ADVANTAGES_STEPS } from "../constants";
 
@@ -18,7 +20,7 @@ const Advantages = () => {
           >
             <div className="icon-bx m-b20">
               <div className="icon-cell text-primary">
-                <i className={item.icon}></i>
+                <FontAwesomeIcon icon={item.icon} />
               </div>
             </div>
             <div className="icon-content">
@@ -27,7 +29,7 @@ const Advantages = () => {
               </h3>
               <p className="m-b15">{item.description}</p>
               <Link href="/about-us" className="read-more">
-                Детальніше <i className="fa-solid fa-arrow-right"></i>
+                Детальніше <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </div>
             <div className="badge">

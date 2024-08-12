@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import { PORTFOLIO_DATA } from "../constants";
 
@@ -44,13 +46,13 @@ const Portfolio = () => {
         onClick={() => swiperRef.current.swiper.slidePrev()}
         className="portfolio-2-button-prev btn-prev"
       >
-        <i className="fas fa-chevron-left"></i>
+        <FontAwesomeIcon icon={faChevronLeft} />
       </div>
       <div
         onClick={() => swiperRef.current.swiper.slideNext()}
         className="portfolio-2-button-next btn-next"
       >
-        <i className="fas fa-chevron-right"></i>
+        <FontAwesomeIcon icon={faChevronRight} />
       </div>
     </div>
   );

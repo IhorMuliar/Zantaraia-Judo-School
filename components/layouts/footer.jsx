@@ -1,5 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 import logoImage from "@/public/images/logo-test.jpg";
 import circleImage from "@/public/images/pattern/circle-footer-1.svg";
@@ -39,7 +46,7 @@ const Footer = () => {
                           href="https://www.facebook.com/GZJudoSchool/"
                           rel="noreferrer"
                         >
-                          <i className="fab fa-facebook-f"></i>
+                          <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
                       </li>{" "}
                       <li>
@@ -48,7 +55,7 @@ const Footer = () => {
                           href="https://www.instagram.com/zantaraia_school"
                           rel="noreferrer"
                         >
-                          <i className="fab fa-instagram"></i>
+                          <FontAwesomeIcon icon={faInstagram} />
                         </Link>
                       </li>{" "}
                       <li>
@@ -57,7 +64,7 @@ const Footer = () => {
                           href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                           rel="noreferrer"
                         >
-                          <i className="fa-brands fa-tiktok"></i>
+                          <FontAwesomeIcon icon={faTiktok} />
                         </Link>
                       </li>
                     </ul>
@@ -95,14 +102,13 @@ const Footer = () => {
                     </li>
                   </ul>
                   <Link href={"/schedule"} className="btn-link">
-                    Детальніше <i className="fa-solid fa-arrow-right m-l10"></i>
+                    Детальніше <FontAwesomeIcon icon={faArrowRight} className="m-l10" />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <!-- Footer Bottom Part --> */}
         <div className="container">
           <div className="footer-bottom">
             <div className="text-center">

@@ -1,7 +1,9 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const ScrollToTop = () => {
   const pathname = usePathname();
@@ -32,7 +34,7 @@ const ScrollToTop = () => {
         className="scroll-top icon-up"
         type="button"
       >
-        <i className="fas fa-arrow-up"></i>
+        <FontAwesomeIcon icon={faArrowUp} />
       </button>
     </>
   );

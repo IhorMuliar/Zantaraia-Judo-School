@@ -422,7 +422,7 @@
     .icon-cell {
       display: inline-block;
 
-      i {
+      svg {
         font-size: 60px;
         line-height: 1;
         display: flex;
@@ -522,7 +522,7 @@
       }
     }
 
-    svg {
+    .big-arrow {
       position: absolute;
       top: 50%;
       right: -30px;

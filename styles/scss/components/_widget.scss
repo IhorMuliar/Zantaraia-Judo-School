@@ -1086,19 +1086,16 @@ ul {
   }
 }
 
-.widget_getintuch ul {
+.widget_get-in-touch ul {
   li {
     position: relative;
+    display: flex;
+    gap: 12px;
     margin-bottom: 30px;
-    padding-left: 45px;
     color: #fff;
 
-    @include respond('tab-land') {
-      padding-left: 35px;
-    }
     @include custommq($max: 1199px) {
       margin-bottom: 25px;
-      padding-left: 35px;
     }
 
     h5 {
@@ -1107,16 +1104,15 @@ ul {
       margin-bottom: 5px;
     }
 
-    i {
-      position: absolute;
+    svg {
       font-size: 24px;
+      width: 24px;
       line-height: 1;
-      left: 0;
-      top: 2px;
       color: var(--primary);
 
       @include respond('phone') {
         font-size: 20px;
+        width: 20px;
       }
     }
 

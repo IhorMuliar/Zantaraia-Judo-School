@@ -1,5 +1,17 @@
+import {
+  faChild,
+  faDumbbell,
+  faMedal,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+
 export const ADVANTAGE1 = (
   <svg
+    className="big-arrow"
     width="72"
     height="200"
     viewBox="0 0 72 200"
@@ -15,6 +27,7 @@ export const ADVANTAGE1 = (
 );
 export const ADVANTAGE2 = (
   <svg
+    className="big-arrow"
     width="72"
     height="200"
     viewBox="0 0 72 200"
@@ -30,6 +43,7 @@ export const ADVANTAGE2 = (
 );
 export const ADVANTAGE3 = (
   <svg
+    className="big-arrow"
     width="72"
     height="200"
     viewBox="0 0 72 200"
@@ -46,7 +60,7 @@ export const ADVANTAGE3 = (
 
 export const ADVANTAGES_STEPS = [
   {
-    icon: "fa-solid fa-child",
+    icon: faChild,
     svg: ADVANTAGE1,
     title: "Будь-який вік",
     description:
@@ -54,7 +68,7 @@ export const ADVANTAGES_STEPS = [
     num: 1,
   },
   {
-    icon: "fa-solid fa-medal",
+    icon: faMedal,
     svg: ADVANTAGE2,
     title: "Часті змагання",
     description:
@@ -62,7 +76,7 @@ export const ADVANTAGES_STEPS = [
     num: 2,
   },
   {
-    icon: "flaticon-fitness",
+    icon: faDumbbell,
     svg: ADVANTAGE3,
     title: "Фізична форма",
     description:
@@ -118,17 +132,17 @@ export const SERVICES = [
 
 export const SOCIALS = [
   {
-    icon: "fab fa-facebook-f",
+    icon: faFacebookF,
     link: "https://www.facebook.com/GZJudoSchool/",
     label: "Facebook",
   },
   {
-    icon: "fab fa-instagram",
+    icon: faInstagram,
     link: "https://www.instagram.com/zantaraia_school",
     label: "Instagram",
   },
   {
-    icon: "fa-brands fa-tiktok",
+    icon: faTiktok,
     link: "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
     label: "TikTok",
   },

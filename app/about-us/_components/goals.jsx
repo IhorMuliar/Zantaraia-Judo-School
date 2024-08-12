@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Tab, Nav } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
 import image from "@/public/images/about/image-box/pic1.jpg";
 
@@ -67,7 +69,7 @@ const Goals = () => {
         </div>
         <div className="contact-us">
           <span className="icon">
-            <i className="fa-solid fa-phone"></i>
+            <FontAwesomeIcon icon={faPhone} className="text-primary"/>
           </span>
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
@@ -102,7 +104,7 @@ const Goals = () => {
             />
             <div className="info-box">
               <span>
-                <i className="fa-solid fa-user-group text-primary"></i>
+                <FontAwesomeIcon icon={faUserGroup} className="text-primary" />
                 Дружня команда
               </span>
             </div>

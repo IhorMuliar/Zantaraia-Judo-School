@@ -1,5 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
@@ -67,7 +72,7 @@ const Team = () => {
                           href={item.facebook}
                           rel="noreferrer"
                         >
-                          <i className="fab fa-facebook-f"></i>
+                          <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
                       </li>
                       <li>
@@ -76,7 +81,7 @@ const Team = () => {
                           href={item.instagram}
                           rel="noreferrer"
                         >
-                          <i className="fab fa-instagram"></i>
+                          <FontAwesomeIcon icon={faInstagram} />
                         </Link>
                       </li>
                     </ul>

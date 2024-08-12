@@ -5,6 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useReducer, useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 import { MENU_ITEMS } from "@/constants";
 
@@ -176,7 +183,9 @@ const HomeHeader = () => {
                                               }}
                                             >
                                               {data.title}
-                                              <i className="fa fa-angle-right" />
+                                              <FontAwesomeIcon
+                                                icon={faAngleRight}
+                                              />
                                             </Link>
                                             <Collapse
                                               in={
@@ -237,7 +246,7 @@ const HomeHeader = () => {
                       href="https://www.facebook.com/GZJudoSchool/"
                       rel="noreferrer"
                     >
-                      <i className="fab fa-facebook-f"></i>
+                      <FontAwesomeIcon icon={faFacebookF} />
                     </Link>
                   </li>{" "}
                   <li>
@@ -246,7 +255,7 @@ const HomeHeader = () => {
                       href="https://www.instagram.com/zantaraia_school"
                       rel="noreferrer"
                     >
-                      <i className="fab fa-instagram"></i>
+                      <FontAwesomeIcon icon={faInstagram} />
                     </Link>
                   </li>{" "}
                   <li>
@@ -255,7 +264,7 @@ const HomeHeader = () => {
                       href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                       rel="noreferrer"
                     >
-                      <i className="fab fa-tiktok"></i>
+                      <FontAwesomeIcon icon={faTiktok} />
                     </Link>
                   </li>
                 </ul>

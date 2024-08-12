@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import { INFO_CARDS } from "../constants";
 
@@ -16,7 +18,7 @@ const Card = ({ icon, title, description, link }) => (
         </h3>
         <p className="m-b15">{description}</p>
         <Link href={link} className="read-more">
-          Детальніше <i className="fa-solid fa-arrow-right"></i>
+          Детальніше <FontAwesomeIcon icon={faArrowRight} />
         </Link>
       </div>
     </div>

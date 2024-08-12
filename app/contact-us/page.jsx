@@ -1,7 +1,14 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import JsonLd from '@/components/shared/json-ld';
+import JsonLd from "@/components/shared/json-ld";
 
 export const metadata = {
   title: "Контакти",
@@ -17,7 +24,7 @@ export const metadata = {
     url: "/contact-us",
   },
   alternates: {
-    canonical: '/contact-us',
+    canonical: "/contact-us",
   },
 };
 
@@ -54,14 +61,14 @@ const ContactUs = () => {
                   Зв’яжіться з нами, і наша команда відповість протягом 24
                   годин.
                 </p>
-                <address className="widget widget_getintuch">
+                <address className="widget widget_get-in-touch">
                   <ul>
                     <li>
-                      <i className="fa-solid fa-location-dot"></i>
+                      <FontAwesomeIcon icon={faLocationDot} />
                       <p>вул. Василія Липківського, 36, Київ</p>
                     </li>
                     <li>
-                      <i className="fa-solid fa-phone"></i>
+                      <FontAwesomeIcon icon={faPhone} />
                       <Link className="text-white" href="tel:+380969795892">
                         096-979-58-92
                       </Link>
@@ -77,7 +84,7 @@ const ContactUs = () => {
                         href="https://www.facebook.com/GZJudoSchool/"
                         rel="noreferrer"
                       >
-                        <i className="fab fa-facebook-f" />
+                        <FontAwesomeIcon icon={faFacebookF} />
                       </Link>
                     </li>{" "}
                     <li>
@@ -86,7 +93,7 @@ const ContactUs = () => {
                         href="https://www.instagram.com/zantaraia_school"
                         rel="noreferrer"
                       >
-                        <i className="fab fa-instagram" />
+                        <FontAwesomeIcon icon={faInstagram} />
                       </Link>
                     </li>{" "}
                     <li>
@@ -95,12 +102,13 @@ const ContactUs = () => {
                         href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                         rel="noreferrer"
                       >
-                        <i className="fab fa-tiktok" />
+                        <FontAwesomeIcon icon={faTiktok} />
                       </Link>
                     </li>{" "}
                   </ul>
                 </div>
                 <svg
+                  className="triangle"
                   width="250"
                   height="70"
                   viewBox="0 0 250 70"

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { SOCIALS } from "../constants";
 
@@ -16,23 +18,25 @@ const ContactInfo = () => {
                 Зв’яжіться з нами, і наша команда відповість протягом 24 годин.
               </p>
             </div>
-            <address className="widget widget_getintuch m-0 wow fadeInUp">
+            <address className="widget widget_get-in-touch m-0 wow fadeInUp">
               <ul>
                 <li>
-                  <i className="fa-solid fa-location-dot"></i>
+                  <FontAwesomeIcon icon={faLocationDot} />
                   <p className="text-dark">
                     вул. Василія Липківського, 36, Київ
                   </p>
                 </li>
                 <li>
-                  <i className="fa-solid fa-phone"></i>
+                  <FontAwesomeIcon icon={faPhone} />
                   <Link className="text-dark" href="tel:+380969795892">
                     096-979-58-92
                   </Link>
                 </li>
               </ul>
             </address>
-            <p className="m-b15 wow fadeInUp fw-bold text-black">Ми в соцмережах</p>
+            <p className="m-b15 wow fadeInUp fw-bold text-black">
+              Ми в соцмережах
+            </p>
             <div className="dz-social-icon style-1  wow fadeInUp">
               <ul>
                 {SOCIALS.map((item, index) => (
@@ -41,9 +45,10 @@ const ContactInfo = () => {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={item.label}
-                      className={item.icon}
                       href={item.link}
-                    ></Link>
+                    >
+                      <FontAwesomeIcon icon={item.icon} />
+                    </Link>
                   </li>
                 ))}
               </ul>

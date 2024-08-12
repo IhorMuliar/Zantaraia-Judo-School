@@ -3,6 +3,8 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import { TESTIMONIALS } from "../constants";
 
@@ -54,7 +56,7 @@ const Testimonial = () => {
         }}
         className="dz-swiper-prev3"
       >
-        <i className="fa-solid fa-arrow-left"></i>
+        <FontAwesomeIcon icon={faArrowLeft} />
       </div>
       <div
         onClick={() => {
@@ -62,7 +64,7 @@ const Testimonial = () => {
         }}
         className="dz-swiper-next3"
       >
-        <i className="fa-solid fa-arrow-right"></i>
+        <FontAwesomeIcon icon={faArrowRight} />
       </div>
     </>
   );

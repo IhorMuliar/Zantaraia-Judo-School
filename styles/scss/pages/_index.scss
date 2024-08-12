@@ -424,12 +424,12 @@
     &:hover {
       background: var(--primary);
 
-      i {
+      svg {
         color: var(--theme-text-color);
       }
     }
 
-    i {
+    svg {
       font-size: 24px;
       position: absolute;
       transform: rotate(45deg) skew(0);
@@ -445,21 +445,20 @@
   .portfolio-2-button-next {
     right: -60px;
 
-    i {
+    svg {
       transform: rotate(45deg) skew(0);
-      top: 5px;
-      left: 16px;
+      top: 13px;
+      left: 17px;
     }
   }
 
   .portfolio-2-button-prev {
     left: -60px;
 
-    i {
-
+    svg {
       transform: rotate(45deg) skew(0);
       right: 20px;
-      top: 42px;
+      top: 47px;
     }
   }
 
@@ -467,17 +466,18 @@
     .portfolio-2-button-next {
       right: -70px;
 
-      i {
-        top: 10px;
-        left: 20px;
+      svg {
+        top: 6px;
+        left: 11px;
       }
     }
+
     .portfolio-2-button-prev {
       left: -70px;
 
-      i {
-        right: 20px;
-        top: 52px;
+      svg {
+        right: 12px;
+        top: 58px;
       }
     }
   }
