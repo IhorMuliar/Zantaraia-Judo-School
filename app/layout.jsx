@@ -55,7 +55,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="uk">
       <body data-theme-color="color_5" suppressHydrationWarning>
-        <div className="page-wraper">
+        <div className="page-wrapper">
           <LayoutBuilder>{children}</LayoutBuilder>
         </div>
         <ScrollToTop />
