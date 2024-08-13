@@ -9,6 +9,7 @@
     .footer-title {
       display: inline-block;
       padding-bottom: 15px;
+      @extend h4;
 
       &:after,
       &:before {

@@ -25,7 +25,7 @@ const InfoDark = ({ title, subtitle, description }) => {
       <div className="dz-info bg-secondary">
         <div className="clearfix text-white">
           <span className="text-primary subtitle">{title}</span>
-          <h4 className="title text-white">{subtitle}</h4>
+          <h3 className="title text-white">{subtitle}</h3>
           <p>{description}</p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const InfoLight = ({ title, subtitle, description }) => {
       <div className="dz-info bg-primary">
         <div className="clearfix theme-text-color">
           <span className="subtitle">{title}</span>
-          <h4 className="title theme-text-color">{subtitle}</h4>
+          <h3 className="title theme-text-color">{subtitle}</h3>
           <p>{description}</p>
         </div>
       </div>

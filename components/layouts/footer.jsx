@@ -45,6 +45,7 @@ const Footer = () => {
                           target="_blank"
                           href="https://www.facebook.com/GZJudoSchool/"
                           rel="noreferrer"
+                          aria-label="Facebook"
                         >
                           <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
@@ -54,6 +55,7 @@ const Footer = () => {
                           target="_blank"
                           href="https://www.instagram.com/zantaraia_school"
                           rel="noreferrer"
+                          aria-label="Instagram"
                         >
                           <FontAwesomeIcon icon={faInstagram} />
                         </Link>
@@ -63,6 +65,7 @@ const Footer = () => {
                           target="_blank"
                           href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                           rel="noreferrer"
+                          aria-label="TikTok"
                         >
                           <FontAwesomeIcon icon={faTiktok} />
                         </Link>
@@ -73,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_locations">
-                  <h4 className="footer-title">Розташування</h4>
+                  <p className="footer-title text-white">Розташування</p>
                   <div className="clearfix">
                     <p className="m-b5 fw-bold text-white">Київ</p>
                     <p>вул. Василія Липківського, 36, Київ</p>
@@ -82,7 +85,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_working">
-                  <h4 className="footer-title">Робочі години</h4>
+                  <p className="footer-title text-white">Робочі години</p>
                   <ul>
                     <li>
                       <span className="days">Понеділок П'ятниця:</span>

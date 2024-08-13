@@ -71,6 +71,7 @@ const Team = () => {
                           target="_blank"
                           href={item.facebook}
                           rel="noreferrer"
+                          aria-label="Facebook"
                         >
                           <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
@@ -80,6 +81,7 @@ const Team = () => {
                           target="_blank"
                           href={item.instagram}
                           rel="noreferrer"
+                          aria-label="Instagram"
                         >
                           <FontAwesomeIcon icon={faInstagram} />
                         </Link>

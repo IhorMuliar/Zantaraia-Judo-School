@@ -56,7 +56,7 @@ const ContactUs = () => {
           <div className="row align-items-center">
             <div className="col-md-6 col-xl-5 m-sm-b30 m-xl-b0">
               <div className="contact-box">
-                <h3 className="contact-title">Контактна інформація</h3>
+                <h2 className="contact-title">Контактна інформація</h2>
                 <p className="contact-text">
                   Зв’яжіться з нами, і наша команда відповість протягом 24
                   годин.
@@ -83,6 +83,7 @@ const ContactUs = () => {
                         target="_blank"
                         href="https://www.facebook.com/GZJudoSchool/"
                         rel="noreferrer"
+                        aria-label="Facebook"
                       >
                         <FontAwesomeIcon icon={faFacebookF} />
                       </Link>
@@ -92,6 +93,7 @@ const ContactUs = () => {
                         target="_blank"
                         href="https://www.instagram.com/zantaraia_school"
                         rel="noreferrer"
+                        aria-label="Instagram"
                       >
                         <FontAwesomeIcon icon={faInstagram} />
                       </Link>
@@ -101,6 +103,7 @@ const ContactUs = () => {
                         target="_blank"
                         href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                         rel="noreferrer"
+                        aria-label="TikTok"
                       >
                         <FontAwesomeIcon icon={faTiktok} />
                       </Link>
