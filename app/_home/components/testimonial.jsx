@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 import { TESTIMONIALS } from "../constants";
 
@@ -28,7 +28,7 @@ const Testimonial = () => {
                 <div className="row align-items-xl-center justify-content-center">
                   <div className="col-lg-8 ">
                     <div className="testimonial-info">
-                      <i className="flaticon-left-quotes-sign quote"></i>
+                      <FontAwesomeIcon icon={faQuoteLeft} className="quote"/>
                       <p className="testimonial-text">
                         Чудове місце для тренувань! Зал оснащений сучасним
                         обладнанням, а тренери - професіонали своєї справи.

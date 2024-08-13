@@ -9,7 +9,7 @@ const Card = ({ icon, title, description, link }) => (
     <div className="icon-bx-wraper style-4 bg-white">
       <div className="icon-bx m-b20">
         <div className="icon-cell text-primary">
-          <i className={icon}></i>
+          <FontAwesomeIcon icon={icon} />
         </div>
       </div>
       <div className="icon-content">

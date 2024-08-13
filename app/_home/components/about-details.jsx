@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 import { SERVICES } from "../constants";
 
@@ -24,7 +26,7 @@ const AboutDetails = () => {
         <ul className="pr-list list-italic m-t30 m-b35">
           {SERVICES.map((item, index) => (
             <li key={index}>
-              <i className="flaticon-check-mark"></i>
+              <FontAwesomeIcon icon={faCheck} />
               {item.title}
             </li>
           ))}

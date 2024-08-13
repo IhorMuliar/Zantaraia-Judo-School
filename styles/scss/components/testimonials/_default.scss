@@ -28,20 +28,6 @@
 .quote-left,
 .quote-right {
   position: relative;
-
-  &:before {
-    font-family: "Flaticon";
-    position: absolute;
-    z-index: 10;
-    height: 36px;
-    width: 36px;
-    line-height: 36px;
-    background-color: var(--primary);
-    color: $white;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 18px;
-  }
 }
 
 .quote-left {

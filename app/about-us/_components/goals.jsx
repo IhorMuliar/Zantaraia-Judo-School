@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Tab, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faUserGroup, faPersonRunning } from "@fortawesome/free-solid-svg-icons";
 
 import image from "@/public/images/about/image-box/pic1.jpg";
 
@@ -90,7 +90,7 @@ const Goals = () => {
             />
             <div className="info-box">
               <span>
-                <i className="flaticon-athletics text-primary"></i>
+                <FontAwesomeIcon icon={faPersonRunning} className="text-primary"/>
                 Професійні тренера
               </span>
             </div>

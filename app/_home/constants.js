@@ -1,7 +1,9 @@
 import {
+  faCalendarDays,
   faChild,
   faDumbbell,
   faMedal,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -87,25 +89,25 @@ export const ADVANTAGES_STEPS = [
 
 export const INFO_CARDS = [
   {
-    icon: "flaticon-fitness",
+    icon: faDumbbell,
     title: "Наша школа",
     description: "Дізнайтеся про нашу школу: цінності та особливості.",
     link: "/about-us",
   },
   {
-    icon: "flaticon-user",
+    icon: faUsers,
     title: "Наші тренери",
     description: "Ознайомтеся з командою професійних тренерів",
     link: "/team",
   },
   {
-    icon: "flaticon-medal",
+    icon: faMedal,
     title: "Моменти з нами",
     description: "Перегляньте події та досягнення нашої школи.",
     link: "/gallery",
   },
   {
-    icon: "flaticon-calendar",
+    icon: faCalendarDays,
     title: "Наш розклад",
     description: "Ознайомтеся з розкладом занять.",
     link: "/schedule",
