@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import { WORKOUTS_SLIDER_ITEMS } from "@/constants";
 
@@ -69,7 +71,7 @@ const WorkoutSlider = () => {
               className="portfolio-button-prev btn-prev dark"
               ref={navigationPrevRef}
             >
-              <i className="fa-solid fa-arrow-left"></i>
+              <FontAwesomeIcon icon={faArrowLeft} />
             </div>
             <div
               className="swiper-pagination dark style-1 m-lr-lg"
@@ -79,7 +81,7 @@ const WorkoutSlider = () => {
               className="portfolio-button-next btn-next dark"
               ref={navigationNextRef}
             >
-              <i className="fa-solid fa-arrow-right"></i>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
         </div>

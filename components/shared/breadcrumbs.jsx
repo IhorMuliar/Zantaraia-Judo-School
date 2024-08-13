@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-import JsonLd from "@/components/shared/json-ld";
+import JsonLd from "./json-ld";
 
 const Breadcrumbs = ({ parentTitle, activePage }) => {
   const jsonLd = {
@@ -36,7 +38,8 @@ const Breadcrumbs = ({ parentTitle, activePage }) => {
               <ul className="breadcrumb">
                 <li className="breadcrumb-item">
                   <Link href={"/"}>{parentTitle}</Link>
-                </li>{" "}
+                </li>
+                <FontAwesomeIcon icon={faAngleRight} />
                 <li className="breadcrumb-item active" aria-current="page">
                   {activePage}
                 </li>

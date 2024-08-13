@@ -3,7 +3,7 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <>
-      <div className="page-wraper">
+      <div className="page-wrapper">
         <main className="page-content bg-white">
           <section
             className="error-page"

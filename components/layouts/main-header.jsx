@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 import HomeHeader from "./home-header";
 
@@ -22,7 +28,7 @@ const MainHeader = () => {
               <div className="dz-topbar-left">
                 <ul>
                   <li>
-                    <i className="fa fa-phone"></i>
+                    <FontAwesomeIcon icon={faPhone} />
                     <Link className="text-black" href="tel:+380969795892">
                       096-979-58-92
                     </Link>
@@ -32,11 +38,11 @@ const MainHeader = () => {
               <div className="dz-topbar-right">
                 <ul>
                   <li>
-                    <i className="fa-regular fa-clock"></i> З 13:00 до 20:00
+                    <FontAwesomeIcon icon={faClock} /> З 13:00 до 20:00
                   </li>{" "}
                   <li>
-                    <i className="fa-solid fa-location-crosshairs"></i> 
-                      вул. Василія Липківського, 36, Київ
+                    <FontAwesomeIcon icon={faLocationDot} />
+                    вул. Василія Липківського, 36, Київ
                   </li>
                 </ul>
               </div>

@@ -1,7 +1,7 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
 import WorkoutSlider from "@/components/shared/workout-slider";
-import GallerySlider from "@/components/gallery/gallery-slider";
+import GallerySlider from "./_components/gallery-slider";
 
 export const metadata = {
   title: "Галерея",

@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import { TEAM_MEMBERS } from "@/constants";
+import { TEAM_MEMBERS } from "./_constants";
 
 export const metadata = {
   title: "Команда",
@@ -66,8 +71,9 @@ const Team = () => {
                           target="_blank"
                           href={item.facebook}
                           rel="noreferrer"
+                          aria-label="Facebook"
                         >
-                          <i className="fab fa-facebook-f"></i>
+                          <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
                       </li>
                       <li>
@@ -75,8 +81,9 @@ const Team = () => {
                           target="_blank"
                           href={item.instagram}
                           rel="noreferrer"
+                          aria-label="Instagram"
                         >
-                          <i className="fab fa-instagram"></i>
+                          <FontAwesomeIcon icon={faInstagram} />
                         </Link>
                       </li>
                     </ul>

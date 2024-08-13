@@ -1,5 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 import logoImage from "@/public/images/logo-test.jpg";
 import circleImage from "@/public/images/pattern/circle-footer-1.svg";
@@ -38,8 +45,9 @@ const Footer = () => {
                           target="_blank"
                           href="https://www.facebook.com/GZJudoSchool/"
                           rel="noreferrer"
+                          aria-label="Facebook"
                         >
-                          <i className="fab fa-facebook-f"></i>
+                          <FontAwesomeIcon icon={faFacebookF} />
                         </Link>
                       </li>{" "}
                       <li>
@@ -47,8 +55,9 @@ const Footer = () => {
                           target="_blank"
                           href="https://www.instagram.com/zantaraia_school"
                           rel="noreferrer"
+                          aria-label="Instagram"
                         >
-                          <i className="fab fa-instagram"></i>
+                          <FontAwesomeIcon icon={faInstagram} />
                         </Link>
                       </li>{" "}
                       <li>
@@ -56,8 +65,9 @@ const Footer = () => {
                           target="_blank"
                           href="https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1"
                           rel="noreferrer"
+                          aria-label="TikTok"
                         >
-                          <i className="fa-brands fa-tiktok"></i>
+                          <FontAwesomeIcon icon={faTiktok} />
                         </Link>
                       </li>
                     </ul>
@@ -66,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_locations">
-                  <h4 className="footer-title">Розташування</h4>
+                  <p className="footer-title text-white">Розташування</p>
                   <div className="clearfix">
                     <p className="m-b5 fw-bold text-white">Київ</p>
                     <p>вул. Василія Липківського, 36, Київ</p>
@@ -75,7 +85,7 @@ const Footer = () => {
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_working">
-                  <h4 className="footer-title">Робочі години</h4>
+                  <p className="footer-title text-white">Робочі години</p>
                   <ul>
                     <li>
                       <span className="days">Понеділок П'ятниця:</span>
@@ -95,14 +105,13 @@ const Footer = () => {
                     </li>
                   </ul>
                   <Link href={"/schedule"} className="btn-link">
-                    Детальніше <i className="fa-solid fa-arrow-right m-l10"></i>
+                    Детальніше <FontAwesomeIcon icon={faArrowRight} className="m-l10" />
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <!-- Footer Bottom Part --> */}
         <div className="container">
           <div className="footer-bottom">
             <div className="text-center">

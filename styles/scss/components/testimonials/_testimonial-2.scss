@@ -10,11 +10,13 @@
       object-fit: cover;
     }
   }
+
   .testimonial-info {
     .quote {
       font-size: 2rem;
       color: var(--primary);
     }
+
     .testimonial-text {
       font-size: 19px;
       font-weight: 400;
@@ -24,10 +26,12 @@
         font-size: 1rem;
       }
     }
+
     .testimonial-name {
       font-size: 24px;
       font-weight: 500;
     }
+
     .testimonial-position {
       font-size: 1rem;
       font-weight: 500;
@@ -40,6 +44,7 @@
       width: 100%;
       text-align: center;
       margin: 0;
+
       img {
         border-radius: 50%;
         border: 5px solid var(--rgba-primary-3);
@@ -76,16 +81,19 @@
     &:hover {
       background: #000;
     }
+
     @include respond("phone") {
       top: 30%;
     }
   }
+
   .dz-swiper-next3 {
     right: 10%;
     @include respond("tab-land") {
       right: 2%;
     }
   }
+
   .dz-swiper-prev3 {
     left: 10%;
 
