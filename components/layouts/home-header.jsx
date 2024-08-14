@@ -15,7 +15,7 @@ import {
 
 import { MENU_ITEMS } from "@/constants";
 
-import logoImage from "@/public/images/logo-test.jpg";
+import logoImage from "@/public/images/logo.jpg";
 
 const HomeHeader = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
