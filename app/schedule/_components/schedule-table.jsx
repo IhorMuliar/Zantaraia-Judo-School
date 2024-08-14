@@ -50,19 +50,16 @@ const ScheduleTable = () => {
           </tr>
           <tr className="row_6">
             <td className="event-time"> 18:00 - 19:30</td>
+            <td className="event title" rowSpan="2">Старша група</td>
             <td className="event title">Старша група</td>
+            <td className="event title" rowSpan="2">Старша група</td>
             <td className="event title">Старша група</td>
-            <td className="event title">Старша група</td>
-            <td className="event title">Старша група</td>
-            <td className="event title">Старша група</td>
+            <td className="event title" rowSpan="2">Старша група</td>
           </tr>
           <tr className="row_7">
             <td className="event-time"> 19:30 - 20:15 </td>
-            <td></td>
             <td className="event title">Група 5-6 років</td>
-            <td></td>
             <td className="event title">Група 5-6 років</td>
-            <td></td>
           </tr>
         </tbody>
       </table>
