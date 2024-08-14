@@ -77,7 +77,6 @@ const HomeHeader = () => {
       <div className="main-bar clearfix">
         <div className="container clearfix">
           <div className="box-header clearfix">
-            {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
               <Link href={"/"}>
                 <Image
@@ -89,7 +88,6 @@ const HomeHeader = () => {
                 />
               </Link>
             </div>
-
             <button
               className={`navbar-toggler navicon justify-content-end ${
                 sidebarOpen ? "open" : "collapsed"
@@ -102,8 +100,6 @@ const HomeHeader = () => {
               <span></span>
               <span></span>
             </button>
-
-            {/* <!-- Header Nav --> */}
             <nav
               id="navbarNavDropdown"
               className={`header-nav navbar-collapse collapse justify-content-around ${
@@ -130,7 +126,6 @@ const HomeHeader = () => {
                           item.title === activeMenu ? "active" : ""
                         }`}
                         // className={`${ menuClass} ${ location.pathname == item.to ? 'active'  : '' }`}
-
                         key={index}
                       >
                         <Link href={item.to}>{item.title}</Link>
