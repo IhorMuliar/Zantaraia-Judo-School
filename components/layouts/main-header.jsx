@@ -38,7 +38,7 @@ const MainHeader = () => {
               <div className="dz-topbar-right">
                 <ul>
                   <li>
-                    <FontAwesomeIcon icon={faClock} /> З 13:00 до 20:00
+                    <FontAwesomeIcon icon={faClock} /> З 08:00 до 20:00
                   </li>{" "}
                   <li>
                     <FontAwesomeIcon icon={faLocationDot} />

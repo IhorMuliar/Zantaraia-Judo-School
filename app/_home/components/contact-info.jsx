@@ -61,7 +61,7 @@ const ContactInfo = () => {
               <li>
                 <span className="days">Понеділок - П'ятниця:</span>
                 <span className="time">
-                  <Link href="/schedule">13:00 - 20:00</Link>
+                  <Link href="/schedule">08:00 - 20:00</Link>
                 </span>
               </li>
               <li>
@@ -71,7 +71,7 @@ const ContactInfo = () => {
               <li>
                 <span className="days">Субота:</span>
                 <span className="time">
-                  <Link href="/schedule">09:00 - 13:00</Link>
+                  <Link href="/schedule">08:00 - 13:00</Link>
                 </span>
               </li>
               <li>
