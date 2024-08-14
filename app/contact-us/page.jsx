@@ -65,7 +65,7 @@ const ContactUs = () => {
                   <ul>
                     <li>
                       <FontAwesomeIcon icon={faLocationDot} />
-                      <p>вул. Василія Липківського, 36, Київ</p>
+                      <p className="mb-0">вул. Василія Липківського, 36, Київ</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={faPhone} />
