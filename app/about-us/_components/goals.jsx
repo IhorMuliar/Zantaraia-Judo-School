@@ -2,9 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Tab, Nav } from "react-bootstrap";
+import { Nav, Tab } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faUserGroup, faPersonRunning } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPersonRunning,
+  faPhone,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
 import image from "@/public/images/about/image-box/pic1.jpg";
 
@@ -18,58 +22,62 @@ const Goals = () => {
             Допомагаємо досягати ваших <span>цілей</span>
           </h2>
           <p className="m-0">
-            Ми - школа дзюдо, яка допомагає вам досягти бажаних результатів.
-            Незалежно від того, чи ваша мета - навчитися дзюдо, покращити
-            фізичну форму, зміцнити м'язи або розвинути впевненість у собі, ми
-            готові розробити для вас індивідуальну програму тренувань та надати
-            необхідні рекомендації.
+            Школа Георгія Зантарая - це навчальний заклад, де діти отримують
+            можливість навчитися основам дзюдо, розвинути фізичну форму та
+            дисципліну.
           </p>
         </div>
         <div className="" data-wow-delay="0.8s">
-          <Tab.Container defaultActiveKey={"mission"}>
+          <Tab.Container defaultActiveKey={"goals"}>
             <Nav as="ul" className="nav nav-tabs style-1 m-b20 m-t30">
+              <Nav.Item as="li" className="nav-item">
+                <Nav.Link className="nav-link" eventKey={"goals"}>
+                  <span>Наші цілі</span>
+                </Nav.Link>
+              </Nav.Item>
               <Nav.Item as="li" className="nav-item">
                 <Nav.Link className="nav-link" eventKey={"mission"}>
                   <span>Наша місія</span>
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item as="li" className="nav-item">
-                <Nav.Link className="nav-link" eventKey={"vision"}>
-                  <span>Наше бачення</span>
-                </Nav.Link>
-              </Nav.Item>
             </Nav>
             <Tab.Content
-              className="tab-content m-sm-b30 m-b40 p-r30"
+              className="tab-content m-sm-b30 m-b30 p-r30"
               id="myTabContent"
             >
-              <Tab.Pane eventKey={"mission"}>
+              <Tab.Pane eventKey={"goals"}>
                 <div className="content">
                   <p>
-                    Ми прагнемо створити найкращі умови для розвитку та
-                    тренувань у дзюдо, сприяючи фізичному та духовному розвитку
-                    наших учасників. Наша школа дзюдо виховує не лише сильних
-                    спортсменів, а й впевнених у собі, дисциплінованих і
-                    цілеспрямованих людей.
+                    Розвиток фізичної витривалості, координації та впевненості у
+                    собі у дітей. Навчання основам дзюдо, принципам чесної гри
+                    та поваги до суперників.
                   </p>
                 </div>
               </Tab.Pane>
-              <Tab.Pane eventKey={"vision"}>
+              <Tab.Pane eventKey={"mission"}>
                 <div className="content">
                   <p>
-                    Ми бачимо наш клуб як центр спортивного та культурного життя
-                    громади, де кожен має можливість досягти своїх цілей і
-                    розкрити свій потенціал. Ми віримо, що дзюдо - це не лише
-                    спорт, а й шлях до самовдосконалення та гармонії.
+                    Виховувати здорове та активне покоління через спорт,
+                    розвивати у дітей лідерські якості, дисципліну та
+                    наполегливість.
                   </p>
                 </div>
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
         </div>
+        <p className="text-dark m-b30">
+          Професійні досягнення: Школа прагне допомогти дітям досягти високого
+          рівня майстерності у дзюдо, підготувати їх до участі в національних і
+          міжнародних змаганнях. Однією з ключових цілей є підготовка
+          спортсменів, здатних боротися за олімпійські медалі та представляти
+          країну на найвищому рівні. Школа створює позитивне середовище, де
+          кожна дитина може розкрити свій потенціал і здобути навички, корисні
+          як у спорті, так і в житті.
+        </p>
         <div className="contact-us">
           <span className="icon">
-            <FontAwesomeIcon icon={faPhone} className="text-primary"/>
+            <FontAwesomeIcon icon={faPhone} className="text-primary" />
           </span>
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
@@ -90,7 +98,10 @@ const Goals = () => {
             />
             <div className="info-box">
               <span>
-                <FontAwesomeIcon icon={faPersonRunning} className="text-primary"/>
+                <FontAwesomeIcon
+                  icon={faPersonRunning}
+                  className="text-primary"
+                />
                 Професійні тренера
               </span>
             </div>
