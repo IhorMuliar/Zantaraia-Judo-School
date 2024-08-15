@@ -83,7 +83,7 @@ const Goals = () => {
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
             <Link className="number" href="tel:+380931517748">
-              093-151-77-48
+              +38 (093) 151 77 48
             </Link>
           </div>
         </div>
