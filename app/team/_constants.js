@@ -8,23 +8,23 @@ export const TEAM_MEMBERS = [
   },
 
   {
-    image: "/images/team/member2.png",
+    image: "/images/team/member1.png",
     title: "Ласкута Анатолій",
-    description: "Старший Тренер",
+    description: "Директор",
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/?hl=en",
   },
 
   {
-    image: "/images/team/member3.png",
+    image: "/images/team/tolkach.jpg",
     title: "Толкач Денис",
-    description: "Тренер",
+    description: "Старший тренер",
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/?hl=en",
   },
 
   {
-    image: "/images/team/member4.png",
+    image: "/images/team/member1.png",
     title: "Старубінська Ольга",
     description: "Тренер",
     facebook: "https://www.facebook.com/",

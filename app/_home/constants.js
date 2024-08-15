@@ -118,12 +118,9 @@ export const INFO_CARDS = [
 ];
 
 export const PORTFOLIO_DATA = [
-  { image: "/images/portfolio/pic8.png" },
-  { image: "/images/portfolio/pic9.png" },
-  { image: "/images/portfolio/pic10.png" },
-  { image: "/images/portfolio/pic8.png" },
-  { image: "/images/portfolio/pic9.png" },
-  { image: "/images/portfolio/pic10.png" },
+  { image: "/images/portfolio/photo1.jpg" },
+  { image: "/images/portfolio/photo4.jpg" },
+  { image: "/images/portfolio/photo3.jpg" },
 ];
 
 export const SERVICES = [

@@ -43,7 +43,7 @@ const WorkoutSlider = () => {
       >
         {WORKOUTS_SLIDER_ITEMS.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className={`dz-box style-1 ${item.changestyle}`}>
+            <div className={`dz-box style-1 ${item.changeStyle}`}>
               <div className="dz-media">
                 <Link href={"/gallery"}>
                   <Image
