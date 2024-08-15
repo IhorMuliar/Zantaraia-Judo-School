@@ -83,7 +83,7 @@ const Gallery = () => {
                   </div>
                   <div className="dz-info">
                     <h4 className="title">
-                      <Link href={`/portfolio-details/${item.category}`}>
+                      <Link href={`/gallery/${item.category}`}>
                         {item.title}
                       </Link>
                     </h4>
