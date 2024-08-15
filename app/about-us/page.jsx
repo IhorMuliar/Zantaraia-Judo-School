@@ -44,7 +44,7 @@ const AboutUs = () => {
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs activePage="Про клуб" parentTitle="Головна" />
+      <Breadcrumbs  parentTitle="Головна" activePage="Про клуб" />
       <section
         className="content-inner-2"
         style={{ backgroundImage: "url(/images/background/bg1.png)" }}

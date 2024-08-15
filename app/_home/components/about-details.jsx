@@ -32,7 +32,7 @@ const AboutDetails = () => {
           ))}
         </ul>
         <Link
-          href="/about-us"
+          href={"/about-us"}
           className="btn btn-skew btn-lg btn-primary shadow-primary"
         >
           <span>Детальніше</span>

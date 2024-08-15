@@ -1,7 +1,8 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import WorkoutSlider from "@/components/shared/workout-slider";
-import GallerySlider from "./_components/gallery-slider";
 
 export const metadata = {
   title: "Галерея",
@@ -38,39 +39,60 @@ const webPageJsonLd = {
   inLanguage: "uk",
 };
 
+const portBlog = [
+  {
+    image: "/images/portfolio/photo4.jpg",
+    title: "Спортивні збори",
+    category: "sport-meetings",
+  },
+  {
+    image: "/images/portfolio/photo3.jpg",
+    title: "Подорожі",
+    category: "travels",
+  },
+  {
+    image: "/images/portfolio/photo1.jpg",
+    title: "Змагання",
+    category: "competions",
+  },
+];
+
 const Gallery = () => {
   return (
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs activePage="Галерея" parentTitle="Головна" />
-      <GallerySlider />
-      <section className="content-inner portfolio-wrapper">
-        <div className="portfolio-wrapper-inner">
-          <div className="container-fluid  p-0">
-            <WorkoutSlider />
+      <Breadcrumbs parentTitle="Головна" activePage="Галерея"/>
+      <section className="content-inner">
+        <div className="container">
+          <div className="row ">
+            {portBlog.map((item, index) => (
+              <div className="col-lg-4 col-sm-6 m-b40" key={index}>
+                <div className="dz-box style-2">
+                  <div className="dz-media">
+                    <Link href={`/gallery/${item.category}`}>
+                      <Image
+                        src={item.image}
+                        width={340}
+                        height={250}
+                        quality={100}
+                        alt={item.title}
+                        title={item.title}
+                      />
+                    </Link>
+                  </div>
+                  <div className="dz-info">
+                    <h4 className="title">
+                      <Link href={`/portfolio-details/${item.category}`}>
+                        {item.title}
+                      </Link>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-        <svg
-          className="shape-up"
-          width="635"
-          height="107"
-          viewBox="0 0 635 107"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M577 0L-16 107L635 45L577 0Z" fill="var(--primary-dark)" />
-        </svg>
-        <svg
-          className="shape-down"
-          width="673"
-          height="109"
-          viewBox="0 0 673 109"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)" />
-        </svg>
       </section>
     </>
   );
