@@ -10,8 +10,8 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
-import trainers from "@/public/images/about/pic1.jpg";
-import team from "@/public/images/portfolio/photo2.jpg";
+import trainersImage from "@/public/images/trainers.jpg";
+import teamImage from "@/public/images/portfolio/photo2.jpg";
 
 const Goals = () => {
   return (
@@ -92,7 +92,7 @@ const Goals = () => {
         <div className="dz-media">
           <div className="image-box">
             <Image
-              src={trainers}
+              src={trainersImage}
               quality={100}
               alt="Goal 1"
               title="Our experts"
@@ -109,7 +109,7 @@ const Goals = () => {
           </div>
           <div className="image-box">
             <Image
-              src={team}
+              src={teamImage}
               quality={100}
               alt="Goal 2"
               title="Friendly team"

@@ -29,7 +29,7 @@ const Breadcrumbs = ({ parentTitle, activePage }) => {
       <div
         className="dz-bnr-inr style-1 text-center"
         data-text="JUDO"
-        style={{ backgroundImage: "url(/images/banner/bg2.png)" }}
+        style={{ backgroundImage: "url(/images/background/bg2.png)" }}
       >
         <div className="container">
           <div className="dz-bnr-inr-entry">

@@ -8,8 +8,8 @@ import Testimonial from "./_home/components/testimonial";
 import Advantages from "./_home/components/advantages";
 import InfoCards from "./_home/components/info-cards";
 
-import mainBannerImage from "@/public/images/main-slider/gym.jpg";
-import zantaraiaImage from "@/public/images/about/zantaraia.png";
+import mainBannerImage from "@/public/images/gym.jpg";
+import zantaraiaImage from "@/public/images/zantaraia.png";
 
 export const metadata = {
   title: {
