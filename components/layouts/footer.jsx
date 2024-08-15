@@ -8,7 +8,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 
-import logoImage from "@/public/images/logo-test.jpg";
+import logoImage from "@/public/images/logo.jpg";
 import circleImage from "@/public/images/pattern/circle-footer-1.svg";
 
 const Footer = () => {

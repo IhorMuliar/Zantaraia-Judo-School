@@ -4,7 +4,11 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faArrowRight,
+  faQuoteLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { TESTIMONIALS } from "../constants";
 
@@ -28,19 +32,11 @@ const Testimonial = () => {
                 <div className="row align-items-xl-center justify-content-center">
                   <div className="col-lg-8 ">
                     <div className="testimonial-info">
-                      <FontAwesomeIcon icon={faQuoteLeft} className="quote"/>
-                      <p className="testimonial-text">
-                        Чудове місце для тренувань! Зал оснащений сучасним
-                        обладнанням, а тренери - професіонали своєї справи.
-                        Атмосфера дружня і мотивуюча, що сприяє швидкому
-                        прогресу. Якість навчання на високому рівні, а підтримка
-                        з боку команди завжди допомагає досягати нових вершин.
-                        Рекомендую всім, хто прагне покращити свої навички в
-                        дзюдо!
-                      </p>
+                      <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
+                      <p className="testimonial-text">{item.feedback}</p>
                       <p className="testimonial-name mb-0">{item.name}</p>
                       <span className="testimonial-position text-primary">
-                        Спортсмен
+                        {item.role}
                       </span>
                     </div>
                   </div>

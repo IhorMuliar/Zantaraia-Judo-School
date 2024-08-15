@@ -22,7 +22,7 @@ const ContactInfo = () => {
               <ul>
                 <li>
                   <FontAwesomeIcon icon={faLocationDot} />
-                  <p className="text-dark">
+                  <p className="text-dark mb-0">
                     вул. Василія Липківського, 36, Київ
                   </p>
                 </li>
