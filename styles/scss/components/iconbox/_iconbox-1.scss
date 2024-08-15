@@ -460,6 +460,10 @@
         text-transform: uppercase;
         font-family: var(--font-family-title);
         @include transitionMedium;
+
+        svg {
+          @include transitionMedium;
+        }
       }
     }
 
