@@ -30,7 +30,7 @@ const MainHeader = () => {
                   <li>
                     <FontAwesomeIcon icon={faPhone} />
                     <Link className="text-black" href="tel:+380931517748">
-                      093-151-77-48
+                        +38 (093) 151 77 48
                     </Link>
                   </li>
                 </ul>
@@ -42,7 +42,7 @@ const MainHeader = () => {
                   </li>{" "}
                   <li>
                     <FontAwesomeIcon icon={faLocationDot} />
-                    вул. Василія Липківського, 36, Київ
+                    вул. Василя Липківського, 36, Київ
                   </li>
                 </ul>
               </div>

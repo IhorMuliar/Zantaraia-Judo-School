@@ -65,12 +65,12 @@ const ContactUs = () => {
                   <ul>
                     <li>
                       <FontAwesomeIcon icon={faLocationDot} />
-                      <p className="mb-0">вул. Василія Липківського, 36, Київ</p>
+                      <p className="mb-0">вул. Василя Липківського, 36, Київ</p>
                     </li>
                     <li>
                       <FontAwesomeIcon icon={faPhone} />
                       <Link className="text-white" href="tel:+380931517748">
-                        093-151-77-48
+                        +38 (093) 151 77 48
                       </Link>
                     </li>
                   </ul>

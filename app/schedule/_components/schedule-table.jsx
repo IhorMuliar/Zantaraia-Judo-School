@@ -94,7 +94,7 @@ const ScheduleTable = () => {
               Старша група
             </td>
             <td className="event title" rowSpan="3">
-              Вихідні
+              Вихідний
             </td>
           </tr>
           <tr className="row_2">

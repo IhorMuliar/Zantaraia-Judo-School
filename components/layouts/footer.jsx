@@ -79,7 +79,7 @@ const Footer = () => {
                   <p className="footer-title text-white">Розташування</p>
                   <div className="clearfix">
                     <p className="m-b5 fw-bold text-white">Київ</p>
-                    <p>вул. Василія Липківського, 36, Київ</p>
+                    <p>вул. Василя Липківського, 36, Київ</p>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <span className="days">Неділя:</span>
-                      <span className="time">Зачинено</span>
+                      <span className="time">Вихідний</span>
                     </li>
                   </ul>
                   <Link href={"/schedule"} className="btn-link">

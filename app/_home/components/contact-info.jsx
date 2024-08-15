@@ -23,13 +23,13 @@ const ContactInfo = () => {
                 <li>
                   <FontAwesomeIcon icon={faLocationDot} />
                   <p className="text-dark mb-0">
-                    вул. Василія Липківського, 36, Київ
+                    вул. Василя Липківського, 36, Київ
                   </p>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faPhone} />
-                  <Link className="text-dark" href="tel:+380931517748">
-                    093-151-77-48
+                  <Link className="text-dark" href="tel:+380969795892">
+                    +38 (093) 151 77 48
                   </Link>
                 </li>
               </ul>
@@ -66,7 +66,7 @@ const ContactInfo = () => {
               </li>
               <li>
                 <span className="days">Неділя:</span>
-                <span className="time">Зачинено</span>
+                <span className="time">Вихідний</span>
               </li>
               <li>
                 <span className="days">Субота:</span>
