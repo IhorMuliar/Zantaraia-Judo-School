@@ -10,7 +10,8 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
-import image from "@/public/images/about/image-box/pic1.jpg";
+import trainers from "@/public/images/about/pic1.jpg";
+import team from "@/public/images/portfolio/photo2.jpg";
 
 const Goals = () => {
   return (
@@ -81,8 +82,8 @@ const Goals = () => {
           </span>
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
-            <Link className="number" href="tel:+380969795892">
-              096-979-58-92
+            <Link className="number" href="tel:+380931517748">
+              093-151-77-48
             </Link>
           </div>
         </div>
@@ -91,10 +92,10 @@ const Goals = () => {
         <div className="dz-media">
           <div className="image-box">
             <Image
-              src={image}
+              src={trainers}
               quality={100}
               alt="Goal 1"
-              title="Your goal photo 1"
+              title="Our experts"
             />
             <div className="info-box">
               <span>
@@ -108,10 +109,10 @@ const Goals = () => {
           </div>
           <div className="image-box">
             <Image
-              src={image}
+              src={team}
               quality={100}
               alt="Goal 2"
-              title="Your goal photo 1"
+              title="Friendly team"
             />
             <div className="info-box">
               <span>
