@@ -25,10 +25,10 @@ const Advantages = () => {
             </div>
             <div className="icon-content">
               <h3 className="dz-title m-b10">
-                <Link href="/about-us">{item.title}</Link>
+                <Link href={"/about-us"}>{item.title}</Link>
               </h3>
               <p className="m-b15">{item.description}</p>
-              <Link href="/about-us" className="read-more">
+              <Link href={"/about-us"} className="read-more">
                 Детальніше <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </div>

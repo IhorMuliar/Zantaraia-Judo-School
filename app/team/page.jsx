@@ -1,10 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
@@ -54,8 +51,8 @@ const Team = () => {
       <section className="content-inner">
         <div className="container">
           <div className="row ">
-            {TEAM_MEMBERS.map((item, index) => (
-              <div className="col-lg-4 col-sm-6 m-b30" key={index}>
+            {TEAM_MEMBERS.map((item) => (
+              <div className="col-lg-4 col-sm-6 m-b30" key={item.title}>
                 <div className="dz-team style-1">
                   <div className="dz-media">
                     <Image

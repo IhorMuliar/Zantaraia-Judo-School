@@ -50,7 +50,7 @@ const ContactUs = () => {
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs activePage="Контакти" parentTitle="Головна" />
+      <Breadcrumbs parentTitle="Головна" activePage="Контакти" />
       <section className="content-inner-1 z-index-none">
         <div className="container">
           <div className="row align-items-center">

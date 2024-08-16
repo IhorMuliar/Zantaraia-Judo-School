@@ -42,7 +42,7 @@ const Schedule = () => {
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs activePage="Розклад" parentTitle="Головна" />
+      <Breadcrumbs parentTitle="Головна" activePage="Розклад"/>
       <div className="content-inner-1">
         <div className="container">
           <div className="schedule-table table-responsive">

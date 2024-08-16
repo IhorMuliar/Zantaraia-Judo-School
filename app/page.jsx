@@ -188,7 +188,7 @@ const Home = () => {
           <div className="section-head style-1 text-center">
             <p className="sub-title wow fadeInUp">ВІДГУКИ</p>
             <h2 className="title wow fadeInUp">
-              Що <span className="text-primary">клієнти</span> кажуть про нас
+              Що <span className="text-primary">кажуть</span> про нас
             </h2>
           </div>
           <Testimonial />

@@ -4,7 +4,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import JsonLd from "./json-ld";
 
-const Breadcrumbs = ({ parentTitle, activePage }) => {
+const Breadcrumbs = ({ parentTitle, parentUrl = "/", activePage }) => {
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
@@ -37,7 +37,7 @@ const Breadcrumbs = ({ parentTitle, activePage }) => {
             <nav aria-label="breadcrumb" className="breadcrumb-row">
               <ul className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <Link href={"/"}>{parentTitle}</Link>
+                  <Link href={parentUrl}>{parentTitle}</Link>
                 </li>
                 <FontAwesomeIcon icon={faAngleRight} />
                 <li className="breadcrumb-item active" aria-current="page">
