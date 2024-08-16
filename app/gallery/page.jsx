@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
+import { GALLERY_ITEMS } from './_constants';
 
 export const metadata = {
   title: "Галерея",
@@ -39,24 +40,6 @@ const webPageJsonLd = {
   inLanguage: "uk",
 };
 
-const portBlog = [
-  {
-    image: "/images/portfolio/photo4.jpg",
-    title: "Спортивні збори",
-    category: "meetings",
-  },
-  {
-    image: "/images/portfolio/photo3.jpg",
-    title: "Подорожі",
-    category: "travels",
-  },
-  {
-    image: "/images/portfolio/photo1.jpg",
-    title: "Змагання",
-    category: "competitions",
-  },
-];
-
 const Gallery = () => {
   return (
     <>
@@ -66,7 +49,7 @@ const Gallery = () => {
       <section className="content-inner">
         <div className="container">
           <div className="row ">
-            {portBlog.map((item, index) => (
+            {GALLERY_ITEMS.map((item, index) => (
               <div className="col-lg-4 col-sm-6 m-b40" key={index}>
                 <div className="dz-box style-2">
                   <div className="dz-media">

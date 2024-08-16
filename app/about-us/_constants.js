@@ -28,7 +28,7 @@ export const WORKOUTS_SLIDER_ITEMS = [
     changeStyle: "box-1",
   },
   {
-    image: '/images/portfolio/pic2.jpg',
+    image: '/images/portfolio/photo7.jpg',
     title: "Чемпіони майбутнього - наша програма тренувань",
     changeStyle: "box-2",
   },
