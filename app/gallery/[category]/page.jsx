@@ -10,7 +10,7 @@ import { allImages } from "./constants";
 const categoryTranslations = {
   competions: "Змагання",
   travels: "Подорожі",
-  "sport-meetings": "Спортивні зустрічі",
+  "sport-meetings": "Спортивні збори",
 };
 
 
