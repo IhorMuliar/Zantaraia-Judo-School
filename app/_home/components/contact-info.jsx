@@ -28,9 +28,9 @@ const ContactInfo = () => {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faPhone} />
-                  <Link className="text-dark" href="tel:+380931517748">
+                  <a className="text-dark" href="tel:+380931517748">
                     +38 (093) 151 77 48
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </address>

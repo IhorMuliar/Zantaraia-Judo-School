@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { Nav, Tab } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -82,9 +81,9 @@ const Goals = () => {
           </span>
           <div className="content d-flex flex-column">
             <span>Зв'яжіться з нами для консультації</span>
-            <Link className="number" href="tel:+380931517748">
+            <a className="number" href="tel:+380931517748">
               +38 (093) 151 77 48
-            </Link>
+            </a>
           </div>
         </div>
       </div>
