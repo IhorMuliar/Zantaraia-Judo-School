@@ -24,7 +24,6 @@ const FloatingActionButton = () => {
     floatingButton.addEventListener("mouseenter", triggerJellyAnimation);
     floatingButton.addEventListener("click", handleClick);
 
-    // Cleanup event listeners
     return () => {
       floatingButton.removeEventListener("mouseenter", triggerJellyAnimation);
       floatingButton.removeEventListener("click", handleClick);
@@ -34,7 +33,7 @@ const FloatingActionButton = () => {
   return (
     <div className="floating-button" ref={floatingButtonRef}>
       <FontAwesomeIcon icon={faPhone} />
-      <a className="phone-number" href="tel:+380931517748">+38 (093) 151 77 48</a>
+      <a href="tel:+380931517748">+38 (093) 151 77 48</a>
     </div>
   );
 };
