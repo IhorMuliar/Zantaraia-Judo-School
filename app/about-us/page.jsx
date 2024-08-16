@@ -1,6 +1,6 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import JsonLd from '@/components/shared/json-ld';
-import WorkoutSlider from "@/components/shared/workout-slider";
+import JsonLd from "@/components/shared/json-ld";
+import WorkoutSlider from "./_components/workout-slider";
 import Goals from "./_components/goals";
 import Training from "./_components/training";
 
@@ -18,7 +18,7 @@ export const metadata = {
     url: "/about-us",
   },
   alternates: {
-    canonical: '/about-us',
+    canonical: "/about-us",
   },
 };
 
@@ -44,7 +44,7 @@ const AboutUs = () => {
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs  parentTitle="Головна" activePage="Про клуб" />
+      <Breadcrumbs parentTitle="Головна" activePage="Про клуб" />
       <section
         className="content-inner-2"
         style={{ backgroundImage: "url(/images/background/bg1.png)" }}

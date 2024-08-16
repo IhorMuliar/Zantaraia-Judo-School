@@ -8,7 +8,7 @@ import { Navigation, Pagination } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import { WORKOUTS_SLIDER_ITEMS } from "@/constants";
+import { WORKOUTS_SLIDER_ITEMS } from "../_constants";
 
 const WorkoutSlider = () => {
   const navigationPrevRef = useRef(null);
