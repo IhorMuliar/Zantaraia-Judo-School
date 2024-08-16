@@ -43,7 +43,7 @@ const portBlog = [
   {
     image: "/images/portfolio/photo4.jpg",
     title: "Спортивні збори",
-    category: "sport-meetings",
+    category: "meetings",
   },
   {
     image: "/images/portfolio/photo3.jpg",
@@ -53,7 +53,7 @@ const portBlog = [
   {
     image: "/images/portfolio/photo1.jpg",
     title: "Змагання",
-    category: "competions",
+    category: "competitions",
   },
 ];
 

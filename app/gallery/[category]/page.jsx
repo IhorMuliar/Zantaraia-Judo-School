@@ -5,36 +5,25 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import { allImages } from "./constants";
+import { IMAGES } from "./_constants";
 
 const categoryTranslations = {
-  competions: "Змагання",
+  competitions: "Змагання",
   travels: "Подорожі",
-  "sport-meetings": "Спортивні збори",
+  meetings: "Спортивні збори",
 };
-
-
 
 const GalleryDetails = ({ params }) => {
   const { category } = params;
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    if (!categoryTranslations[category]) {
-      notFound();
-
-      return;
-    }
-
-    const filteredImages = allImages.filter((image) => image.category === category);
+    const filteredImages = IMAGES.filter((image) => image.category === category);
     setImages(filteredImages);
   }, [category]);
 
-  const translatedCategory = categoryTranslations[category];
-  
-  if (!translatedCategory) {
+  if (!categoryTranslations[category]) {
     notFound();
-
     return null;
   }
 
@@ -43,7 +32,7 @@ const GalleryDetails = ({ params }) => {
       <Breadcrumbs
         parentTitle="Галерея"
         parentUrl="/gallery"
-        activePage={translatedCategory}
+        activePage={categoryTranslations[category]}
       />
       <section className="content-inner">
         <div className="container">
@@ -57,7 +46,7 @@ const GalleryDetails = ({ params }) => {
                       width={340}
                       height={250}
                       quality={100}
-                      alt=""
+                      alt="Photo"
                     />
                   </div>
                 </div>
@@ -71,4 +60,3 @@ const GalleryDetails = ({ params }) => {
 };
 
 export default GalleryDetails;
-
