@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -29,9 +28,9 @@ const MainHeader = () => {
                 <ul>
                   <li>
                     <FontAwesomeIcon icon={faPhone} />
-                    <Link className="text-black" href="tel:+380931517748">
+                    <a className="text-black" href="tel:+380931517748">
                         +38 (093) 151 77 48
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
