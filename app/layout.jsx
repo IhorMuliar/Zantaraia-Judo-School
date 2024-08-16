@@ -1,8 +1,9 @@
 import LayoutBuilder from "@/components/layouts/layout-builder";
 import ScrollToTop from "@/components/shared/scroll-to-top";
-import { config } from '@fortawesome/fontawesome-svg-core';
+import FloatingActionButton from "@/components/shared/floating-action-button";
+import { config } from "@fortawesome/fontawesome-svg-core";
 
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@/styles/vendor/swiper/swiper-bundle.min.css";
 import "@/styles/scss/main.scss";
 
@@ -33,11 +34,11 @@ export const metadata = {
   },
   openGraph: {
     url: "/",
-    siteName: 'Zantaraia Judo School',
+    siteName: "Zantaraia Judo School",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
-        alt: 'Zantaraia Judo School',
+        alt: "Zantaraia Judo School",
       },
     ],
     type: "website",
@@ -63,6 +64,7 @@ const RootLayout = ({ children }) => {
           <LayoutBuilder>{children}</LayoutBuilder>
         </div>
         <ScrollToTop />
+        <FloatingActionButton />
       </body>
     </html>
   );

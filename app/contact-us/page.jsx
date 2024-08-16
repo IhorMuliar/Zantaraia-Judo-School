@@ -69,9 +69,9 @@ const ContactUs = () => {
                     </li>
                     <li>
                       <FontAwesomeIcon icon={faPhone} />
-                      <Link className="text-white" href="tel:+380931517748">
+                      <a className="text-white" href="tel:+380931517748">
                         +38 (093) 151 77 48
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </address>
