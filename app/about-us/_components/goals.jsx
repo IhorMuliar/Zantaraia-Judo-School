@@ -5,7 +5,6 @@ import { Nav, Tab } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPersonRunning,
-  faPhone,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +16,6 @@ const Goals = () => {
     <>
       <div className="col-lg-6 about-content m-b30">
         <div className="section-head m-0">
-          <span className="sub-title">ПРО НАС</span>
           <h2 className="title">
             Допомагаємо досягати ваших <span>цілей</span>
           </h2>
@@ -75,17 +73,6 @@ const Goals = () => {
           кожна дитина може розкрити свій потенціал і здобути навички, корисні
           як у спорті, так і в житті.
         </p>
-        <div className="contact-us">
-          <span className="icon">
-            <FontAwesomeIcon icon={faPhone} className="text-primary" />
-          </span>
-          <div className="content d-flex flex-column">
-            <span>Зв'яжіться з нами для консультації</span>
-            <a className="number" href="tel:+380931517748">
-              +38 (093) 151 77 48
-            </a>
-          </div>
-        </div>
       </div>
       <div className="col-lg-6 m-b30">
         <div className="dz-media">

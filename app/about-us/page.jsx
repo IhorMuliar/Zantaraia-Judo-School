@@ -1,8 +1,9 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import WorkoutSlider from "./_components/workout-slider";
+import AdaptiveSport from "./_components/adaptive-sport";
 import Goals from "./_components/goals";
 import Training from "./_components/training";
+import WorkoutSlider from "./_components/workout-slider";
 
 export const metadata = {
   title: "Про клуб",
@@ -55,12 +56,19 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="content-inner clearfix">
+      <section className="content-inner-3">
+        <div className="container">
+          <div className="row about-bx2 align-items-center">
+            <AdaptiveSport />
+          </div>
+        </div>
+      </section>
+      <section className="content-inner-3 clearfix p-b60">
         <div className="fitness-classes">
           <Training />
         </div>
       </section>
-      <section className="content-inner portfolio-wrapper">
+      <section className="content-inner-1 portfolio-wrapper">
         <div className="portfolio-wrapper-inner">
           <div className="container-fluid  p-0">
             <WorkoutSlider />
