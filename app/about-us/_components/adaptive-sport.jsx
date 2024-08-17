@@ -2,8 +2,8 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-import trainersImage from "@/public/images/gallery/adaptive-sport/photo9.jpg";
-import teamImage from "@/public/images/gallery/adaptive-sport/photo8.jpg";
+import emotionsImage from "@/public/images/gallery/adaptive-sport/photo9.jpg";
+import exercisesImage from "@/public/images/gallery/adaptive-sport/photo8.jpg";
 
 const AdaptiveSport = () => {
   return (
@@ -12,18 +12,18 @@ const AdaptiveSport = () => {
         <div className="dz-media">
           <div className="image-box">
             <Image
-              src={trainersImage}
+              src={emotionsImage}
               quality={100}
-              alt="Goal 1"
-              title="Our experts"
+              alt="Emotions"
+              title="Emotions"
             />
           </div>
           <div className="image-box">
             <Image
-              src={teamImage}
+              src={exercisesImage}
               quality={100}
-              alt="Goal 2"
-              title="Friendly team"
+              alt="Adaptive exercises"
+              title="Adaptive exercises"
             />
           </div>
         </div>

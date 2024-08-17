@@ -86,6 +86,9 @@ export const PORTFOLIO_DATA = [
   { image: "/images/gallery/photo1.jpg" },
   { image: "/images/gallery/photo4.jpg" },
   { image: "/images/gallery/photo3.jpg" },
+  { image: "/images/gallery/photo23.jpg" },
+  { image: "/images/gallery/photo9.jpg" },
+  { image: "/images/gallery/photo22.jpg" },
 ];
 
 export const SERVICES = [

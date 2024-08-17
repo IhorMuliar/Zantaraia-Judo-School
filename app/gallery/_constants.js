@@ -10,7 +10,7 @@ export const GALLERY_ITEMS = [
     category: "travels",
   },
   {
-    image: "/images/gallery/photo19.jpg",
+    image: "/images/gallery/photo32.jpg",
     title: "Змагання",
     category: "competitions",
   },
