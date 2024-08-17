@@ -79,7 +79,7 @@ const ScheduleTable = () => {
           </tr>
         </tbody>
       </table>
-      <table className="table-responsive-md ck-table">
+      <table className="table-responsive-md ck-table m-b10">
         <thead>
           <tr>
             <th></th>
@@ -103,7 +103,7 @@ const ScheduleTable = () => {
           </tr>
           <tr className="row_3">
             <td className="event-time"> 11:30 - 13:00</td>
-            <td>Групи 8-10 років та 10-14 років</td>
+            <td className="event title">Групи 8-10 років та 10-14 років</td>
           </tr>
         </tbody>
       </table>
