@@ -1,22 +1,16 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import { ADVANTAGES_STEPS } from "../constants";
+import { ADVANTAGES_STEPS, BIG_ARROW } from "../constants";
 
 const Advantages = () => {
-  const [activeIndex, setActiveIndex] = useState(1);
-
   return (
     <div className="row align-items-center">
-      {ADVANTAGES_STEPS.map((item, index) => (
-        <div className="col-xl-4 col-md-6 mb-4 wow fadeInLeft" key={index}>
+      {ADVANTAGES_STEPS.map((item) => (
+        <div className="col-xl-4 col-md-6 mb-4 wow fadeInLeft" key={item.title}>
           <div
-            onMouseEnter={() => setActiveIndex(index)}
-            className={`icon-bx-wraper style-5 ${activeIndex === index ? "active" : ""}`}
+            className="icon-bx-wraper style-5"
           >
             <div className="icon-bx m-b20">
               <div className="icon-cell text-primary">
@@ -35,7 +29,7 @@ const Advantages = () => {
             <div className="badge">
               <span>{item.num}</span>
             </div>
-            {item.svg}
+            <BIG_ARROW />
           </div>
         </div>
       ))}

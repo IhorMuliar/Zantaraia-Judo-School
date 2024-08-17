@@ -532,6 +532,10 @@
       transform: translateY(-50%);
       @include transitionMedium;
       color: var(--secondary);
+
+      &:hover {
+        color: var(--primary);
+      }
     }
 
     &:hover,

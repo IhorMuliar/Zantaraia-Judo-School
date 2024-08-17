@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import trainersImage from "@/public/images/trainers.jpg";
-import teamImage from "@/public/images/portfolio/photo2.jpg";
+import teamImage from "@/public/images/gallery/photo2.jpg";
 
 const Goals = () => {
   return (
@@ -27,9 +27,9 @@ const Goals = () => {
             дисципліну.
           </p>
         </div>
-        <div className="" data-wow-delay="0.8s">
+        <div className="m-t30 m-b30" data-wow-delay="0.8s">
           <Tab.Container defaultActiveKey={"goals"}>
-            <Nav as="ul" className="nav nav-tabs style-1 m-b20 m-t30">
+            <Nav as="ul" className="nav nav-tabs style-1 m-b20">
               <Nav.Item as="li" className="nav-item">
                 <Nav.Link className="nav-link" eventKey={"goals"}>
                   <span>Наші цілі</span>
@@ -42,12 +42,12 @@ const Goals = () => {
               </Nav.Item>
             </Nav>
             <Tab.Content
-              className="tab-content m-sm-b30 m-b30 p-r30"
+              className="tab-content"
               id="myTabContent"
             >
               <Tab.Pane eventKey={"goals"}>
                 <div className="content">
-                  <p>
+                  <p className="m-0">
                     Розвиток фізичної витривалості, координації та впевненості у
                     собі у дітей. Навчання основам дзюдо, принципам чесної гри
                     та поваги до суперників.
@@ -56,7 +56,7 @@ const Goals = () => {
               </Tab.Pane>
               <Tab.Pane eventKey={"mission"}>
                 <div className="content">
-                  <p>
+                  <p className="m-0">
                     Виховувати здорове та активне покоління через спорт,
                     розвивати у дітей лідерські якості, дисципліну та
                     наполегливість.
@@ -67,7 +67,7 @@ const Goals = () => {
           </Tab.Container>
         </div>
         <p className="text-dark m-b30">
-          Професійні досягнення: Школа прагне допомогти дітям досягти високого
+          Школа прагне допомогти дітям досягти високого
           рівня майстерності у дзюдо, підготувати їх до участі в національних і
           міжнародних змаганнях. Однією з ключових цілей є підготовка
           спортсменів, здатних боротися за олімпійські медалі та представляти

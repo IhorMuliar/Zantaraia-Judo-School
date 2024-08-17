@@ -55,20 +55,20 @@ const Training = () => {
           subtitle={TRAINING_DETAILS.childrenSection.subtitle}
           description={TRAINING_DETAILS.childrenSection.description}
         />
-        <InfoMedia image="/images/portfolio/photo1.jpg" />
+        <InfoMedia image="/images/gallery/photo1.jpg" />
         <InfoLight
           title={TRAINING_DETAILS.championsProgram.title}
           subtitle={TRAINING_DETAILS.championsProgram.subtitle}
           description={TRAINING_DETAILS.championsProgram.description}
         />
-        <InfoMedia image="/images/portfolio/photo2.jpg" />
-        <InfoMedia image="/images/portfolio/photo3.jpg" />
+        <InfoMedia image="/images/gallery/photo2.jpg" />
+        <InfoMedia image="/images/gallery/photo3.jpg" />
         <InfoLight
           title={TRAINING_DETAILS.physicalDevelopment.title}
           subtitle={TRAINING_DETAILS.physicalDevelopment.subtitle}
           description={TRAINING_DETAILS.physicalDevelopment.description}
         />
-        <InfoMedia image="/images/portfolio/photo4.jpg" />
+        <InfoMedia image="/images/gallery/photo4.jpg" />
         <InfoDark
           title={TRAINING_DETAILS.friendlyAtmosphere.title}
           subtitle={TRAINING_DETAILS.friendlyAtmosphere.subtitle}
