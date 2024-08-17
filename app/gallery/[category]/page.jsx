@@ -38,7 +38,7 @@ const GalleryDetails = ({ params }) => {
         <div className="container">
           <div className="row">
             {images.map((item, index) => (
-              <div className="col-lg-4 col-sm-6 m-b40" key={index}>
+              <div className="col-lg-4 col-sm-6 m-b30" key={index}>
                 <div className="dz-box style-2">
                   <div className="dz-media">
                     <Image

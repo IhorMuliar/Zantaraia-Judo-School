@@ -56,7 +56,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="content-inner-3">
+      <section className="content-inner-3 pt-0">
         <div className="container">
           <div className="row about-bx2 align-items-center">
             <AdaptiveSport />
