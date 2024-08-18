@@ -52,14 +52,14 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#fcde3b",
+  themeColor: "#ebc600",
   colorScheme: "only light",
 };
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="uk">
-      <body data-theme-color="color_5" suppressHydrationWarning>
+      <body data-theme-color="light" suppressHydrationWarning>
         <div className="page-wrapper">
           <LayoutBuilder>{children}</LayoutBuilder>
         </div>

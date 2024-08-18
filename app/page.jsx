@@ -195,7 +195,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        className="content-inner-2 theme-bg contact-section style-2"
+        className="content-inner-2 theme-bg contact-section style-2 p-t70"
         style={{
           backgroundImage: "url(/images/background/bg10.png)",
           backgroundPosition: " center",

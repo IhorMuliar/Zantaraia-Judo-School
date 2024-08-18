@@ -38,7 +38,7 @@ const Footer = () => {
                     досягати досконалості.
                   </p>
                   <p className="m-b15 fw-bold text-white">Ми в соцмережах</p>
-                  <div className="dz-social-icon style-1">
+                  <div className="dz-social-icon style-1 dark">
                     <ul>
                       <li>
                         <Link

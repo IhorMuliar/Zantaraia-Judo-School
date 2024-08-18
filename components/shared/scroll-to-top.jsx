@@ -32,7 +32,7 @@ const ScrollToTop = () => {
     <button
       onClick={() => window.scrollTo(0, 0)}
       ref={scrollTopBtn}
-      className="scroll-top icon-up"
+      className="scroll-top"
       type="button"
     >
       <FontAwesomeIcon icon={faArrowUp} />

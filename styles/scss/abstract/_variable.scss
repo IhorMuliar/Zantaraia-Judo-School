@@ -3,7 +3,7 @@ $enable-deprecation-messages: false;
 $ignore-warning: true;
 
 // Color
-$primary: #FF8139;
+$primary: #ebc600;
 $secondary: #232323 !default;
 $success: #13c24d !default;
 $info: #00aeff !default;
@@ -11,7 +11,6 @@ $warning: #FFBD13 !default;
 $danger: #ff0003 !default;
 $light: #faf8f2 !default;
 $dark: #222222;
-
 
 // Body
 $body-bg: #ffffff;
@@ -85,7 +84,7 @@ $border-radius-sm: .75rem !default;
   --secondary: #{$secondary};
   --gray: #{$gray};
   --primary-hover: #{darken($primary, 10)};
-  --primary-dark: #{darken($primary, 30)};
+  --primary-dark: #{darken($primary, 15)};
   --rgba-secondary-1: #{rgba($secondary, 0.1)};
   --rgba-primary-1: #{rgba($primary, 0.1)};
   --rgba-primary-2: #{rgba($primary, 0.2)};
