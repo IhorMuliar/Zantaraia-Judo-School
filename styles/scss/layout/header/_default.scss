@@ -1158,7 +1158,33 @@
   display: none;
   opacity: 1;
 
-  &.show {
-    display: block;
+  @include respond('wide-desktop') {
+    &.show {
+      display: none;
+    }
+  }
+
+  @include respond('laptop') {
+    &.show {
+      display: none;
+    }
+  }
+
+  @include respond('tab-port') {
+    &.show {
+      display: block;
+    }
+  }
+
+  @include respond('phone-land') {
+    &.show {
+      display: block;
+    }
+  }
+
+  @include respond('phone') {
+    &.show {
+      display: block;
+    }
   }
 }
