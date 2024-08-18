@@ -32,7 +32,7 @@ const HomeHeader = () => {
         mainMenu.classList.remove("show");
       }
     }
-  });
+  }, [sidebarOpen]);
 
   // Menu dropdown list
   const reducer = (previousState, updatedState) => ({
@@ -100,6 +100,9 @@ const HomeHeader = () => {
               <span></span>
               <span></span>
             </button>
+            <div
+              className={`sidebar-overlay ${sidebarOpen ? "show" : ""}`}
+            ></div>
             <nav
               id="navbarNavDropdown"
               className={`header-nav navbar-collapse collapse justify-content-around ${
@@ -128,7 +131,7 @@ const HomeHeader = () => {
                         // className={`${ menuClass} ${ location.pathname == item.to ? 'active'  : '' }`}
                         key={index}
                       >
-                        <Link href={item.to}>{item.title}</Link>
+                        <Link href={item.to} onClick={() => setSidebarOpen(!sidebarOpen)}>{item.title}</Link>
                       </li>
                     );
                   } else {
