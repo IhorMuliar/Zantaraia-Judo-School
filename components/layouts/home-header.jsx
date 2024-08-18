@@ -131,7 +131,7 @@ const HomeHeader = () => {
                         // className={`${ menuClass} ${ location.pathname == item.to ? 'active'  : '' }`}
                         key={index}
                       >
-                        <Link href={item.to} onClick={() => setSidebarOpen(!sidebarOpen)}>{item.title}</Link>
+                        <Link href={item.to}>{item.title}</Link>
                       </li>
                     );
                   } else {
