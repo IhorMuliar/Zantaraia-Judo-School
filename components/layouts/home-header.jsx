@@ -100,6 +100,9 @@ const HomeHeader = () => {
               <span></span>
               <span></span>
             </button>
+            <div
+              className={`sidebar-overlay ${sidebarOpen ? "show" : ""}`}
+            ></div>
             <nav
               id="navbarNavDropdown"
               className={`header-nav navbar-collapse collapse justify-content-around ${

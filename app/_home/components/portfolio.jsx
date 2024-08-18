@@ -18,7 +18,6 @@ const Portfolio = () => {
         spaceBetween={20}
         ref={swiperRef}
         speed={1500}
-        loop={true}
         breakpoints={{
           991: { slidesPerView: 3 },
           775: { slidesPerView: 2 },
