@@ -44,7 +44,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    const mainMenu = document.getElementById("OpenMenu");
+    const mainMenu = document.getElementById("navbarNavDropdown");
     if (mainMenu) {
       mainMenu.classList.toggle("show", sidebarOpen);
     }
@@ -102,7 +102,7 @@ const Header = () => {
           {sidebarOpen && <div className="sidebar-overlay"></div>}
           <nav
             id="navbarNavDropdown"
-            className={`header-nav navbar-collapse collapse justify-content-around ${sidebarOpen ? "show" : ""}`}
+            className="header-nav navbar-collapse collapse justify-content-around"
           >
             <div className="logo-header logo-dark">
               <Link href="/">
