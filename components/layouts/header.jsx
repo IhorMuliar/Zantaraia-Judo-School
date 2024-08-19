@@ -28,13 +28,13 @@ const reducer = (state, action) => ({
 });
 
 const Header = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
   const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 991) setSidebarOpen(false);
+      if (window.innerWidth >= 991) setIsSidebarOpen(false);
     };
 
     window.addEventListener("resize", handleResize);
@@ -46,10 +46,10 @@ const Header = () => {
   useEffect(() => {
     const sidebar = document.getElementById("sidebar");
     if (sidebar) {
-      sidebar.classList.toggle("show", sidebarOpen);
+      sidebar.classList.toggle("show", isSidebarOpen);
     }
-    document.body.classList.toggle("overflow-hidden", sidebarOpen);
-  }, [sidebarOpen]);
+    document.body.classList.toggle("overflow-hidden", isSidebarOpen);
+  }, [isSidebarOpen]);
 
   useEffect(() => {
     MENU_ITEMS.forEach((item) => {
@@ -90,16 +90,16 @@ const Header = () => {
             </Link>
           </div>
           <button
-            className={`navbar-toggler navicon justify-content-end ${sidebarOpen ? "open" : "collapsed"}`}
+            className={`navbar-toggler navicon justify-content-end ${isSidebarOpen ? "open" : "collapsed"}`}
             type="button"
             aria-label="Toggle navigation"
-            onClick={() => setSidebarOpen(!sidebarOpen)}
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
-          {sidebarOpen && <div className="sidebar-overlay"></div>}
+          {isSidebarOpen && <div className="sidebar-overlay"></div>}
           <nav
             id="sidebar"
             className="header-nav navbar-collapse justify-content-around"
@@ -181,7 +181,12 @@ const Header = () => {
                       </Collapse>
                     </>
                   ) : (
-                    <Link href={item.to}>{item.title}</Link>
+                    <Link
+                      href={item.to}
+                      onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                    >
+                      {item.title}
+                    </Link>
                   )}
                 </li>
               ))}
