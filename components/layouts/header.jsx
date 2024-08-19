@@ -49,6 +49,7 @@ const Header = () => {
       sidebar.classList.toggle("show", isSidebarOpen);
     }
     document.body.classList.toggle("overflow-hidden", isSidebarOpen);
+    console.log(isSidebarOpen)
   }, [isSidebarOpen]);
 
   useEffect(() => {
@@ -183,7 +184,7 @@ const Header = () => {
                   ) : (
                     <Link
                       href={item.to}
-                      onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                      onClick={() => setIsSidebarOpen(false)}
                     >
                       {item.title}
                     </Link>
