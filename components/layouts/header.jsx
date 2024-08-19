@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useReducer, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ import { MENU_ITEMS } from "@/constants";
 import logoImage from "@/public/images/logo.jpg";
 
 const initialState = {
-  active: "",
+  activeMenu: "",
   activeSubmenu: "",
 };
 
@@ -27,9 +27,8 @@ const reducer = (state, action) => ({
   ...action,
 });
 
-const HomeHeader = () => {
+const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState("");
   const [state, dispatch] = useReducer(reducer, initialState);
   const pathname = usePathname();
 
@@ -39,39 +38,35 @@ const HomeHeader = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
     return () => {
-      document.body.classList.remove("overflow-hidden");
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   useEffect(() => {
     const mainMenu = document.getElementById("OpenMenu");
-
     if (mainMenu) {
       mainMenu.classList.toggle("show", sidebarOpen);
     }
-
     document.body.classList.toggle("overflow-hidden", sidebarOpen);
   }, [sidebarOpen]);
 
-  useMemo(() => {
-    const findActiveMenu = () => {
-      MENU_ITEMS.forEach((item) => {
-        if (
-          item.to === pathname ||
-          item.content?.some((sub) => sub.to === pathname)
-        ) {
-          setActiveMenu(item.title);
-        }
-      });
-    };
-    findActiveMenu();
+  useEffect(() => {
+    MENU_ITEMS.forEach((item) => {
+      if (
+        item.to === pathname ||
+        item.content?.some((sub) => sub.to === pathname)
+      ) {
+        dispatch({ activeMenu: item.title });
+      }
+    });
   }, [pathname]);
 
   const handleMenuToggle = (menuTitle) => {
-    dispatch({ active: state.active === menuTitle ? "" : menuTitle });
+    dispatch({
+      activeMenu: state.activeMenu === menuTitle ? "" : menuTitle,
+      activeSubmenu: "",
+    });
   };
 
   const handleSubmenuToggle = (submenuTitle) => {
@@ -90,7 +85,7 @@ const HomeHeader = () => {
                 src={logoImage}
                 quality={100}
                 alt="Logo"
-                title="Zantaraia school logo"
+                title="Zantaraia School Logo"
               />
             </Link>
           </div>
@@ -115,7 +110,7 @@ const HomeHeader = () => {
                   src={logoImage}
                   quality={100}
                   alt="Logo"
-                  title="Zantaraia school logo"
+                  title="Zantaraia School Logo"
                 />
               </Link>
             </div>
@@ -123,11 +118,9 @@ const HomeHeader = () => {
               {MENU_ITEMS.map((item, index) => (
                 <li
                   key={index}
-                  className={`${item.classChange} ${
-                    state.active === item.title || activeMenu === item.title
-                      ? "active"
-                      : ""
-                  }`}
+                  className={`${
+                    item.classChange
+                  } ${state.activeMenu === item.title ? "active" : ""}`}
                 >
                   {item.content && item.content.length > 0 ? (
                     <>
@@ -137,18 +130,18 @@ const HomeHeader = () => {
                       >
                         {item.title}
                       </Link>
-                      <Collapse in={state.active === item.title}>
+                      <Collapse in={state.activeMenu === item.title}>
                         <ul
                           className={`sub-menu ${item.classChange === "mm-collapse" ? "open" : ""}`}
                         >
                           {item.content.map((subItem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${
+                              className={
                                 state.activeSubmenu === subItem.title
                                   ? "open"
                                   : ""
-                              }`}
+                              }
                             >
                               {subItem.content && subItem.content.length > 0 ? (
                                 <>
@@ -231,4 +224,4 @@ const HomeHeader = () => {
   );
 };
 
-export default HomeHeader;
+export default Header;

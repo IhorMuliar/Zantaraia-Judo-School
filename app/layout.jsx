@@ -1,7 +1,8 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+
 import LayoutBuilder from "@/components/layouts/layout-builder";
 import ScrollToTop from "@/components/shared/scroll-to-top";
 import FloatingActionButton from "@/components/shared/floating-action-button";
-import { config } from "@fortawesome/fontawesome-svg-core";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@/styles/vendor/swiper/swiper-bundle.min.css";
