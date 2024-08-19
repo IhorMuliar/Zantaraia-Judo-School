@@ -1,6 +1,6 @@
 export const TEAM_MEMBERS = [
   {
-    image: "/images/team/member1.png",
+    image: "/images/team/zantaraia.jpg",
     title: "Зантарая Георгій",
     description: "Засновник клубу",
     facebook: "https://www.facebook.com/",
