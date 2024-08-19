@@ -4,7 +4,7 @@ export const TEAM_MEMBERS = [
     title: "Зантарая Георгій",
     description: "Засновник клубу",
     facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/?hl=en",
+    instagram: "https://www.instagram.com/zantaraia_georgii",
   },
 
   {
@@ -12,23 +12,22 @@ export const TEAM_MEMBERS = [
     title: "Ласкута Анатолій",
     description: "Директор",
     facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/?hl=en",
+    instagram: "https://www.instagram.com/anatolii.laskuta",
   },
 
   {
     image: "/images/team/tolkach.jpg",
     title: "Толкач Денис",
     description: "Старший тренер",
-    facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/?hl=en",
+    facebook: "https://www.facebook.com/ippon93",
+    instagram: "https://www.instagram.com/d_tolkach",
   },
-
   {
-    image: "/images/team/member1.png",
+    image: "/images/team/starubinska.jpg",
     title: "Старубінська Ольга",
     description: "Тренер",
     facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/?hl=en",
+    instagram: "https://www.instagram.com/olga_starubinska",
   },
 
   {
@@ -36,6 +35,6 @@ export const TEAM_MEMBERS = [
     title: "Стукаленко Ольга",
     description: "Тренер",
     facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/?hl=en",
+    instagram: "https://www.instagram.com/alexandrovna.oll",
   },
 ];
