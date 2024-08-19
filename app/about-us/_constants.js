@@ -33,7 +33,7 @@ export const WORKOUTS_SLIDER_ITEMS = [
     changeStyle: "box-2",
   },
   {
-    image: '/images/gallery/photo4.jpg',
+    image: '/images/gallery/photo9.jpg',
     title: "Фізичний розвиток - заняття дзюдо для зміцнення м'язів",
     changeStyle: "box-3",
   }

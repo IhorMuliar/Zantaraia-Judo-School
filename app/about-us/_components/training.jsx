@@ -55,14 +55,14 @@ const Training = () => {
           subtitle={TRAINING_DETAILS.childrenSection.subtitle}
           description={TRAINING_DETAILS.childrenSection.description}
         />
-        <InfoMedia image="/images/gallery/photo1.jpg" />
+        <InfoMedia image="/images/gallery/photo9.jpg" />
         <InfoLight
           title={TRAINING_DETAILS.championsProgram.title}
           subtitle={TRAINING_DETAILS.championsProgram.subtitle}
           description={TRAINING_DETAILS.championsProgram.description}
         />
         <InfoMedia image="/images/gallery/photo2.jpg" />
-        <InfoMedia image="/images/gallery/photo3.jpg" />
+        <InfoMedia image="/images/gallery/photo1.jpg" />
         <InfoLight
           title={TRAINING_DETAILS.physicalDevelopment.title}
           subtitle={TRAINING_DETAILS.physicalDevelopment.subtitle}
