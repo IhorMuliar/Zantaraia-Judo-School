@@ -32,9 +32,27 @@ const HomeHeader = () => {
         mainMenu.classList.remove("show");
       }
     }
+
+    if (sidebarOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    const handleResize = () => {
+      if (window.innerWidth >= 991) {
+        setSidebarOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+      window.removeEventListener("resize", handleResize);
+    };
   }, [sidebarOpen]);
 
-  // Menu dropdown list
   const reducer = (previousState, updatedState) => ({
     ...previousState,
     ...updatedState,
@@ -100,9 +118,7 @@ const HomeHeader = () => {
               <span></span>
               <span></span>
             </button>
-            <div
-              className={`sidebar-overlay ${sidebarOpen ? "show" : ""}`}
-            ></div>
+            {sidebarOpen && <div className={`sidebar-overlay`}></div>}
             <nav
               id="navbarNavDropdown"
               className={`header-nav navbar-collapse collapse justify-content-around ${

@@ -1155,36 +1155,6 @@
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 999;
   transition: opacity 0.3s ease;
-  display: none;
+  display: block;
   opacity: 1;
-
-  @include respond('wide-desktop') {
-    &.show {
-      display: none;
-    }
-  }
-
-  @include respond('laptop') {
-    &.show {
-      display: none;
-    }
-  }
-
-  @include respond('tab-port') {
-    &.show {
-      display: block;
-    }
-  }
-
-  @include respond('phone-land') {
-    &.show {
-      display: block;
-    }
-  }
-
-  @include respond('phone') {
-    &.show {
-      display: block;
-    }
-  }
 }
