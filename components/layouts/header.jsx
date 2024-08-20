@@ -100,13 +100,13 @@ const Header = () => {
             <span></span>
             <span></span>
           </button>
-          {isSidebarOpen && <div className="sidebar-overlay"></div>}
+          {isSidebarOpen && <div className="sidebar-overlay" onClick={() => setIsSidebarOpen(false)}></div>}
           <nav
             id="sidebar"
             className="header-nav navbar-collapse justify-content-around"
           >
             <div className="logo-header logo-dark">
-              <Link href="/">
+              <Link href="/" onClick={() => setIsSidebarOpen(false)} >
                 <Image
                   src={logoImage}
                   quality={100}

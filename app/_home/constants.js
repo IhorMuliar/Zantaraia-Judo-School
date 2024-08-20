@@ -64,7 +64,7 @@ export const INFO_CARDS = [
   {
     icon: faUsers,
     title: "Наші тренери",
-    description: "Зустрічайте нашу команду досвідчених і професійних тренерів",
+    description: "Зустрічайте досвідчених і професійних тренерів",
     link: "/team",
   },
   {
@@ -77,7 +77,7 @@ export const INFO_CARDS = [
     icon: faCalendarDays,
     title: "Наш розклад",
     description:
-      "Ознайомтеся з нашим розкладом занять та плануйте свій час ефективно",
+      "Ознайомтеся з нашим розкладом занять",
     link: "/schedule",
   },
 ];
