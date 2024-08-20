@@ -91,10 +91,11 @@
       text-transform: uppercase;
       background-color: #f5f5f5;
       margin-bottom: 0;
-      padding: 25px 25px 25px 25px;
+      padding: 17px 25px;
       text-align: right;
       width: 95%;
       font-weight: 700;
+      font-size: 21px;
       position: absolute;
       bottom: -15px;
       right: 0;
@@ -124,7 +125,7 @@
         font-weight: 600;
       }
       @include respond('laptop') {
-        font-size: 25px;
+        font-size: 21px;
         width: 100%;
       }
       @include respond('phone-land') {
