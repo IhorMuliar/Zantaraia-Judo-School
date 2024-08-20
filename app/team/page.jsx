@@ -1,19 +1,13 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
 
-import TeamMember from './_components/team-member';
+import TeamMember from "./_components/team-member";
 import { TEAM_MEMBERS } from "./_constants";
 
 export const metadata = {
   title: "Команда",
   description:
     "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
-  keywords: [
-    "Команда дзюдо школи",
-    "Тренери дзюдо",
-    "Наставники клубу",
-    "Професіонали дзюдо",
-  ],
   openGraph: {
     url: "/team",
   },
@@ -26,7 +20,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
 const webPageJsonLd = {
@@ -35,7 +29,7 @@ const webPageJsonLd = {
   name: "Команда - Zantaraia Judo School",
   description:
     "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
-  url: "https://zantaraia-judo-school.pp.ua/team",
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/team`,
   inLanguage: "uk",
 };
 

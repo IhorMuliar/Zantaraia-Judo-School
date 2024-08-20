@@ -7,12 +7,6 @@ export const metadata = {
   title: "Галерея",
   description:
     "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
-  keywords: [
-    "Фотогалерея",
-    "Моменти тренувань",
-    "Змагання дзюдо",
-    "Життя клубу",
-  ],
   openGraph: {
     url: "/gallery",
   },
@@ -25,7 +19,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
 const webPageJsonLd = {
@@ -34,7 +28,7 @@ const webPageJsonLd = {
   name: "Галерея - Zantaraia Judo School",
   description:
     "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
-  url: "https://zantaraia-judo-school.pp.ua/gallery",
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/gallery`,
   inLanguage: "uk",
 };
 
