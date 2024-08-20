@@ -50,7 +50,7 @@ const Team = () => {
       <Breadcrumbs parentTitle="Головна" activePage="Команда" />
       <section className="content-inner">
         <div className="container">
-          <div className="row ">
+          <div className="row">
             {TEAM_MEMBERS.map((item) => (
               <div className="col-lg-4 col-sm-6 m-b30" key={item.title}>
                 <div className="dz-team style-1">
@@ -63,29 +63,33 @@ const Team = () => {
                       quality={100}
                     />
                     <ul className="team-social">
-                      <li>
-                        <Link
-                          target="_blank"
-                          href={item.facebook}
-                          rel="noreferrer"
-                          aria-label="Facebook"
-                        >
-                          <FontAwesomeIcon icon={faFacebookF} />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          target="_blank"
-                          href={item.instagram}
-                          rel="noreferrer"
-                          aria-label="Instagram"
-                        >
-                          <FontAwesomeIcon icon={faInstagram} />
-                        </Link>
-                      </li>
+                      {item.facebook && (
+                        <li>
+                          <Link
+                            target="_blank"
+                            href={item.facebook}
+                            rel="noreferrer"
+                            aria-label="Facebook"
+                          >
+                            <FontAwesomeIcon icon={faFacebookF} />
+                          </Link>
+                        </li>
+                      )}
+                      {item.instagram && (
+                        <li>
+                          <Link
+                            target="_blank"
+                            href={item.instagram}
+                            rel="noreferrer"
+                            aria-label="Instagram"
+                          >
+                            <FontAwesomeIcon icon={faInstagram} />
+                          </Link>
+                        </li>
+                      )}
                     </ul>
                   </div>
-                  <div className="dz-content ">
+                  <div className="dz-content">
                     <h4 className="dz-name">{item.title}</h4>
                     <span className="dz-position">{item.description}</span>
                   </div>

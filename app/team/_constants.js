@@ -3,7 +3,7 @@ export const TEAM_MEMBERS = [
     image: "/images/team/zantaraia.jpg",
     title: "Зантарая Георгій",
     description: "Засновник клубу",
-    facebook: "https://www.facebook.com/",
+    facebook: "https://www.facebook.com/zantaraia.kiev.ua",
     instagram: "https://www.instagram.com/zantaraia_georgii",
   },
 
@@ -11,7 +11,7 @@ export const TEAM_MEMBERS = [
     image: "/images/team/member1.png",
     title: "Ласкута Анатолій",
     description: "Директор",
-    facebook: "https://www.facebook.com/",
+    facebook: "",
     instagram: "https://www.instagram.com/anatolii.laskuta",
   },
 
@@ -26,7 +26,7 @@ export const TEAM_MEMBERS = [
     image: "/images/team/starubinska.jpg",
     title: "Старубінська Ольга",
     description: "Тренер",
-    facebook: "https://www.facebook.com/",
+    facebook: "",
     instagram: "https://www.instagram.com/olga_starubinska",
   },
 
@@ -34,7 +34,7 @@ export const TEAM_MEMBERS = [
     image: "/images/team/stukolenko.jpg",
     title: "Стукаленко Ольга",
     description: "Тренер",
-    facebook: "https://www.facebook.com/",
+    facebook: "",
     instagram: "https://www.instagram.com/alexandrovna.oll",
   },
 ];
