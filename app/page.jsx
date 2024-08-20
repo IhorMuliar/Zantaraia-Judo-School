@@ -17,12 +17,6 @@ export const metadata = {
   },
   description:
     "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
-  keywords: [
-    "Дзюдо школа",
-    "Тренування дзюдо",
-    "Фізичний розвиток",
-    "Підготовка до змагань",
-  ],
   alternates: {
     canonical: "/",
   },
@@ -41,11 +35,11 @@ const organizationJsonLd = {
     addressLocality: "Київ",
     addressRegion: "Київ",
     postalCode: "0200",
-    addressCountry: "Україна",
+    addressCountry: "UA",
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+38-096-979-5892",
+    telephone: "+380931517748",
     contactType: "Customer Service",
     areaServed: "UA",
     availableLanguage: ["Ukrainian"],
@@ -55,19 +49,43 @@ const organizationJsonLd = {
     "https://www.instagram.com/zantaraia_school",
     "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
   ],
-  // TODO: Update members
-  // member: [
-  //   {
-  //     "@type": "Person",
-  //     name: "Georgiy Zantaraia",
-  //     jobTitle: "Head Coach",
-  //     description:
-  //       "Experienced judo coach with a strong track record in training and competition.",
-  //     image:
-  //       "https://zantaraia-judo-school.pp.ua/images/coaches/georgiy-zantaraia.jpg",
-  //     url: "https://zantaraia-judo-school.pp.ua/about-us#coaches",
-  //   },
-  // ],
+  member: [
+    {
+      "@type": "Person",
+      name: "Георгій Зантарая",
+      jobTitle: "Засновник",
+      image:
+        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/zantaraia.jpg`,
+    },
+    {
+      "@type": "Person",
+      name: "Анатолій Ласкута",
+      jobTitle: "Директор",
+      image:
+        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/member1.png`,
+    },
+    {
+      "@type": "Person",
+      name: "Денис Толкач",
+      jobTitle: "Старший тренер",
+      image:
+        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/tolkach.jpg`,
+    },
+    {
+      "@type": "Person",
+      name: "Ольга Старубінська",
+      jobTitle: "Тренер",
+      image:
+        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/starubinska.jpg`,
+    },
+    {
+      "@type": "Person",
+      name: "Ольга Стукаленко",
+      jobTitle: "Тренер",
+      image:
+        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/stukolenko.jpg`,
+    },
+  ],
 };
 
 const breadcrumbsJsonLd = {
@@ -86,7 +104,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
 const webPageJsonLd = {
@@ -95,7 +113,7 @@ const webPageJsonLd = {
   name: "Головна - Zantaraia Judo School",
   description:
     "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
   inLanguage: "uk",
 };
 

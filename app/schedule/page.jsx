@@ -1,22 +1,16 @@
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import JsonLd from '@/components/shared/json-ld';
+import JsonLd from "@/components/shared/json-ld";
 import ScheduleTable from "./_components/schedule-table";
 
 export const metadata = {
   title: "Рокзлад",
   description:
     "Актуальний розклад тренувань у Zantaraia Judo School. Знайдіть зручний час для занять дзюдо для дітей та дорослих.",
-  keywords: [
-    "Розклад тренувань",
-    "Час занять дзюдо",
-    "Графік тренувань",
-    "Заняття для дітей та дорослих",
-  ],
   openGraph: {
     url: "/schedule",
   },
   alternates: {
-    canonical: '/schedule',
+    canonical: "/schedule",
   },
 };
 
@@ -24,7 +18,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
 const webPageJsonLd = {
@@ -33,7 +27,7 @@ const webPageJsonLd = {
   name: "Розклад - Zantaraia Judo School",
   description:
     "Актуальний розклад тренувань у Zantaraia Judo School. Знайдіть зручний час для занять дзюдо для дітей та дорослих.",
-  url: "https://zantaraia-judo-school.pp.ua/schedule",
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/schedule`,
   inLanguage: "uk",
 };
 
@@ -42,7 +36,7 @@ const Schedule = () => {
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs parentTitle="Головна" activePage="Розклад"/>
+      <Breadcrumbs parentTitle="Головна" activePage="Розклад" />
       <div className="content-inner-1">
         <div className="container">
           <div className="schedule-table table-responsive">

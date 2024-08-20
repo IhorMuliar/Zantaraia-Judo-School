@@ -7,12 +7,6 @@ export const metadata = {
   title: "Контакти",
   description:
     "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
-  keywords: [
-    "Контактні дані",
-    "Запис на тренування",
-    "Адреса дзюдо школи",
-    "Телефон",
-  ],
   openGraph: {
     url: "/contact-us",
   },
@@ -25,7 +19,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
 const webPageJsonLd = {
@@ -34,7 +28,7 @@ const webPageJsonLd = {
   name: "Контакти - Zantaraia Judo School",
   description:
     "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
-  url: "https://zantaraia-judo-school.pp.ua/contact-us",
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/contact-us`,
   inLanguage: "uk",
 };
 

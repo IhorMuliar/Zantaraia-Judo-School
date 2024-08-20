@@ -10,12 +10,6 @@ export const metadata = {
   title: "Про клуб",
   description:
     "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
-  keywords: [
-    "Інформація про клуб",
-    "Історія дзюдо школи",
-    "Тренерський склад",
-    "Досягнення клубу",
-  ],
   openGraph: {
     url: "/about-us",
   },
@@ -28,7 +22,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  url: "https://zantaraia-judo-school.pp.ua",
+  url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
 const webPageJsonLd = {
@@ -37,7 +31,7 @@ const webPageJsonLd = {
   name: "Про клуб - Zantaraia Judo School",
   description:
     "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
-  url: "https://zantaraia-judo-school.pp.ua/about-us",
+  url: `${process.env.NEXT_PUBLIC_SITE_URL}/about-us`,
   inLanguage: "uk",
 };
 
