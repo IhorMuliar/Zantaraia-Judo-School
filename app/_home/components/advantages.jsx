@@ -2,7 +2,8 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import { ADVANTAGES_STEPS, BIG_ARROW } from "../constants";
+import { ADVANTAGES_STEPS } from "../constants";
+import BigArrow from './big-arrow';
 
 const Advantages = () => {
   return (
@@ -29,7 +30,7 @@ const Advantages = () => {
             <div className="badge">
               <span>{item.num}</span>
             </div>
-            <BIG_ARROW />
+            <BigArrow />
           </div>
         </div>
       ))}

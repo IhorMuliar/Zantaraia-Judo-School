@@ -1,10 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
-
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
+
+import TeamMember from './_components/team-member';
 import { TEAM_MEMBERS } from "./_constants";
 
 export const metadata = {
@@ -35,7 +32,7 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Контакти - Zantaraia Judo School",
+  name: "Команда - Zantaraia Judo School",
   description:
     "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
   url: "https://zantaraia-judo-school.pp.ua/team",
@@ -51,50 +48,8 @@ const Team = () => {
       <section className="content-inner">
         <div className="container">
           <div className="row">
-            {TEAM_MEMBERS.map((item) => (
-              <div className="col-lg-4 col-sm-6 m-b30" key={item.title}>
-                <div className="dz-team style-1">
-                  <div className="dz-media">
-                    <Image
-                      src={item.image}
-                      width={285}
-                      height={475}
-                      alt="Coach"
-                      quality={100}
-                    />
-                    <ul className="team-social">
-                      {item.facebook && (
-                        <li>
-                          <Link
-                            target="_blank"
-                            href={item.facebook}
-                            rel="noreferrer"
-                            aria-label="Facebook"
-                          >
-                            <FontAwesomeIcon icon={faFacebookF} />
-                          </Link>
-                        </li>
-                      )}
-                      {item.instagram && (
-                        <li>
-                          <Link
-                            target="_blank"
-                            href={item.instagram}
-                            rel="noreferrer"
-                            aria-label="Instagram"
-                          >
-                            <FontAwesomeIcon icon={faInstagram} />
-                          </Link>
-                        </li>
-                      )}
-                    </ul>
-                  </div>
-                  <div className="dz-content">
-                    <h4 className="dz-name">{item.title}</h4>
-                    <span className="dz-position">{item.description}</span>
-                  </div>
-                </div>
-              </div>
+            {TEAM_MEMBERS.map((member) => (
+              <TeamMember key={member.title} member={member} />
             ))}
           </div>
         </div>

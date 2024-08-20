@@ -4,6 +4,7 @@ import AdaptiveSport from "./_components/adaptive-sport";
 import Goals from "./_components/goals";
 import Training from "./_components/training";
 import WorkoutSlider from "./_components/workout-slider";
+import ShapeSvg from "./_components/shape-svg";
 
 export const metadata = {
   title: "Про клуб",
@@ -74,26 +75,20 @@ const AboutUs = () => {
             <WorkoutSlider />
           </div>
         </div>
-        <svg
+        <ShapeSvg
           className="shape-up"
           width="635"
           height="107"
-          viewBox="0 0 635 107"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M577 0L-16 107L635 45L577 0Z" fill="var(--primary-dark)" />
-        </svg>
-        <svg
+          path="M577 0L-16 107L635 45L577 0Z"
+          fill="var(--primary-dark)"
+        />
+        <ShapeSvg
           className="shape-down"
           width="673"
           height="109"
-          viewBox="0 0 673 109"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)" />
-        </svg>
+          path="M682 0L0 56L682 109V0Z"
+          fill="var(--primary)"
+        />
       </section>
     </>
   );

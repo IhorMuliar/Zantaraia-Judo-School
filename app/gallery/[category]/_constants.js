@@ -1,3 +1,9 @@
+export const CATEGORY_TRANSLATIONS = {
+  competitions: "Змагання",
+  travels: "Подорожі",
+  meetings: "Спортивні збори",
+};
+
 export const IMAGES = [
   { category: "competitions", image: "/images/gallery/photo12.jpg" },
   { category: "competitions", image: "/images/gallery/photo32.jpg" },

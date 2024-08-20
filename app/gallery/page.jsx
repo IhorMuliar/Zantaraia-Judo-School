@@ -1,9 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import { GALLERY_ITEMS } from './_constants';
+import GalleryItem from "./_components/gallery-item";
+import { GALLERY_ITEMS } from "./_constants";
 
 export const metadata = {
   title: "Галерея",
@@ -45,34 +43,12 @@ const Gallery = () => {
     <>
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <Breadcrumbs parentTitle="Головна" activePage="Галерея"/>
+      <Breadcrumbs parentTitle="Головна" activePage="Галерея" />
       <section className="content-inner">
         <div className="container">
           <div className="row ">
             {GALLERY_ITEMS.map((item, index) => (
-              <div className="col-lg-4 col-sm-6 m-b30" key={index}>
-                <div className="dz-box style-2">
-                  <div className="dz-media">
-                    <Link href={`/gallery/${item.category}`}>
-                      <Image
-                        src={item.image}
-                        width={340}
-                        height={250}
-                        quality={100}
-                        alt={item.title}
-                        title={item.title}
-                      />
-                    </Link>
-                  </div>
-                  <div className="dz-info">
-                    <h4 className="title">
-                      <Link href={`/gallery/${item.category}`}>
-                        {item.title}
-                      </Link>
-                    </h4>
-                  </div>
-                </div>
-              </div>
+              <GalleryItem item={item} key={index} />
             ))}
           </div>
         </div>

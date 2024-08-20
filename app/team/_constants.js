@@ -6,7 +6,6 @@ export const TEAM_MEMBERS = [
     facebook: "https://www.facebook.com/zantaraia.kiev.ua",
     instagram: "https://www.instagram.com/zantaraia_georgii",
   },
-
   {
     image: "/images/team/member1.png",
     title: "Ласкута Анатолій",
@@ -14,7 +13,6 @@ export const TEAM_MEMBERS = [
     facebook: "",
     instagram: "https://www.instagram.com/anatolii.laskuta",
   },
-
   {
     image: "/images/team/tolkach.jpg",
     title: "Толкач Денис",
@@ -29,7 +27,6 @@ export const TEAM_MEMBERS = [
     facebook: "",
     instagram: "https://www.instagram.com/olga_starubinska",
   },
-
   {
     image: "/images/team/stukolenko.jpg",
     title: "Стукаленко Ольга",
