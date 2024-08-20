@@ -26,7 +26,7 @@ const Card = ({ icon, title, description, link }) => (
 );
 
 const InfoCards = () => (
-  <div className="row align-items-center justify-content-center">
+  <div className="row align-items-stretch justify-content-center">
     {INFO_CARDS.map((card, index) => (
       <Card
         key={index}
