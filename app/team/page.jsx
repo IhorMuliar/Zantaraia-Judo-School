@@ -10,6 +10,14 @@ export const metadata = {
     "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
   openGraph: {
     url: "/team",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
+        alt: "Zantaraia Judo School",
+      },
+    ],
+    type: "website",
+    locale: "uk",
   },
   alternates: {
     canonical: "/team",

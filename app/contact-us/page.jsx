@@ -9,6 +9,14 @@ export const metadata = {
     "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
   openGraph: {
     url: "/contact-us",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
+        alt: "Zantaraia Judo School",
+      },
+    ],
+    type: "website",
+    locale: "uk",
   },
   alternates: {
     canonical: "/contact-us",

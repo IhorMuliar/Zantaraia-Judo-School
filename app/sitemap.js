@@ -28,6 +28,21 @@ export default function sitemap() {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/gallery/meetings`,
+      lastModified: new Date(),
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/gallery/travels`,
+      lastModified: new Date(),
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/gallery/competitions`,
+      lastModified: new Date(),
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/schedule`,
       lastModified: new Date(),
       priority: 0.5,

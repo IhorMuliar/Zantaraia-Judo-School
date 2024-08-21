@@ -8,6 +8,14 @@ export const metadata = {
     "Актуальний розклад тренувань у Zantaraia Judo School. Знайдіть зручний час для занять дзюдо для дітей та дорослих.",
   openGraph: {
     url: "/schedule",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
+        alt: "Zantaraia Judo School",
+      },
+    ],
+    type: "website",
+    locale: "uk",
   },
   alternates: {
     canonical: "/schedule",

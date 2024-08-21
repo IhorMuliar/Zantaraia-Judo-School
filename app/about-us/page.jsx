@@ -12,6 +12,14 @@ export const metadata = {
     "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
   openGraph: {
     url: "/about-us",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
+        alt: "Zantaraia Judo School",
+      },
+    ],
+    type: "website",
+    locale: "uk",
   },
   alternates: {
     canonical: "/about-us",

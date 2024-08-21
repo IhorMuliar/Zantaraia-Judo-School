@@ -9,6 +9,14 @@ export const metadata = {
     "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
   openGraph: {
     url: "/gallery",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/opengraph-image.jpg`,
+        alt: "Zantaraia Judo School",
+      },
+    ],
+    type: "website",
+    locale: "uk",
   },
   alternates: {
     canonical: "/gallery",
