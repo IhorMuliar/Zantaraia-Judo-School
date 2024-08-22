@@ -49,7 +49,6 @@ const Header = () => {
       sidebar.classList.toggle("show", isSidebarOpen);
     }
     document.body.classList.toggle("overflow-hidden", isSidebarOpen);
-    console.log(isSidebarOpen)
   }, [isSidebarOpen]);
 
   useEffect(() => {
