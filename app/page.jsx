@@ -13,10 +13,10 @@ import zantaraiaImage from "@/public/images/zantaraia.png";
 
 export const metadata = {
   title: {
-    absolute: "Головна - Zantaraia Judo School",
+    absolute: "Школа дзюдо - Zantaraia Judo School",
   },
   description:
-    "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
+    "Школа дзюдо Георгія Зантарая - ознайомтеся з нашими тренуваннями, досвідченими тренерами та спортивними досягненнями.  Дзюдо для дітей та підлітків: фізичний розвиток, підготовка до змагань, дружня атмосфера!",
   alternates: {
     canonical: "/",
   },
@@ -54,36 +54,31 @@ const organizationJsonLd = {
       "@type": "Person",
       name: "Георгій Зантарая",
       jobTitle: "Засновник",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/zantaraia.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/zantaraia.jpg`,
     },
     {
       "@type": "Person",
       name: "Анатолій Ласкута",
       jobTitle: "Директор",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/member1.png`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/member1.png`,
     },
     {
       "@type": "Person",
       name: "Денис Толкач",
       jobTitle: "Старший тренер",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/tolkach.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/tolkach.jpg`,
     },
     {
       "@type": "Person",
       name: "Ольга Старубінська",
       jobTitle: "Тренер",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/starubinska.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/starubinska.jpg`,
     },
     {
       "@type": "Person",
       name: "Ольга Стукаленко",
       jobTitle: "Тренер",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/stukolenko.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/stukolenko.jpg`,
     },
   ],
 };

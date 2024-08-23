@@ -7,9 +7,9 @@ import WorkoutSlider from "./_components/workout-slider";
 import ShapeSvg from "./_components/shape-svg";
 
 export const metadata = {
-  title: "Про клуб",
+  title: "Про клуб дзюдо",
   description:
-    "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
+    "Дізнайтеся про клуб дзюдо Георгія Зантарая: наші цілі, місію, адаптивний спорт та основні принципи роботи. Більше про наш підхід і те, що робить наш клуб унікальним.",
   openGraph: {
     url: "/about-us",
     images: [

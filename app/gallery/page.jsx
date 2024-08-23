@@ -4,9 +4,9 @@ import GalleryItem from "./_components/gallery-item";
 import { GALLERY_ITEMS } from "./_constants";
 
 export const metadata = {
-  title: "Галерея",
+  title: "Фото школи дзюдо",
   description:
-    "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
+    "Перегляньте фото школи дзюдо Георгія Зантарая: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
   openGraph: {
     url: "/gallery",
     images: [

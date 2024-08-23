@@ -5,9 +5,9 @@ import TeamMember from "./_components/team-member";
 import { TEAM_MEMBERS } from "./_constants";
 
 export const metadata = {
-  title: "Команда",
+  title: "Команда школи дзюдо",
   description:
-    "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
+    "Познайомтеся з професійною командою тренерів клубу дзюдо Георгія Зантарая. Досвідчені наставники допоможуть вам досягти успіху!",
   openGraph: {
     url: "/team",
     images: [
