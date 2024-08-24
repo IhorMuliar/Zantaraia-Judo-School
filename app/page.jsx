@@ -119,7 +119,6 @@ const Home = () => {
       <JsonLd schema={breadcrumbsJsonLd} />
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <h1 className="visually-hidden">Zantaraia Judo School</h1>
       <div className="main-bnr-two">
         <div className="banner-inner">
           <div className="container">
@@ -141,7 +140,6 @@ const Home = () => {
         </div>
       </div>
       <section className="clearfix section-wrapper1">
-        <h2 className="visually-hidden">Коротка інформація</h2>
         <div className="container">
           <InfoCards />
         </div>
@@ -183,6 +181,11 @@ const Home = () => {
         }}
       >
         <div className="container">
+          <div className="section-head style-1 text-center">
+            <h2 className="title wow fadeInUp">
+              Наші <span className="text-primary">переваги</span>
+            </h2>
+          </div>
           <Advantages />
         </div>
       </section>
