@@ -67,6 +67,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="content-inner-3 clearfix p-b60">
+        <h2 className="visually-hidden">Особливості наших тренувань</h2>
         <div className="fitness-classes">
           <Training />
         </div>

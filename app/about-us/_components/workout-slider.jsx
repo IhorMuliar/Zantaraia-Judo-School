@@ -57,9 +57,9 @@ const WorkoutSlider = () => {
                 </Link>
               </div>
               <div className="dz-info">
-                <h3 className="title">
+                <p className="title">
                   <Link href={"/gallery"}>{item.title}</Link>
-                </h3>
+                </p>
               </div>
             </div>
           </SwiperSlide>

@@ -73,7 +73,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-md-4 wow fadeInUp">
+            <address className="col-xl-3 col-md-4 wow fadeInUp">
               <div className="widget widget_locations">
                 <p className="footer-title text-white">Розташування</p>
                 <div className="clearfix">
@@ -81,7 +81,7 @@ const Footer = () => {
                   <p>вул. Василя Липківського, 36, Київ</p>
                 </div>
               </div>
-            </div>
+            </address>
             <div className="col-xl-3 col-md-4 wow fadeInUp">
               <div className="widget widget_working">
                 <p className="footer-title text-white">Робочі години</p>
