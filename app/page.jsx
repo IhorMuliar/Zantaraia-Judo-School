@@ -130,8 +130,8 @@ const Home = () => {
                     quality={100}
                     priority={true}
                     className="main-img"
-                    alt="Main banner"
-                    title="Banner"
+                    alt="Головний банер школи дзюдо Георгія Зантарая"
+                    title="Головний банер"
                   />
                 </div>
               </div>
@@ -162,9 +162,9 @@ const Home = () => {
                   <Image
                     src={zantaraiaImage}
                     data-wow-delay="0.4s"
-                    alt="Zantaraia"
+                    alt="Георгій Зантарая"
                     className="wow fadeInUp"
-                    title="Zantaraia photo"
+                    title="Георгій Зантарая"
                   />
                 </div>
               </div>
@@ -176,8 +176,8 @@ const Home = () => {
         className="content-inner section-wrapper-1"
         style={{
           backgroundImage: "url(/images/background/bg7.png)",
-          backgroundSize: " cover",
-          backgroundRepeat: " no-repeat",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="container">

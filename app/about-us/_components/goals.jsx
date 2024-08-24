@@ -80,8 +80,8 @@ const Goals = () => {
             <Image
               src={trainersImage}
               quality={100}
-              alt="Goal 1"
-              title="Our experts"
+              alt="Тренери школи Георгія Зантарая"
+              title="Тренери школи Георгія Зантарая"
             />
             <div className="info-box">
               <span>
@@ -89,7 +89,7 @@ const Goals = () => {
                   icon={faPersonRunning}
                   className="text-primary"
                 />
-                Професійні тренера
+                Професійні тренери
               </span>
             </div>
           </div>
@@ -97,8 +97,8 @@ const Goals = () => {
             <Image
               src={teamImage}
               quality={100}
-              alt="Goal 2"
-              title="Friendly team"
+              alt="Діти в залі школи Георгія Зантарая"
+              title="Діти в залі школи Георгія Зантарая"
             />
             <div className="info-box">
               <span>

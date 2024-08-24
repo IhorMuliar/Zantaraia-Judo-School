@@ -41,19 +41,22 @@ export const INFO_CARDS = [
   {
     icon: faSchool,
     title: "Наша школа",
-    description: "Дізнайтеся більше про школу дзюдо Георгія Зантарая, наші цінності та підхід до навчання дзюдо",
+    description:
+      "Дізнайтеся більше про школу дзюдо Георгія Зантарая, наші цінності та підхід до навчання дзюдо",
     link: "/about-us",
   },
   {
     icon: faUsers,
     title: "Наші тренери",
-    description: "Познайомтесь з нашими досвідченими тренерами, які допоможуть вам досягти успіху у дзюдо",
+    description:
+      "Познайомтесь з нашими досвідченими тренерами, які допоможуть вам досягти успіху у дзюдо",
     link: "/team",
   },
   {
     icon: faImages,
     title: "Моменти з нами",
-    description: "Перегляньте яскраві моменти, тренування та подій у школі дзюдо Георгія Зантарая",
+    description:
+      "Перегляньте яскраві моменти, тренування та подій у школі дзюдо Георгія Зантарая",
     link: "/gallery",
   },
   {
@@ -66,12 +69,30 @@ export const INFO_CARDS = [
 ];
 
 export const PORTFOLIO_DATA = [
-  { image: "/images/gallery/photo1.jpg" },
-  { image: "/images/gallery/photo4.jpg" },
-  { image: "/images/gallery/photo3.jpg" },
-  { image: "/images/gallery/photo23.jpg" },
-  { image: "/images/gallery/photo9.jpg" },
-  { image: "/images/gallery/photo22.jpg" },
+  {
+    image: "/images/gallery/photo1.jpg",
+    alt: "Зал Георгія Зантарая з дітьми",
+  },
+  {
+    image: "/images/gallery/photo4.jpg",
+    alt: "Зал в Швейцарії з дітьми",
+  },
+  {
+    image: "/images/gallery/photo3.jpg",
+    alt: "Діти на відпочунку у Швейцарії",
+  },
+  {
+    image: "/images/gallery/photo23.jpg",
+    alt: "Спортивні збори в Швейцарії з дітьми",
+  },
+  {
+    image: "/images/gallery/photo9.jpg",
+    alt: "Діти на спортивних зборах у Карпатах",
+  },
+  {
+    image: "/images/gallery/photo22.jpg",
+    alt: "Діти на відпочунку в Албанії",
+  },
 ];
 
 export const SERVICES = [

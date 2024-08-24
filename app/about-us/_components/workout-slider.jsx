@@ -51,8 +51,8 @@ const WorkoutSlider = () => {
                     width={340}
                     height={250}
                     quality={100}
-                    alt="Workout"
-                    title="Our workout"
+                    alt={item.title}
+                    title={item.title}
                   />
                 </Link>
               </div>

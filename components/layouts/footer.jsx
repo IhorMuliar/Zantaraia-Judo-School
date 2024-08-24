@@ -27,14 +27,15 @@ const Footer = () => {
                       className="select_logo_white"
                       src={logoImage}
                       quality={100}
-                      alt="Logo"
-                      title="Zantaraia School Logo"
+                      alt="Лого дзюдо школи Георгія Зантарая"
+                      title="Лого дзюдо школи Георгія Зантарая"
                     />
                   </Link>
                 </div>
                 <p className="m-b30">
-                  Дзюдо – мистецтво гармонії тіла і духу. Вчіться з нами
-                  досягати досконалості.
+                  Школа Георгія Зантарая - це навчальний заклад, де діти
+                  отримують можливість навчитися основам дзюдо, розвинути
+                  фізичну форму та дисципліну.
                 </p>
                 <p className="m-b15 fw-bold text-white">Ми в соцмережах</p>
                 <div className="dz-social-icon style-1 dark">
@@ -127,15 +128,13 @@ const Footer = () => {
         className="svg-shape-1 rotate-360"
         src={hexagonImage}
         quality={100}
-        alt="Hexagon Shape 1"
-        title="Hexagon Shape 1"
+        alt=""
       />
       <Image
         className="svg-shape-2 rotate-360"
         src={hexagonImage}
         quality={100}
-        alt="Hexagon Shape 2"
-        title="Hexagon Shape 2"
+        alt=""
       />
     </footer>
   );

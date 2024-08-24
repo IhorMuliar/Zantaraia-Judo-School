@@ -34,8 +34,8 @@ const Portfolio = () => {
                   width={325}
                   height={290}
                   quality={100}
-                  alt="Portfolio"
-                  title="Portfolio photo"
+                  alt={item.alt}
+                  title={item.alt}
                 />
               </div>
             </div>

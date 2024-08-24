@@ -84,8 +84,8 @@ const Header = () => {
               <Image
                 src={logoImage}
                 quality={100}
-                alt="Logo"
-                title="Zantaraia School Logo"
+                alt="Лого дзюдо школи Георгія Зантарая"
+                title="Лого дзюдо школи Георгія Зантарая"
               />
             </Link>
           </div>
@@ -114,8 +114,8 @@ const Header = () => {
                 <Image
                   src={logoImage}
                   quality={100}
-                  alt="Logo"
-                  title="Zantaraia School Logo"
+                  alt="Лого дзюдо школи Георгія Зантарая"
+                  title="Лого дзюдо школи Георгія Зантарая"
                 />
               </Link>
             </div>
