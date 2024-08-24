@@ -1,11 +1,10 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const FloatingActionButton = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const floatingButtonRef = useRef(null);
 
   const triggerJellyAnimation = useCallback(() => {
@@ -21,7 +20,6 @@ const FloatingActionButton = () => {
   }, []);
 
   const handleClick = useCallback(() => {
-    setIsExpanded((previous) => !previous);
     floatingButtonRef.current?.classList.toggle("expanded");
   }, []);
 
@@ -43,7 +41,6 @@ const FloatingActionButton = () => {
       ref={floatingButtonRef}
       className="floating-button"
       aria-label="Show phone number"
-      aria-expanded={isExpanded}
     >
       <FontAwesomeIcon icon={faPhone} />
       <a href="tel:+380931517748">+38 (093) 151 77 48</a>

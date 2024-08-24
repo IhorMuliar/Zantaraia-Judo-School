@@ -4,9 +4,9 @@ import GalleryItem from "./_components/gallery-item";
 import { GALLERY_ITEMS } from "./_constants";
 
 export const metadata = {
-  title: "Галерея",
+  title: "Фото школи дзюдо",
   description:
-    "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
+    "Перегляньте фото школи дзюдо Георгія Зантарая: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
   openGraph: {
     url: "/gallery",
     images: [
@@ -27,6 +27,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
+  alternateName : "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 

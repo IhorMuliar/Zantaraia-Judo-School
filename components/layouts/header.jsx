@@ -84,8 +84,8 @@ const Header = () => {
               <Image
                 src={logoImage}
                 quality={100}
-                alt="Logo"
-                title="Zantaraia School Logo"
+                alt="Лого дзюдо школи Георгія Зантарая"
+                title="Лого дзюдо школи Георгія Зантарая"
               />
             </Link>
           </div>
@@ -99,18 +99,23 @@ const Header = () => {
             <span></span>
             <span></span>
           </button>
-          {isSidebarOpen && <div className="sidebar-overlay" onClick={() => setIsSidebarOpen(false)}></div>}
+          {isSidebarOpen && (
+            <div
+              className="sidebar-overlay"
+              onClick={() => setIsSidebarOpen(false)}
+            ></div>
+          )}
           <nav
             id="sidebar"
             className="header-nav navbar-collapse justify-content-around"
           >
             <div className="logo-header logo-dark">
-              <Link href="/" onClick={() => setIsSidebarOpen(false)} >
+              <Link href="/" onClick={() => setIsSidebarOpen(false)}>
                 <Image
                   src={logoImage}
                   quality={100}
-                  alt="Logo"
-                  title="Zantaraia School Logo"
+                  alt="Лого дзюдо школи Георгія Зантарая"
+                  title="Лого дзюдо школи Георгія Зантарая"
                 />
               </Link>
             </div>

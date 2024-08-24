@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { TRAINING_DETAILS } from "../_constants";
 
-const InfoMedia = ({ image }) => {
+const InfoMedia = ({ image, alt }) => {
   return (
     <div className="col-xl-3 col-md-6">
       <div className="dz-media">
@@ -11,8 +11,8 @@ const InfoMedia = ({ image }) => {
           width={360}
           height={100}
           quality={100}
-          alt="Training"
-          title="Training photo"
+          alt={alt}
+          title={alt}
         />
       </div>
     </div>
@@ -55,20 +55,32 @@ const Training = () => {
           subtitle={TRAINING_DETAILS.childrenSection.subtitle}
           description={TRAINING_DETAILS.childrenSection.description}
         />
-        <InfoMedia image="/images/gallery/photo9.jpg" />
+        <InfoMedia
+          image="/images/gallery/photo9.jpg"
+          alt="Діти на спортивних зборах у Карпатах"
+        />
         <InfoLight
           title={TRAINING_DETAILS.championsProgram.title}
           subtitle={TRAINING_DETAILS.championsProgram.subtitle}
           description={TRAINING_DETAILS.championsProgram.description}
         />
-        <InfoMedia image="/images/gallery/photo2.jpg" />
-        <InfoMedia image="/images/gallery/photo1.jpg" />
+        <InfoMedia
+          image="/images/gallery/photo2.jpg"
+          alt="Новорічний зал Георгія Зантарая з дітьми"
+        />
+        <InfoMedia
+          image="/images/gallery/photo1.jpg"
+          alt="Зал Георгія Зантарая з дітьми"
+        />
         <InfoLight
           title={TRAINING_DETAILS.physicalDevelopment.title}
           subtitle={TRAINING_DETAILS.physicalDevelopment.subtitle}
           description={TRAINING_DETAILS.physicalDevelopment.description}
         />
-        <InfoMedia image="/images/gallery/photo4.jpg" />
+        <InfoMedia
+          image="/images/gallery/photo4.jpg"
+          alt="Зал в Швейцарії з дітьми"
+        />
         <InfoDark
           title={TRAINING_DETAILS.friendlyAtmosphere.title}
           subtitle={TRAINING_DETAILS.friendlyAtmosphere.subtitle}

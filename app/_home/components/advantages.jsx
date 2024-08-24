@@ -3,16 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import { ADVANTAGES_STEPS } from "../constants";
-import BigArrow from './big-arrow';
+import BigArrow from "./big-arrow";
 
 const Advantages = () => {
   return (
-    <div className="row align-items-center">
+    <ol className="row align-items-center m-0 p-0">
       {ADVANTAGES_STEPS.map((item) => (
-        <div className="col-xl-4 col-md-6 mb-4 wow fadeInLeft" key={item.title}>
-          <div
-            className="icon-bx-wraper style-5"
-          >
+        <li className="col-xl-4 col-md-6 mb-4 wow fadeInLeft" key={item.title}>
+          <div className="icon-bx-wraper style-5">
             <div className="icon-bx m-b20">
               <div className="icon-cell text-primary">
                 <FontAwesomeIcon icon={item.icon} />
@@ -32,9 +30,9 @@ const Advantages = () => {
             </div>
             <BigArrow />
           </div>
-        </div>
+        </li>
       ))}
-    </div>
+    </ol>
   );
 };
 

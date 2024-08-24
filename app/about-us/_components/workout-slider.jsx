@@ -51,15 +51,15 @@ const WorkoutSlider = () => {
                     width={340}
                     height={250}
                     quality={100}
-                    alt="Workout"
-                    title="Our workout"
+                    alt={item.title}
+                    title={item.title}
                   />
                 </Link>
               </div>
               <div className="dz-info">
-                <h3 className="title">
+                <p className="title">
                   <Link href={"/gallery"}>{item.title}</Link>
-                </h3>
+                </p>
               </div>
             </div>
           </SwiperSlide>

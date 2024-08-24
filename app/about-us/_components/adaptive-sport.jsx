@@ -14,16 +14,16 @@ const AdaptiveSport = () => {
             <Image
               src={emotionsImage}
               quality={100}
-              alt="Emotions"
-              title="Emotions"
+              alt="Адаптивний спорт під керівництвом тренера в школі дзюдо Георгія Зантарая"
+              title="Адаптивний спорт під керівництвом тренера в школі дзюдо Георгія Зантарая"
             />
           </div>
           <div className="image-box">
             <Image
               src={exercisesImage}
               quality={100}
-              alt="Adaptive exercises"
-              title="Adaptive exercises"
+              alt="Командне заняття з адаптивного спорту в школі дзюдо Георгія Зантарая, де діти працюють разом для покращення своїх навичок"
+              title="Командне заняття з адаптивного спорту в школі дзюдо Георгія Зантарая, де діти працюють разом для покращення своїх навичок"
             />
           </div>
         </div>

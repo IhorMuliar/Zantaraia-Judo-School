@@ -13,10 +13,10 @@ import zantaraiaImage from "@/public/images/zantaraia.png";
 
 export const metadata = {
   title: {
-    absolute: "Головна - Zantaraia Judo School",
+    absolute: "Школа дзюдо - Zantaraia Judo School",
   },
   description:
-    "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
+    "Школа дзюдо Георгія Зантарая - ознайомтеся з нашими тренуваннями, досвідченими тренерами та спортивними досягненнями.  Дзюдо для дітей та підлітків: фізичний розвиток, підготовка до змагань, дружня атмосфера!",
   alternates: {
     canonical: "/",
   },
@@ -54,36 +54,31 @@ const organizationJsonLd = {
       "@type": "Person",
       name: "Георгій Зантарая",
       jobTitle: "Засновник",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/zantaraia.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/zantaraia.jpg`,
     },
     {
       "@type": "Person",
       name: "Анатолій Ласкута",
       jobTitle: "Директор",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/member1.png`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/member1.png`,
     },
     {
       "@type": "Person",
       name: "Денис Толкач",
       jobTitle: "Старший тренер",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/tolkach.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/tolkach.jpg`,
     },
     {
       "@type": "Person",
       name: "Ольга Старубінська",
       jobTitle: "Тренер",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/starubinska.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/starubinska.jpg`,
     },
     {
       "@type": "Person",
       name: "Ольга Стукаленко",
       jobTitle: "Тренер",
-      image:
-        `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/stukolenko.jpg`,
+      image: `${process.env.NEXT_PUBLIC_SITE_URL}/images/team/stukolenko.jpg`,
     },
   ],
 };
@@ -104,6 +99,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
+  alternateName : "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
@@ -124,7 +120,6 @@ const Home = () => {
       <JsonLd schema={breadcrumbsJsonLd} />
       <JsonLd schema={webSiteJsonLd} />
       <JsonLd schema={webPageJsonLd} />
-      <h1 className="visually-hidden">Zantaraia Judo School</h1>
       <div className="main-bnr-two">
         <div className="banner-inner">
           <div className="container">
@@ -136,8 +131,8 @@ const Home = () => {
                     quality={100}
                     priority={true}
                     className="main-img"
-                    alt="Main banner"
-                    title="Banner"
+                    alt="Головний банер школи дзюдо Георгія Зантарая"
+                    title="Головний банер"
                   />
                 </div>
               </div>
@@ -146,7 +141,6 @@ const Home = () => {
         </div>
       </div>
       <section className="clearfix section-wrapper1">
-        <h2 className="visually-hidden">Коротка інформація</h2>
         <div className="container">
           <InfoCards />
         </div>
@@ -169,9 +163,9 @@ const Home = () => {
                   <Image
                     src={zantaraiaImage}
                     data-wow-delay="0.4s"
-                    alt="Zantaraia"
+                    alt="Георгій Зантарая"
                     className="wow fadeInUp"
-                    title="Zantaraia photo"
+                    title="Георгій Зантарая"
                   />
                 </div>
               </div>
@@ -183,11 +177,16 @@ const Home = () => {
         className="content-inner section-wrapper-1"
         style={{
           backgroundImage: "url(/images/background/bg7.png)",
-          backgroundSize: " cover",
-          backgroundRepeat: " no-repeat",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="container">
+          <div className="section-head style-1 text-center">
+            <h2 className="title wow fadeInUp">
+              Наші <span className="text-primary">переваги</span>
+            </h2>
+          </div>
           <Advantages />
         </div>
       </section>

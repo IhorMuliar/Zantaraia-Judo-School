@@ -11,7 +11,8 @@ const TeamMember = ({ member }) => (
           src={member.image}
           width={285}
           height={475}
-          alt="Coach"
+          alt={member.title}
+          title={member.title}
           quality={100}
         />
         <ul className="team-social">

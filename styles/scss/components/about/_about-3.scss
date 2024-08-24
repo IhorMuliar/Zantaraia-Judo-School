@@ -130,14 +130,11 @@
   padding: 15px 25px;
 
   li {
-    font-size: 20px;
     width: 50%;
     float: left;
+    font-size: 16px;
     font-weight: 400;
     color: #232323;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
     padding: 5px 0;
     display: flex;
     align-items: center;
@@ -149,10 +146,6 @@
     @include respond('phone') {
       width: 100%;
     }
-
-    /* Secondary-2 */
-
-    color: #232323;
 
     svg {
       color: var(--primary);

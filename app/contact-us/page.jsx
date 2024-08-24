@@ -6,7 +6,7 @@ import MapEmbed from './_components/map-embed';
 export const metadata = {
   title: "Контакти",
   description:
-    "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
+    "Зв’яжіться з нами! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації про школу дзюдо Георгія Зантарая.",
   openGraph: {
     url: "/contact-us",
     images: [
@@ -27,6 +27,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
+  alternateName : "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 

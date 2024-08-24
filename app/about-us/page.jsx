@@ -7,9 +7,9 @@ import WorkoutSlider from "./_components/workout-slider";
 import ShapeSvg from "./_components/shape-svg";
 
 export const metadata = {
-  title: "Про клуб",
+  title: "Про клуб дзюдо",
   description:
-    "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
+    "Дізнайтеся про клуб дзюдо Георгія Зантарая: наші цілі, місію, адаптивний спорт та основні принципи роботи. Більше про наш підхід і те, що робить наш клуб унікальним.",
   openGraph: {
     url: "/about-us",
     images: [
@@ -30,6 +30,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
+  alternateName : "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
@@ -67,6 +68,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="content-inner-3 clearfix p-b60">
+        <h2 className="visually-hidden">Особливості наших тренувань</h2>
         <div className="fitness-classes">
           <Training />
         </div>

@@ -3,9 +3,9 @@ import JsonLd from "@/components/shared/json-ld";
 import ScheduleTable from "./_components/schedule-table";
 
 export const metadata = {
-  title: "Рокзлад",
+  title: "Розклад тренувань дзюдо",
   description:
-    "Актуальний розклад тренувань у Zantaraia Judo School. Знайдіть зручний час для занять дзюдо для дітей та дорослих.",
+    "Перегляньте гнучкий розклад тренувань дзюдо в школі Георгія Зантарая та оберіть зручний час для занять.",
   openGraph: {
     url: "/schedule",
     images: [
@@ -26,6 +26,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
+  alternateName : "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
