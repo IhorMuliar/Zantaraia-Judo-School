@@ -14,6 +14,7 @@ const AdaptiveSport = () => {
             <Image
               src={emotionsImage}
               quality={100}
+              sizes="(min-width: 1180px) 349px, (min-width: 1000px) 240px, (min-width: 780px) 480px, (min-width: 580px) 300px, calc(100vw - 90px)"
               alt="Адаптивний спорт під керівництвом тренера в школі дзюдо Георгія Зантарая"
               title="Адаптивний спорт під керівництвом тренера в школі дзюдо Георгія Зантарая"
             />
@@ -22,6 +23,7 @@ const AdaptiveSport = () => {
             <Image
               src={exercisesImage}
               quality={100}
+              sizes="(min-width: 1180px) 429px, (min-width: 1000px) 320px, (min-width: 780px) 560px, (min-width: 580px) 380px, calc(100vw - 90px)"
               alt="Командне заняття з адаптивного спорту в школі дзюдо Георгія Зантарая, де діти працюють разом для покращення своїх навичок"
               title="Командне заняття з адаптивного спорту в школі дзюдо Георгія Зантарая, де діти працюють разом для покращення своїх навичок"
             />

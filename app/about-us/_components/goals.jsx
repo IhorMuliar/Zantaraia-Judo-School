@@ -80,6 +80,7 @@ const Goals = () => {
             <Image
               src={trainersImage}
               quality={100}
+              sizes="(min-width: 1180px) 429px, (min-width: 1000px) 320px, (min-width: 780px) 560px, (min-width: 580px) 380px, calc(100vw - 90px)"
               alt="Тренери школи Георгія Зантарая"
               title="Тренери школи Георгія Зантарая"
             />
@@ -97,6 +98,7 @@ const Goals = () => {
             <Image
               src={teamImage}
               quality={100}
+              sizes="(min-width: 1180px) 429px, (min-width: 1000px) 320px, (min-width: 780px) 560px, (min-width: 580px) 380px, calc(100vw - 90px)"
               alt="Діти в залі школи Георгія Зантарая"
               title="Діти в залі школи Георгія Зантарая"
             />
