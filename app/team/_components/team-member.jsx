@@ -11,9 +11,10 @@ const TeamMember = ({ member }) => (
           src={member.image}
           width={285}
           height={475}
+          quality={100}
+          sizes="(min-width: 1180px) 353px, (min-width: 1000px) 285px, (min-width: 780px) 325px, (min-width: 580px) 235px, (min-width: 440px) 365px, calc(83.33vw + 15px)"
           alt={member.title}
           title={member.title}
-          quality={100}
         />
         <ul className="team-social">
           {member.facebook && (

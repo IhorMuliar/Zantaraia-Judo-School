@@ -11,6 +11,7 @@ const InfoMedia = ({ image, alt }) => {
           width={360}
           height={100}
           quality={100}
+          sizes="(min-width: 1180px) 25vw, (min-width: 780px) 50vw, 100vw"
           alt={alt}
           title={alt}
         />

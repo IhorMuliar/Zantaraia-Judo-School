@@ -4,7 +4,10 @@ import Image from "next/image";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { PORTFOLIO_DATA } from "../constants";
 
@@ -34,6 +37,7 @@ const Portfolio = () => {
                   width={325}
                   height={290}
                   quality={100}
+                  sizes="(min-width: 1000px) 33vw, (min-width: 800px) 50vw, (min-width: 440px) calc(94.12vw + 26px), calc(83.33vw + 50px)"
                   alt={item.alt}
                   title={item.alt}
                 />

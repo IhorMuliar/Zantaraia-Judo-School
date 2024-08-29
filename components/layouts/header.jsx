@@ -84,6 +84,7 @@ const Header = () => {
               <Image
                 src={logoImage}
                 quality={100}
+                sizes="(min-width: 1000px) 77px, 68px"
                 alt="Лого дзюдо школи Георгія Зантарая"
                 title="Лого дзюдо школи Георгія Зантарая"
               />
@@ -114,6 +115,7 @@ const Header = () => {
                 <Image
                   src={logoImage}
                   quality={100}
+                  sizes="(min-width: 1000px) 77px, 68px"
                   alt="Лого дзюдо школи Георгія Зантарая"
                   title="Лого дзюдо школи Георгія Зантарая"
                 />
