@@ -99,7 +99,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  alternateName : "Школа Георгія Зантарая",
+  alternateName: "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
@@ -130,6 +130,7 @@ const Home = () => {
                     src={mainBannerImage}
                     quality={100}
                     priority={true}
+                    sizes="(min-width: 2160px) 2048px, calc(95vw + 15px)"
                     className="main-img"
                     alt="Головний банер школи дзюдо Георгія Зантарая"
                     title="Головний банер"
@@ -162,10 +163,10 @@ const Home = () => {
                 <div className="dz-media p-r20">
                   <Image
                     src={zantaraiaImage}
-                    data-wow-delay="0.4s"
+                    sizes="(min-width: 1180px) 534px, (min-width: 1000px) 430px, (min-width: 780px) 670px, (min-width: 580px) 490px, calc(100vw - 50px)"
                     alt="Георгій Зантарая"
-                    className="wow fadeInUp"
                     title="Георгій Зантарая"
+                    className="wow fadeInUp"
                   />
                 </div>
               </div>
