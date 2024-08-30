@@ -1,7 +1,7 @@
+import { client } from "@/sanity/lib/client";
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import GalleryItem from "./_components/gallery-item";
-import { GALLERY_ITEMS } from "./_constants";
+import GalleryCategory from "./_components/gallery-category";
 
 export const metadata = {
   title: "Фото школи дзюдо",
@@ -27,7 +27,7 @@ const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Zantaraia Judo School",
-  alternateName : "Школа Георгія Зантарая",
+  alternateName: "Школа Георгія Зантарая",
   url: process.env.NEXT_PUBLIC_SITE_URL,
 };
 
@@ -41,7 +41,26 @@ const webPageJsonLd = {
   inLanguage: "uk",
 };
 
-const Gallery = () => {
+async function fetchCategories() {
+  return await client.fetch(`
+    *[_type == "galleryCategory"] | order(title asc) {
+      _id,
+      title,
+      description,
+      slug,
+      preview {
+        asset -> {
+          _id,
+          url
+        }
+      }
+    }
+  `);
+}
+
+const Gallery = async () => {
+  const categories = await fetchCategories();
+
   return (
     <>
       <JsonLd schema={webSiteJsonLd} />
@@ -49,9 +68,9 @@ const Gallery = () => {
       <Breadcrumbs parentTitle="Головна" activePage="Галерея" />
       <section className="content-inner">
         <div className="container">
-          <div className="row ">
-            {GALLERY_ITEMS.map((item, index) => (
-              <GalleryItem item={item} key={index} />
+          <div className="row">
+            {categories.map((category) => (
+              <GalleryCategory category={category} key={category._id} />
             ))}
           </div>
         </div>

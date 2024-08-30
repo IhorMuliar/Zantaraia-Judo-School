@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
+import { client } from "@/sanity/lib/client";
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import { CATEGORY_TRANSLATIONS, IMAGES } from "./_constants";
 
 export const metadata = {
   title: "Галерея школи дзюдо",
@@ -24,37 +24,65 @@ export const metadata = {
   },
 };
 
-const GalleryDetails = ({ params }) => {
-  const { category } = params;
+async function fetchCategoryData(category) {
+  const categoryData = await client.fetch(
+    `*[_type == "galleryCategory" && slug.current == $category][0]{
+      _id,
+      title,
+      description,
+      photos[] -> {
+        _id,
+        title,
+        image {
+          asset -> {
+            _id,
+            url
+          }
+        }
+      }
+    }`,
+    { category },
+  );
 
-  if (!CATEGORY_TRANSLATIONS[category]) {
-    notFound();
-
+  if (!categoryData) {
     return null;
   }
 
-  const filteredImages = IMAGES.filter((image) => image.category === category);
+  return { category: categoryData };
+}
+
+const GalleryDetails = async ({ params }) => {
+  const { category } = params;
+
+  const data = await fetchCategoryData(category);
+
+  if (!data.category.photos) {
+    notFound();
+    return null;
+  }
+
+  const { category: categoryData } = data;
 
   return (
     <>
       <Breadcrumbs
         parentTitle="Галерея"
         parentUrl="/gallery"
-        activePage={CATEGORY_TRANSLATIONS[category]}
+        activePage={categoryData.title}
       />
       <section className="content-inner">
         <div className="container">
           <div className="row">
-            {filteredImages.map((item, index) => (
-              <div className="col-lg-4 col-sm-6 m-b30" key={index}>
+            {categoryData.photos.map((photo) => (
+              <div className="col-lg-4 col-sm-6 m-b30" key={photo._id}>
                 <div className="dz-box style-2">
                   <div className="dz-media">
                     <Image
-                      src={item.image}
+                      src={photo.image.asset.url}
                       width={340}
                       height={250}
                       quality={100}
-                      alt={`${CATEGORY_TRANSLATIONS[category]} - ${index + 1}`}
+                      alt={photo.title}
                     />
                   </div>
                 </div>

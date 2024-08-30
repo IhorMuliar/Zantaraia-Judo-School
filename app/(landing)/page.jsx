@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 import JsonLd from "@/components/shared/json-ld";
-import AboutDetails from "./_home/components/about-details";
-import ContactInfo from "./_home/components/contact-info";
-import Portfolio from "./_home/components/portfolio";
-import Testimonial from "./_home/components/testimonial";
-import Advantages from "./_home/components/advantages";
-import InfoCards from "./_home/components/info-cards";
+import AboutDetails from "../(landing)/_home/components/about-details";
+import ContactInfo from "../(landing)/_home/components/contact-info";
+import Portfolio from "../(landing)/_home/components/portfolio";
+import Testimonial from "../(landing)/_home/components/testimonial";
+import Advantages from "../(landing)/_home/components/advantages";
+import InfoCards from "../(landing)/_home/components/info-cards";
 
 import mainBannerImage from "@/public/images/gym.jpg";
 import zantaraiaImage from "@/public/images/zantaraia.png";
