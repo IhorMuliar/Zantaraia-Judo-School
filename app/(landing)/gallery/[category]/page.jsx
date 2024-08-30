@@ -56,7 +56,7 @@ const GalleryDetails = async ({ params }) => {
 
   const data = await fetchCategoryData(category);
 
-  if (!data) {
+  if (!data.category.photos) {
     notFound();
     return null;
   }
