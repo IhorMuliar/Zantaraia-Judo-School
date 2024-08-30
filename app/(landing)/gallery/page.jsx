@@ -41,6 +41,8 @@ const webPageJsonLd = {
   inLanguage: "uk",
 };
 
+export const revalidate = 0;
+
 async function fetchCategories() {
   return await client.fetch(`
     *[_type == "galleryCategory"] | order(title asc) {

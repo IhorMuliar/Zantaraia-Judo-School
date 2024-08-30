@@ -24,6 +24,8 @@ export const metadata = {
   },
 };
 
+export const revalidate = 0;
+
 async function fetchCategoryData(category) {
   const categoryData = await client.fetch(
     `*[_type == "galleryCategory" && slug.current == $category][0]{
