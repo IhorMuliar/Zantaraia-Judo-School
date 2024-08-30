@@ -1,11 +1,11 @@
 export { metadata, viewport } from "next-sanity/studio";
 
-const SanityLayout = ({ children }) => {
+const RootLayout = ({ children }) => {
   return (
-    <html lang="en">
-      <body className="min-h-screen">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>{children}</body>
     </html>
   );
 };
 
-export default SanityLayout;
+export default RootLayout;
