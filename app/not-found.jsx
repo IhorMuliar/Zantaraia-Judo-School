@@ -13,7 +13,7 @@ const NotFound = () => {
             }}
           >
             <div className="container">
-              <div className="inner-content text-center" data-text="">
+              <div className="text-center">
                 <div className="dz_error">404</div>
                 <h2 className="error-head">
                   Ми вибачаємося. Але сторінка, яку ви шукаєте, не може бути
