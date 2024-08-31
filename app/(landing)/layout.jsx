@@ -30,21 +30,21 @@ export const metadata = {
       url: "/favicon.ico",
     },
     {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '32x32',
-      url: '/favicon-32x32.png',
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32.png",
     },
     {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '16x16',
-      url: '/favicon-16x16.png',
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
     },
     {
-      rel: 'apple-touch-icon',
-      sizes: '180x180',
-      url: '/apple-touch-icon.png',
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/apple-touch-icon.png",
     },
   ],
   robots: {
@@ -78,15 +78,11 @@ export const viewport = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="uk">
-      <body data-theme-color="light" suppressHydrationWarning>
-        <div className="page-wrapper">
-          <LayoutBuilder>{children}</LayoutBuilder>
-        </div>
-        <ScrollToTop />
-        <FloatingActionButton />
-      </body>
-    </html>
+    <div className="page-wrapper">
+      <LayoutBuilder>{children}</LayoutBuilder>
+      <ScrollToTop />
+      <FloatingActionButton />
+    </div>
   );
 };
 
