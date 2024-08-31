@@ -6,7 +6,7 @@ export default {
   fields: [
     {
       name: "title",
-      title: "Заголовок",
+      title: "Назва",
       type: "string",
       description: "Короткий опис фото, використовується для зручності",
       validation: (Rule) => Rule.required(),

@@ -1,21 +1,32 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  name: "galleryCategory",
-  title: "Категорія галереї",
+  name: "blogPost",
+  title: "Новина",
   type: "document",
   fields: [
     {
       name: "title",
       title: "Заголовок",
       type: "string",
-      description: "Назва категорії",
+      description: "Назва новини",
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "releaseDate",
+      title: "Дата",
+      type: "date",
+      description: "Дата написання новини",
+      validation: (Rule) => Rule.required(),
+      options: {
+        dateFormat: "YYYY-MM-DD",
+        calendarTodayLabel: "Today",
+      },
+    },
+    {
       name: "description",
-      title: "Опис",
-      type: "text",
-      description: "Короткий опис категорії, використовується як опис прев'ю",
+      title: "Короткий опис",
+      type: "string",
+      description: "Короткий опис новини",
       validation: (Rule) => Rule.required(),
     },
     {
@@ -38,13 +49,6 @@ export default {
         hotspot: true,
       },
       validation: (Rule) => Rule.required(),
-    },
-    {
-      name: "photos",
-      title: "Фотографії",
-      type: "array",
-      of: [{ type: "reference", to: [{ type: "photo" }] }],
-      description: "Заповніть список фото",
     },
   ],
 };
