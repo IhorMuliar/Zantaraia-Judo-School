@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import "@/styles/scss/main.scss";
+
 const NotFound = () => {
   return (
     <>

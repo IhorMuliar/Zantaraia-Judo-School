@@ -6,6 +6,7 @@ import FloatingActionButton from "@/components/shared/floating-action-button";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@/styles/vendor/swiper/swiper-bundle.min.css";
+import "@/styles/scss/main.scss";
 
 config.autoAddCss = false;
 
