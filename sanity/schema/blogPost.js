@@ -50,5 +50,25 @@ export default {
       },
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: "content",
+      type: "array",
+      title: "Content",
+      of: [
+        {
+          type: "block",
+        },
+        {
+          type: "image",
+          fields: [
+            {
+              type: "text",
+              name: "alt",
+              title: "Alternative Text",
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
