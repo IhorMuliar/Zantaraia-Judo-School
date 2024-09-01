@@ -23,6 +23,8 @@ export const metadata = {
   },
 };
 
+export const revalidate = 0;
+
 const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -41,10 +43,8 @@ const webPageJsonLd = {
   inLanguage: "uk",
 };
 
-export const revalidate = 0;
-
 async function fetchCategories() {
-  return await client.fetch(`
+  const query = `
     *[_type == "galleryCategory"] | order(title asc) {
       _id,
       title,
@@ -57,7 +57,9 @@ async function fetchCategories() {
         }
       }
     }
-  `);
+  `;
+
+  return client.fetch(query);
 }
 
 const Gallery = async () => {

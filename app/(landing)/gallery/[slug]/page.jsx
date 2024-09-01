@@ -26,9 +26,9 @@ export const metadata = {
 
 export const revalidate = 0;
 
-async function fetchCategoryData(category) {
-  const categoryData = await client.fetch(
-    `*[_type == "galleryCategory" && slug.current == $category][0]{
+async function fetchCategory(slug) {
+  const query = `
+    *[_type == "galleryCategory" && slug.current == $slug][0] {
       _id,
       title,
       description,
@@ -42,40 +42,32 @@ async function fetchCategoryData(category) {
           }
         }
       }
-    }`,
-    { category },
-  );
+    }
+  `;
 
-  if (!categoryData) {
-    return null;
-  }
-
-  return { category: categoryData };
+  return await client.fetch(query, { slug });
 }
 
 const GalleryDetails = async ({ params }) => {
-  const { category } = params;
+  const { slug } = params;
+  const category = await fetchCategory(slug);
 
-  const data = await fetchCategoryData(category);
-
-  if (!data.category.photos) {
+  if (Object.entries(category).length === 0) {
     notFound();
     return null;
   }
-
-  const { category: categoryData } = data;
 
   return (
     <>
       <Breadcrumbs
         parentTitle="Галерея"
         parentUrl="/gallery"
-        activePage={categoryData.title}
+        activePage={category.title}
       />
       <section className="content-inner">
         <div className="container">
           <div className="row">
-            {categoryData.photos.map((photo) => (
+            {category.photos.map((photo) => (
               <div className="col-lg-4 col-sm-6 m-b30" key={photo._id}>
                 <div className="dz-box style-2">
                   <div className="dz-media">

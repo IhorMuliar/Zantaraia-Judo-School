@@ -6,26 +6,14 @@ import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
 
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
+import { formatDate } from "@/utils";
 import Breadcrumbs from "@/components/shared/breadcrumbs";
-import BlogActions from "../[slug]/_components/blog-actions";
+import BlogActions from "./_components/blog-actions";
 
 export const revalidate = 0;
 
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  const options = {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  };
-
-  return new Intl.DateTimeFormat("uk-UA", options)
-    .format(date)
-    .replace(" р.", "");
-}
-
 async function fetchPost(slug) {
-  const query = `    
+  const query = `
     *[_type == "blogPost" && slug.current == $slug][0]{
       _id,
       title,
@@ -38,9 +26,10 @@ async function fetchPost(slug) {
           url
         }
       }
-    }`;
+    }
+  `;
 
-  return await client.fetch(query, { slug });
+  return client.fetch(query, { slug });
 }
 
 const PortableTextComponent = {
@@ -73,13 +62,13 @@ const BlogDetails = async ({ params }) => {
       />
       <section className="content-inner">
         <div className="container">
-          <div className="blog-content">
-            <div className="blog-meta">
+          <article className="blog-content">
+            <header className="blog-meta">
               <p className="blog-date">
                 <FontAwesomeIcon icon={faCalendarDay} />
                 {formatDate(post.releaseDate)}
               </p>
-            </div>
+            </header>
             <div className="blog-details">
               <PortableText
                 value={post.content}
@@ -87,7 +76,7 @@ const BlogDetails = async ({ params }) => {
               />
             </div>
             <BlogActions />
-          </div>
+          </article>
         </div>
       </section>
     </div>
