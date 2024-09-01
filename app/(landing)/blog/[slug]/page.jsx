@@ -20,12 +20,6 @@ async function fetchPost(slug) {
       releaseDate,
       content,
       slug,
-      preview {
-        asset -> {
-          _id,
-          url
-        }
-      }
     }
   `;
 
@@ -37,9 +31,11 @@ const PortableTextComponent = {
     image: ({ value }) => (
       <Image
         src={urlFor(value).url()}
-        alt={value.alt || "Image"}
-        width={800}
-        height={800}
+        alt={value.description || "Фото"}
+        title={value.description || "Фото"}
+        width={700}
+        height={300}
+        quality={100}
       />
     ),
   },

@@ -63,10 +63,13 @@ export default {
           fields: [
             {
               type: "text",
-              name: "alt",
-              title: "Alternative Text",
+              name: "description",
+              title: "Опис фото",
             },
           ],
+          options: {
+            hotspot: true,
+          },
         },
       ],
     },
