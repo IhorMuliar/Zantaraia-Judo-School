@@ -1,4 +1,3 @@
-// site-header
 .site-header {
   &.style-1 {
     .main-bar {
@@ -6,6 +5,8 @@
       background-color: transparent;
 
       .box-header {
+        display: flex;
+        align-items: center;
         position: relative;
 
         @include custommq($min: 1180px, $max: 1280px) {

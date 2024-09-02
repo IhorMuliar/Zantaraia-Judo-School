@@ -1,0 +1,118 @@
+.theme-toggle {
+    --size: 2rem;
+    --icon-fill: hsl(210, 10%, 30%);
+    --icon-fill-hover: hsl(210, 10%, 15%);
+    --transition-speed: 0.5s;
+    
+    background: none;
+    border: none;
+    padding: 0;
+  
+    inline-size: var(--size);
+    block-size: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  
+    outline-offset: 5px;
+  
+    & > svg {
+      inline-size: 100%;
+      block-size: 100%;
+      stroke-linecap: round;
+      transition: transform var(--transition-speed) ease-in-out;
+    }
+  
+    [data-theme="dark"] & > svg {
+      transform: rotate(-360deg); /* Counterclockwise rotation */
+    }
+  
+    @media (hover: none) {
+      --size: 48px;
+    }
+  }
+  
+  .sun-and-moon {
+    & > :is(.moon, .sun, .sun-beams) {
+      transform-origin: center center;
+    }
+  
+    & > :is(.moon, .sun) {
+      fill: var(--icon-fill);
+      transition: transform var(--transition-speed) ease-in-out;
+  
+      .theme-toggle:is(:hover, :focus-visible) > & {
+        fill: var(--icon-fill-hover);
+      }
+    }
+  
+    & > .sun-beams {
+      stroke: var(--icon-fill);
+      stroke-width: 2px;
+      opacity: 1;
+      transition: opacity var(--transition-speed) ease-in-out, transform var(--transition-speed) ease-in-out;
+  
+      .theme-toggle:is(:hover, :focus-visible) & {
+        stroke: var(--icon-fill-hover);
+      }
+    }
+  
+    [data-theme="dark"] & {
+      & > .sun {
+        transform: scale(1.75);
+        transition: transform var(--transition-speed) ease-in-out;
+      }
+  
+      & > .sun-beams {
+        opacity: 0;
+        transform: rotate(-45deg); /* Adjusted for counterclockwise rotation */
+        transition: opacity var(--transition-speed) ease-in-out, transform var(--transition-speed) ease-in-out;
+      }
+  
+      & > .moon > circle {
+        transform: translateX(-7px);
+        transition: transform var(--transition-speed) ease-in-out;
+  
+        @supports (cx: 1) {
+          transform: translateX(0);
+          cx: 17;
+        }
+      }
+    }
+  
+    @media (--motionOK) {
+      & > .sun {
+        transition: transform var(--transition-speed) ease-in-out;
+      }
+  
+      & > .sun-beams {
+        transition: opacity var(--transition-speed) ease-in-out, transform var(--transition-speed) ease-in-out;
+      }
+  
+      & .moon > circle {
+        transition: transform var(--transition-speed) ease-in-out;
+  
+        @supports (cx: 1) {
+          transition: cx var(--transition-speed) ease-in-out;
+        }
+      }
+  
+      [data-theme="dark"] & {
+        & > .sun {
+          transform: scale(1.75);
+        }
+  
+        & > .sun-beams {
+          transform: rotateZ(-25deg); /* Adjusted for counterclockwise rotation */
+        }
+  
+        & > .moon > circle {
+          transform: translateX(-7px);
+        }
+      }
+    }
+  }
+  

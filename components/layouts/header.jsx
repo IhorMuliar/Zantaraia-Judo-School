@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { MENU_ITEMS } from "@/constants";
+import ThemeSwitcher from "../shared/theme-switcher";
 
 import logoImage from "@/public/images/logo.jpg";
 
@@ -230,6 +231,9 @@ const Header = () => {
               </ul>
             </div>
           </nav>
+          <div className="m-r10">
+            <ThemeSwitcher />
+          </div>
         </div>
       </div>
     </div>
