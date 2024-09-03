@@ -1,6 +1,7 @@
+import blogPost from "./blogPost";
 import galleryCategory from "./galleryCategory";
 import photo from "./photo";
 
 export const schema = {
-  types: [galleryCategory, photo],
+  types: [blogPost, galleryCategory, photo],
 };

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   name: "photo",
   title: "Фото",
@@ -5,7 +6,7 @@ export default {
   fields: [
     {
       name: "title",
-      title: "Заголовок",
+      title: "Назва",
       type: "string",
       description: "Короткий опис фото, використовується для зручності",
       validation: (Rule) => Rule.required(),

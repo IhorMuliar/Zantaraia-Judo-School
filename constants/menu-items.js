@@ -20,7 +20,12 @@ export const MENU_ITEMS = [
     to: "/gallery",
   },
   {
+    title: "Новини",
+    to: "/blog",
+  },
+  {
     title: "Контакти",
     to: "/contact-us",
   },
+  
 ];

@@ -1,4 +1,6 @@
-export default function sitemap() {
+import { fetchPosts } from "@/app/(landing)/blog/page";
+
+export default async function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   return [
@@ -28,24 +30,13 @@ export default function sitemap() {
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/gallery/meetings`,
-      lastModified: new Date(),
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/gallery/travels`,
-      lastModified: new Date(),
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/gallery/competitions`,
-      lastModified: new Date(),
-      priority: 0.6,
-    },
-    {
       url: `${baseUrl}/schedule`,
       lastModified: new Date(),
       priority: 0.5,
     },
+    ...(await fetchPosts()).map((post) => ({
+      url: `${baseUrl}/${post.slug.current}`,
+      lastModified: post.updatedAt,
+    })),
   ];
 }

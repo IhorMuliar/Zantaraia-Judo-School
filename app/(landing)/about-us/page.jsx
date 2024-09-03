@@ -37,9 +37,9 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Про клуб - Zantaraia Judo School",
+  name: "Про клуб дзюдо",
   description:
-    "Дізнайтеся більше про Zantaraia Judo School: історія клубу, тренерський склад, наші цінності та досягнення.",
+    "Дізнайтеся про клуб дзюдо Георгія Зантарая: наші цілі, місію, адаптивний спорт та основні принципи роботи. Більше про наш підхід і те, що робить наш клуб унікальним.",
   url: `${process.env.NEXT_PUBLIC_SITE_URL}/about-us`,
   inLanguage: "uk",
 };

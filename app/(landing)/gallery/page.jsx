@@ -23,6 +23,8 @@ export const metadata = {
   },
 };
 
+export const revalidate = 0;
+
 const webSiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -34,19 +36,16 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Галерея - Zantaraia Judo School",
+  name: "Фото школи дзюдо",
   description:
-    "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
+    "Перегляньте фото школи дзюдо Георгія Зантарая: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
   url: `${process.env.NEXT_PUBLIC_SITE_URL}/gallery`,
   inLanguage: "uk",
 };
 
-export const revalidate = 0;
-
 async function fetchCategories() {
-  return await client.fetch(`
+  const query = `
     *[_type == "galleryCategory"] | order(title asc) {
-      _id,
       title,
       description,
       slug,
@@ -57,7 +56,9 @@ async function fetchCategories() {
         }
       }
     }
-  `);
+  `;
+
+  return client.fetch(query);
 }
 
 const Gallery = async () => {
@@ -72,7 +73,7 @@ const Gallery = async () => {
         <div className="container">
           <div className="row">
             {categories.map((category) => (
-              <GalleryCategory category={category} key={category._id} />
+              <GalleryCategory category={category} key={category.slug.current} />
             ))}
           </div>
         </div>

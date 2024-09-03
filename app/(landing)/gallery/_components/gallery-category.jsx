@@ -17,11 +17,11 @@ const GalleryCategory = ({ category }) => (
         </Link>
       </div>
       <div className="dz-info">
-        <h4 className="title">
+        <h2 className="h4 title">
           <Link href={`/gallery/${category.slug.current}`}>
             {category.title}
           </Link>
-        </h4>
+        </h2>
       </div>
     </div>
   </div>

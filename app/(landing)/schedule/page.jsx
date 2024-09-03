@@ -33,9 +33,9 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Розклад - Zantaraia Judo School",
+  name: "Розклад тренувань дзюдо",
   description:
-    "Актуальний розклад тренувань у Zantaraia Judo School. Знайдіть зручний час для занять дзюдо для дітей та дорослих.",
+    "Перегляньте гнучкий розклад тренувань дзюдо в школі Георгія Зантарая та оберіть зручний час для занять.",
   url: `${process.env.NEXT_PUBLIC_SITE_URL}/schedule`,
   inLanguage: "uk",
 };

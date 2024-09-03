@@ -34,9 +34,9 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Контакти - Zantaraia Judo School",
+  name: "Контакти",
   description:
-    "Зв'яжіться з Zantaraia Judo School! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації.",
+    "Зв’яжіться з нами! Адреса, телефон та соціальні мережі для запису на тренування та отримання додаткової інформації про школу дзюдо Георгія Зантарая.",
   url: `${process.env.NEXT_PUBLIC_SITE_URL}/contact-us`,
   inLanguage: "uk",
 };
