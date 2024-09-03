@@ -13,7 +13,7 @@ const Breadcrumbs = ({ parentTitle, parentUrl = "/", activePage }) => {
         "@type": "ListItem",
         position: 1,
         name: parentTitle,
-        item: "https://zantaraia-judo-school.pp.ua",
+        item: "https://zantaraia-school.com",
       },
       {
         "@type": "ListItem",

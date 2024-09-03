@@ -36,9 +36,9 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Галерея - Zantaraia Judo School",
+  name: "Фото школи дзюдо",
   description:
-    "Перегляньте фотогалерею Zantaraia Judo School: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
+    "Перегляньте фото школи дзюдо Георгія Зантарая: яскраві моменти тренувань, змагань та життя нашого клубу в атмосфері дружби та розвитку.",
   url: `${process.env.NEXT_PUBLIC_SITE_URL}/gallery`,
   inLanguage: "uk",
 };
@@ -46,7 +46,6 @@ const webPageJsonLd = {
 async function fetchCategories() {
   const query = `
     *[_type == "galleryCategory"] | order(title asc) {
-      _id,
       title,
       description,
       slug,
@@ -74,7 +73,7 @@ const Gallery = async () => {
         <div className="container">
           <div className="row">
             {categories.map((category) => (
-              <GalleryCategory category={category} key={category._id} />
+              <GalleryCategory category={category} key={category.slug.current} />
             ))}
           </div>
         </div>

@@ -106,9 +106,9 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Головна - Zantaraia Judo School",
+  name: "Школа дзюдо - Zantaraia Judo School",
   description:
-    "Долучайтесь до Zantaraia Judo School! Тренування для дітей та дорослих: фізичний розвиток, підготовка до змагань, дружня атмосфера.",
+    "Школа дзюдо Георгія Зантарая - ознайомтеся з нашими тренуваннями, досвідченими тренерами та спортивними досягненнями.  Дзюдо для дітей та підлітків: фізичний розвиток, підготовка до змагань, дружня атмосфера!",
   url: process.env.NEXT_PUBLIC_SITE_URL,
   inLanguage: "uk",
 };

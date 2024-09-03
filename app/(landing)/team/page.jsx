@@ -35,9 +35,9 @@ const webSiteJsonLd = {
 const webPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Команда - Zantaraia Judo School",
+  name: "Команда школи дзюдо",
   description:
-    "Знайомтесь з командою Zantaraia Judo School: досвідчені тренери та наставники, що допомагають нашим учням досягати успіхів у дзюдо.",
+    "Познайомтеся з професійною командою тренерів клубу дзюдо Георгія Зантарая. Досвідчені наставники допоможуть вам досягти успіху!",
   url: `${process.env.NEXT_PUBLIC_SITE_URL}/team`,
   inLanguage: "uk",
 };

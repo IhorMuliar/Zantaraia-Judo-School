@@ -12,18 +12,60 @@ import BlogActions from "./_components/blog-actions";
 
 export const revalidate = 0;
 
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+
+  const post = await fetchPost(slug);
+
+  return {
+    title: post.title,
+    description: post.description,
+    openGraph: {
+      url: `/${slug}`,
+      images: [
+        {
+          url: post.preview.asset.url,
+          alt: "Zantaraia Judo School",
+        },
+      ],
+      type: "website",
+      locale: "uk",
+    },
+    twitter: {
+      images: [post.preview.asset.url],
+    },
+    alternates: {
+      canonical: `/${slug}`,
+    },
+  };
+}
+
 async function fetchPost(slug) {
   const query = `
     *[_type == "blogPost" && slug.current == $slug][0]{
       _id,
       title,
       releaseDate,
+      description,
       content,
       slug,
+      preview {
+        asset -> {
+          _id,
+          url
+        }
+      }
     }
   `;
 
-  return client.fetch(query, { slug });
+  const post = await client.fetch(query, { slug });
+
+  if (Object.entries(post).length === 0) {
+    notFound();
+    return null;
+  }
+
+  return post;
 }
 
 const PortableTextComponent = {
@@ -43,11 +85,6 @@ const PortableTextComponent = {
 
 const BlogDetails = async ({ params }) => {
   const post = await fetchPost(params.slug);
-
-  if (!post) {
-    notFound();
-    return null;
-  }
 
   return (
     <div className="page-content">
