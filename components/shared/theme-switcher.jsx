@@ -1,15 +1,11 @@
+'use client'; // Ensure this component is a client component
+
 import { useEffect, useState } from 'react';
 
 const storageKey = 'theme-preference';
 
-const ThemeSwitcher = () => {
+export default function ThemeSwitcher() {
   const [theme, setTheme] = useState('light');
-
-  const onClick = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    setPreference(newTheme);
-  };
 
   const getColorPreference = () => {
     if (typeof window !== 'undefined' && localStorage.getItem(storageKey)) {
@@ -31,9 +27,15 @@ const ThemeSwitcher = () => {
       document.documentElement.setAttribute('data-theme', newTheme);
       const toggleButton = document.querySelector('#theme-toggle');
       if (toggleButton) {
-        toggleButton.setAttribute('aria-label', newTheme);
+        toggleButton.setAttribute('aria-label', `Switch to ${newTheme === 'light' ? 'Dark' : 'Light'} Mode`);
       }
     }
+  };
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    setPreference(newTheme);
   };
 
   useEffect(() => {
@@ -59,9 +61,9 @@ const ThemeSwitcher = () => {
       className="theme-toggle"
       id="theme-toggle"
       title="Toggles light & dark"
-      aria-label="auto"
+      aria-label={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} Mode`}
       aria-live="polite"
-      onClick={onClick}
+      onClick={toggleTheme}
     >
       <svg className="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
         <mask className="moon" id="moon-mask">
@@ -82,6 +84,4 @@ const ThemeSwitcher = () => {
       </svg>
     </button>
   );
-};
-
-export default ThemeSwitcher;
+}
