@@ -1,4 +1,6 @@
-export default function sitemap() {
+import { fetchPosts } from "@/app/(landing)/blog/page";
+
+export default async function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   return [
@@ -32,5 +34,9 @@ export default function sitemap() {
       lastModified: new Date(),
       priority: 0.5,
     },
+    ...(await fetchPosts()).map((post) => ({
+      url: `${baseUrl}/${post.slug.current}`,
+      lastModified: post.updatedAt,
+    })),
   ];
 }

@@ -1,15 +1,35 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-import HomeLayout from "./home-layout";
-import MainLayout from "./main-layout";
+import Header from "./header";
+import Footer from "./footer";
 
 const LayoutBuilder = ({ children }) => {
   const pathname = usePathname();
-  const Layout = pathname === "/" ? HomeLayout : MainLayout;
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
-  return <Layout>{children}</Layout>;
+  useEffect(() => {
+    const handleScroll = () => setIsHeaderFixed(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <header className="site-header mo-left header header-transparent style-1">
+        <div
+          className={`sticky-header mt-3 navbar-expand-lg ${isHeaderFixed ? "is-fixed" : ""}`}
+        >
+          <Header />
+        </div>
+      </header>
+      <main className="page-content bg-white">{children}</main>
+      {pathname !== "/" && <Footer />}
+    </>
+  );
 };
 
 export default LayoutBuilder;
