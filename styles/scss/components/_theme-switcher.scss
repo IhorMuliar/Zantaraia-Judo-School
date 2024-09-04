@@ -1,7 +1,13 @@
+@media (max-width: 991px) {
+  .theme-switcher-container {
+    display: none;
+  }
+}
+
 .theme-toggle {
-    --size: 2rem;
-    --icon-fill: hsl(210, 10%, 30%);
-    --icon-fill-hover: hsl(210, 10%, 15%);
+    --size: 1.7rem;
+    --icon-fill: var(--primary);
+    --icon-fill-hover: #071c35;
     --transition-speed: 0.5s;
     
     background: none;
@@ -27,7 +33,7 @@
     }
   
     [data-theme="dark"] & > svg {
-      transform: rotate(-360deg); /* Counterclockwise rotation */
+      transform: rotate(-360deg);
     }
   
     @media (hover: none) {
@@ -61,6 +67,8 @@
     }
   
     [data-theme="dark"] & {
+      --icon-fill-hover: white;
+
       & > .sun {
         transform: scale(1.75);
         transition: transform var(--transition-speed) ease-in-out;

@@ -121,6 +121,7 @@ const Header = () => {
                   title="Лого дзюдо школи Георгія Зантарая"
                 />
               </Link>
+              <ThemeSwitcher />
             </div>
             <ul className="nav navbar-nav navbar-left">
               {MENU_ITEMS.map((item, index) => (
@@ -231,7 +232,7 @@ const Header = () => {
               </ul>
             </div>
           </nav>
-          <div className="m-r10">
+          <div className="m-r10 theme-switcher-container">
             <ThemeSwitcher />
           </div>
         </div>
