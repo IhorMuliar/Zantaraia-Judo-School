@@ -35,7 +35,7 @@ export default async function sitemap() {
       priority: 0.5,
     },
     ...(await fetchPosts()).map((post) => ({
-      url: `${baseUrl}/${post.slug.current}`,
+      url: `${baseUrl}/blog/${post.slug.current}`,
       lastModified: post.updatedAt,
     })),
   ];
