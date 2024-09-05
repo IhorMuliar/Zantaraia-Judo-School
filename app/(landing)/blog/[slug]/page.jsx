@@ -21,9 +21,18 @@ export async function generateMetadata({ params }) {
     title: post.title,
     description: post.description,
     openGraph: {
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.jpg`,
+          alt: post.title,
+        },
+      ],
       url: `/${slug}`,
       type: "website",
       locale: "uk",
+    },
+    twitter: {
+      images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.jpg`],
     },
     alternates: {
       canonical: `/${slug}`,
