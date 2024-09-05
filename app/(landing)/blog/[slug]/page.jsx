@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
           alt: post.title,
         },
       ],
-      url: `/${slug}`,
+      url: `/blog/${slug}`,
       type: "website",
       locale: "uk",
     },
