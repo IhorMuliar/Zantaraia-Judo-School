@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.jpg`],
     },
     alternates: {
-      canonical: `/${slug}`,
+      canonical: `/blog/${slug}`,
     },
   };
 }
