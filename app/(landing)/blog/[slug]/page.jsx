@@ -22,17 +22,8 @@ export async function generateMetadata({ params }) {
     description: post.description,
     openGraph: {
       url: `/${slug}`,
-      images: [
-        {
-          url: post.preview.asset.url,
-          alt: "Zantaraia Judo School",
-        },
-      ],
       type: "website",
       locale: "uk",
-    },
-    twitter: {
-      images: [post.preview.asset.url],
     },
     alternates: {
       canonical: `/${slug}`,
