@@ -73,5 +73,52 @@ export default {
         },
       ],
     },
+    {
+      name: "socialLinks",
+      title: "Соцмережі",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            {
+              name: "href",
+              title: "Посилання",
+              type: "url",
+              description: "URL посилання на соціальну мережу",
+              validation: (Rule) => Rule.required(),
+              initialValue: "https://www.facebook.com/",
+            },
+            {
+              name: "icon",
+              title: "Іконка",
+              type: "string",
+              description: "Ідентифікатор іконки",
+              initialValue: "faFacebookF",
+              validation: (Rule) => Rule.required(),
+            },
+          ],
+        },
+      ],
+      description: "Соцмережі для новини",
+      initialValue: [
+        { href: "https://www.facebook.com/GZJudoSchool/", icon: "faFacebookF" },
+        {
+          href: "https://www.instagram.com/zantaraia_school",
+          icon: "faInstagram",
+        },
+        {
+          href: "https://www.tiktok.com/@zantaraia_school?_t=8et0vHMb2m5&_r=1",
+          icon: "faTiktok",
+        },
+      ],
+    },
+    {
+      name: "tags",
+      title: "Теги",
+      type: "array",
+      of: [{ type: "string" }],
+      description: "Теги новини",
+    },
   ],
 };

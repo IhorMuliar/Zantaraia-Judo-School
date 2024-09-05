@@ -54,7 +54,12 @@ async function fetchPost(slug) {
           _id,
           url
         }
-      }
+      },
+      socialLinks[] {
+        href,
+        icon
+      },
+      tags
     }
   `;
 
@@ -108,7 +113,7 @@ const BlogDetails = async ({ params }) => {
                 components={PortableTextComponent}
               />
             </div>
-            <BlogActions />
+            <BlogActions socialLinks={post.socialLinks} tags={post.tags} />
           </article>
         </div>
       </section>

@@ -6,11 +6,17 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 
-const BlogActions = () => (
+const iconMap = {
+  faFacebookF: faFacebookF,
+  faInstagram: faInstagram,
+  faTiktok: faTiktok,
+};
+
+const BlogActions = ({ socialLinks, tags }) => (
   <div className="blog-actions">
     <div className="blog-tags">
       <p className="blog-tags-title">Теги:</p>
-      {["Табір", "Спортивні збори"].map((tag) => (
+      {tags.map((tag) => (
         <Link href="#" key={tag}>
           <span>{tag}</span>
         </Link>
@@ -20,18 +26,12 @@ const BlogActions = () => (
       {socialLinks.map(({ href, icon }, index) => (
         <li key={index}>
           <Link target="_blank" href={href} rel="noreferrer">
-            <FontAwesomeIcon icon={icon} />
+            <FontAwesomeIcon icon={iconMap[icon]} />
           </Link>
         </li>
       ))}
     </ul>
   </div>
 );
-
-const socialLinks = [
-  { href: "https://www.facebook.com/", icon: faFacebookF },
-  { href: "https://www.instagram.com/", icon: faInstagram },
-  { href: "https://www.tiktok.com/", icon: faTiktok },
-];
 
 export default BlogActions;
