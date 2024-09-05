@@ -34,6 +34,11 @@ export default async function sitemap() {
       lastModified: new Date(),
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
     ...(await fetchPosts()).map((post) => ({
       url: `${baseUrl}/blog/${post.slug.current}`,
       lastModified: post.updatedAt,
