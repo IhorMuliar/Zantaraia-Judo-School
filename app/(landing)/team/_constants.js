@@ -7,7 +7,7 @@ export const TEAM_MEMBERS = [
     instagram: "https://www.instagram.com/zantaraia_georgii",
   },
   {
-    image: "/images/team/member1.png",
+    image: "/images/team/laskuta.jpg",
     title: "Ласкута Анатолій",
     description: "Директор",
     facebook: "",
