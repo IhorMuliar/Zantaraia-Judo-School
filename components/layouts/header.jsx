@@ -15,7 +15,7 @@ import {
 
 import { MENU_ITEMS } from "@/constants";
 
-import logoImage from "@/public/images/logo.jpg";
+import logoImage from "@/public/images/logo.png";
 
 const initialState = {
   activeMenu: "",

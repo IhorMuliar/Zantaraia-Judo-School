@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       images: [
         {
-          url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.jpg`,
+          url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.png`,
           alt: post.title,
         },
       ],
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
       locale: "uk",
     },
     twitter: {
-      images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.jpg`],
+      images: [`${process.env.NEXT_PUBLIC_SITE_URL}/images/logo.png`],
     },
     alternates: {
       canonical: `/blog/${slug}`,
