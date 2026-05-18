@@ -71,7 +71,7 @@ const Gallery = async () => {
       <Breadcrumbs parentTitle="Головна" activePage="Галерея" />
       <section className="content-inner">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             {categories.map((category) => (
               <GalleryCategory category={category} key={category.slug.current} />
             ))}
